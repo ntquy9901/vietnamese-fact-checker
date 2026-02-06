@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLLB Vietnamese to English Translation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .translation-area {
+            padding: 40px;
+        }
+
+        .input-section, .output-section {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+            font-size: 1.1em;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e1e5e9;
+            border-radius: 10px;
+            font-size: 16px;
+            resize: vertical;
+            transition: border-color 0.3s;
+            font-family: inherit;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: #4facfe;
+        }
+
+        #vietnameseInput {
+            min-height: 120px;
+        }
+
+        #englishOutput {
+            min-height: 120px;
+            background-color: #f8f9fa;
+            border-color: #e9ecef;
+        }
+
+        .button-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .translate-btn {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .translate-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(79, 172, 254, 0.3);
+        }
+
+        .translate-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        .status {
+            text-align: center;
+            margin: 20px 0;
+            font-weight: 500;
+        }
+
+        .status.loading {
+            color: #4facfe;
+        }
+
+        .status.success {
+            color: #28a745;
+        }
+
+        .status.error {
+            color: #dc3545;
+        }
+
+        .examples {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+
+        .examples h3 {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .example-item {
+            background: white;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            border-left: 4px solid #4facfe;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .example-item:hover {
+            background-color: #e3f2fd;
+        }
+
+        .example-vi {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .example-en {
+            color: #666;
+            font-style: italic;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+
+        .info-box p {
+            margin: 0;
+            color: #1565c0;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #4facfe;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🇻🇳 → 🇺🇸 NLLB Translation</h1>
+            <p>Vietnamese to English Translation using Facebook NLLB Model</p>
+        </div>
+
+        <div class="translation-area">
+            <div class="info-box">
+                <p>🚀 <strong>Model:</strong> facebook/nllb-200-distilled-600M | <strong>Backend:</strong> http://localhost:8003 | <strong>Status:</strong> Ready to translate</p>
+            </div>
+
+            <div class="input-section">
+                <label for="vietnameseInput">📝 Vietnamese Text:</label>
+                <textarea 
+                    id="vietnameseInput" 
+                    placeholder="Enter Vietnamese text here..."
+                    maxlength="1000"
+                ></textarea>
+            </div>
+
+            <div class="button-container">
+                <button class="translate-btn" onclick="translateText()">
+                    Translate Now
+                </button>
+            </div>
+
+            <div id="status" class="status"></div>
+
+            <div class="output-section">
+                <label for="englishOutput">🌍 English Translation:</label>
+                <textarea 
+                    id="englishOutput" 
+                    readonly
+                    placeholder="Translation will appear here..."
+                ></textarea>
+            </div>
+
+            <div class="examples">
+                <h3>📋 Test Examples (Click to use):</h3>
+                <div class="example-item" onclick="useExample('Xin chào, bạn khỏe không?')">
+                    <div class="example-vi">Xin chào, bạn khỏe không?</div>
+                    <div class="example-en">Hello, how are you?</div>
+                </div>
+                <div class="example-item" onclick="useExample('Hà Nội là thủ đô của Việt Nam.')">
+                    <div class="example-vi">Hà Nội là thủ đô của Việt Nam.</div>
+                    <div class="example-en">Hanoi is the capital of Vietnam.</div>
+                </div>
+                <div class="example-item" onclick="useExample('Tôi thích ăn phở và bánh mì.')">
+                    <div class="example-vi">Tôi thích ăn phở và bánh mì.</div>
+                    <div class="example-en">I like to eat pho and banh mi.</div>
+                </div>
+                <div class="example-item" onclick="useExample('Công nghệ thông tin đang phát triển rất nhanh.')">
+                    <div class="example-vi">Công nghệ thông tin đang phát triển rất nhanh.</div>
+                    <div class="example-en">Information technology is developing very fast.</div>
+                </div>
+                <div class="example-item" onclick="useExample('Thị trường chứng khoán Việt Nam tăng trưởng mạnh mẽ.')">
+                    <div class="example-vi">Thị trường chứng khoán Việt Nam tăng trưởng mạnh mẽ.</div>
+                    <div class="example-en">Vietnam's stock market is growing strongly.</div>
+                </div>
+                <div class="example-item" onclick="useExample('Tại sao bạn làm vậy và test ra kết quả vậy không')">
+                    <div class="example-vi">Tại sao bạn làm vậy và test ra kết quả vậy không</div>
+                    <div class="example-en">Why do you do that and test result is not</div>
+                </div>
+                <div class="example-item" onclick="useExample('bạn học là ai')">
+                    <div class="example-vi">bạn học là ai</div>
+                    <div class="example-en">You learn there</div>
+                </div>
+                <div class="example-item" onclick="useExample('bạn là ai')">
+                    <div class="example-vi">bạn là ai</div>
+                    <div class="example-en">Who are you?</div>
+                </div>
+                <div class="example-item" onclick="useExample('ai là giáo viên của bạn')">
+                    <div class="example-vi">ai là giáo viên của bạn</div>
+                    <div class="example-en">who's your teacher?</div>
+                </div>
+                <div class="example-item" onclick="useExample('bạn đang học ai')">
+                    <div class="example-vi">bạn đang học ai</div>
+                    <div class="example-en">Who are you studying?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let isTranslating = false;
+
+        function useExample(text) {
+            document.getElementById('vietnameseInput').value = text;
+            document.getElementById('englishOutput').value = '';
+            updateStatus('', '');
+        }
+
+        function updateStatus(message, type) {
+            const statusEl = document.getElementById('status');
+            statusEl.textContent = message;
+            statusEl.className = `status ${type}`;
+        }
+
+        function showLoading() {
+            const btn = document.querySelector('.translate-btn');
+            btn.disabled = true;
+            btn.innerHTML = '<span class="spinner"></span>Translating...';
+            updateStatus('🔄 Translating...', 'loading');
+        }
+
+        function hideLoading() {
+            const btn = document.querySelector('.translate-btn');
+            btn.disabled = false;
+            btn.innerHTML = 'Translate Now';
+        }
+
+        async function translateText() {
+            if (isTranslating) return;
+
+            const vietnameseText = document.getElementById('vietnameseInput').value.trim();
+            
+            if (!vietnameseText) {
+                updateStatus('⚠️ Please enter Vietnamese text to translate', 'error');
+                return;
+            }
+
+            isTranslating = true;
+            showLoading();
+
+            try {
+                // Call real backend API
+                const response = await fetch('http://localhost:8003/translate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        text: vietnameseText,
+                        max_length: 512
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const result = await response.json();
+                
+                // Display real translation
+                document.getElementById('englishOutput').value = result.english;
+                
+                updateStatus(`✅ Translation completed in ${result.translation_time.toFixed(3)}s`, 'success');
+            } catch (error) {
+                console.error('Translation error:', error);
+                if (error.message.includes('Failed to fetch')) {
+                    updateStatus('❌ Cannot connect to translation server. Please start the backend server first.', 'error');
+                } else {
+                    updateStatus('❌ Translation failed: ' + error.message, 'error');
+                }
+            } finally {
+                isTranslating = false;
+                hideLoading();
+            }
+        }
+
+        // Allow Enter key to translate (Shift+Enter for new line)
+        document.getElementById('vietnameseInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                translateText();
+            }
+        });
+
+        // Character counter
+        document.getElementById('vietnameseInput').addEventListener('input', function() {
+            const length = this.value.length;
+            const maxLength = this.getAttribute('maxlength');
+            if (length > maxLength * 0.9) {
+                updateStatus(`⚠️ ${length}/${maxLength} characters`, 'error');
+            } else {
+                updateStatus('', '');
+            }
+        });
+    </script>
+</body>
+</html>

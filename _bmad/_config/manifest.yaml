@@ -1,0 +1,21 @@
+installation:
+  version: 6.0.0-Beta.4
+  installDate: 2026-01-31T12:10:06.349Z
+  lastUpdated: 2026-01-31T12:27:06.450Z
+modules:
+  - name: core
+    version: 6.0.0-Beta.4
+    installDate: 2026-01-31T12:10:06.349Z
+    lastUpdated: 2026-01-31T12:27:06.450Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+  - name: bmm
+    version: 6.0.0-Beta.4
+    installDate: 2026-01-31T12:10:06.285Z
+    lastUpdated: 2026-01-31T12:27:06.450Z
+    source: built-in
+    npmPackage: null
+    repoUrl: null
+ides:
+  - windsurf
