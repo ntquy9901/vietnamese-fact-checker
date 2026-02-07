@@ -1,0 +1,566 @@
+[
+  {
+    "claim": "Hà Nội là thủ đô của Việt Nam",
+    "verdict": "SUPPORTED",
+    "confidence": 0.9875526428222656,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988]",
+    "evidence": [
+      {
+        "text": "Thủ đô Hà Nội - Việt Nam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Trang tin công bố thông tin chỉ đạo, điều hành của UBND thành phố Hà Nội",
+        "url": "https://www.facebook.com/thudo.gov.vn/?locale=vi_VN",
+        "title": "Thủ đô Hà Nội - Việt Nam | Hanoi"
+      },
+      {
+        "text": "Hà Nội cách thành phố cảng Hải Phòng 102 km, cách thành phố Nam Định 84 km tạo thành 3 cực chính của Đồng bằng sông Hồng. Nó có diện tích 3.358,6 km², chiếm khoảng 1% diện tích tự nhiên của cả nước, đứng hàng thứ 32 về diện tích trong 34 tỉnh, thành phố ở Việt Nam, và là 1 trong 17 thủ đô ...",
+        "url": "https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i",
+        "title": "Hà Nội – Wikipedia tiếng Việt"
+      },
+      {
+        "text": "Hà Nội trở thành thủ đô của đất nước từ năm 1954. Nếu không có lý do xứng đáng, không nên dời đô tới bất kỳ nơi nào khác. Đây là bản đồ bố trí các quân khu của Việt Nam.",
+        "url": "https://hinhanhvietnam.com/tai-sao-ha-noi-la-thu-do-cua-viet-nam-thay-vi-sai-gon/",
+        "title": "Tại sao Hà Nội là thủ đô của Việt Nam thay vì Sài Gòn? – Hình ảnh Việt Nam xưa & nay"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.557097673416138,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://www.facebook.com/thudo.gov.vn/?locale=vi_VN",
+      "https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i",
+      "https://hinhanhvietnam.com/tai-sao-ha-noi-la-thu-do-cua-viet-nam-thay-vi-sai-gon/"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Hà Nội là thủ đô của Việt Nam",
+        "english_claim": "Hanoi is the capital of Vietnam",
+        "vietnamese_evidence": [
+          "Thủ đô Hà Nội - Việt Nam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Trang tin công bố thông tin chỉ đạo, điều hành của UBND thành phố Hà Nội",
+          "Hà Nội cách thành phố cảng Hải Phòng 102 km, cách thành phố Nam Định 84 km tạo thành 3 cực chính của Đồng bằng sông Hồng. Nó có diện tích 3.358,6 km², chiếm khoảng 1% diện tích tự nhiên của cả nước, đứng hàng thứ 32 về diện tích trong 34 tỉnh, thành phố ở Việt Nam, và là 1 trong 17 thủ đô ...",
+          "Hà Nội trở thành thủ đô của đất nước từ năm 1954. Nếu không có lý do xứng đáng, không nên dời đô tới bất kỳ nơi nào khác. Đây là bản đồ bố trí các quân khu của Việt Nam."
+        ],
+        "english_evidence": [
+          "Hanoi Capital - Vietnam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Information disclosure site directing and operating the Hanoi People's Committee",
+          "Hanoi is 102 km from Hai Phong port city, 84 km from Nam Dinh city forming the 3 main poles of the Red River Delta. It has an area of 3,358.6 km2, accounting for about 1% of the country's natural area, ranks 32nd in area among 34 provinces and cities in Vietnam, and is 1 of 17 capitals...",
+          "Hanoi has been the capital of the country since 1954. If there is no good reason, it is not recommended to move the capital to any other place. Here is a map of the layout of Vietnam's military zones."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Hanoi is the capital of Vietnam",
+        "evidence": [
+          "Hanoi Capital - Vietnam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Information disclosure site directing and operating the Hanoi People's Committee",
+          "Hanoi is 102 km from Hai Phong port city, 84 km from Nam Dinh city forming the 3 main poles of the Red River Delta. It has an area of 3,358.6 km2, accounting for about 1% of the country's natural area, ranks 32nd in area among 34 provinces and cities in Vietnam, and is 1 of 17 capitals...",
+          "Hanoi has been the capital of the country since 1954. If there is no good reason, it is not recommended to move the capital to any other place. Here is a map of the layout of Vietnam's military zones."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9875526428222656,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.9875526428222656,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988",
+          "processing_time": 0.17161035537719727,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9875526428222656,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.9875526428222656,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988",
+          "processing_time": 0.17161035537719727,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "SUPPORTED",
+    "is_correct": true
+  },
+  {
+    "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+    "verdict": "NEITHER",
+    "confidence": 0.444717675447464,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: REFUTED with confidence 0.445]",
+    "evidence": [
+      {
+        "text": "Biên giới đất liền Việt Nam-Campuchia dài khoảng 1255km (trong đó 84% đã phân giới cắm mốc). Biên giới bắt đầu từ vị trí ngã ba biên giới Việt Nam-Lào-Campuchia (đồi 1086 gần Bờ Y-Kon Tum), ...",
+        "url": "https://ttdn.vn/bien-gioi-bien-dao/duong-bien-gioi-tren-dat-lien-giua-viet-nam-va-campuchia-54918",
+        "title": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương"
+      },
+      {
+        "text": "Tại đây, hành khách có thể làm thủ tục hải quan xuất cảnh sang Trung Quốc. 2/ Cửa khẩu biên giới tại Việt Nam đến Lào",
+        "url": "http://bienphongvietnam.gov.vn/cua-khau-quoc-te-bien-gioi-viet-nam-den-cac-nuoc-trung-quoc-lao-campuchia.html",
+        "title": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia"
+      },
+      {
+        "text": "Từ cuối thế kỷ XIX đất nước ta bị thực dân Pháp xâm lược, chính quyền thực dân Pháp đã đàm phán, ký kết hiệp ước biên giới với Trung Quốc và Thái Lan để xác lập đường biên giới của xứ Đông Dương thuộc Pháp trong thời kỳ cận đại. Chính quyền thực dân Pháp cũng đã ấn định đường biên giới hành chính giữa các xứ thuộc địa Việt Nam - Lào - Campuchia căn cứ theo đường ranh giới tập quán tử lâu hình thàn...",
+        "url": "https://quangnam.gov.vn/tong-quan-ve-duong-bien-gioi-viet-nam-lao-59238.html",
+        "title": "Tổng quan về đường biên giới Việt Nam - Lào"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.44231390953064,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://ttdn.vn/bien-gioi-bien-dao/duong-bien-gioi-tren-dat-lien-giua-viet-nam-va-campuchia-54918",
+      "http://bienphongvietnam.gov.vn/cua-khau-quoc-te-bien-gioi-viet-nam-den-cac-nuoc-trung-quoc-lao-campuchia.html",
+      "https://quangnam.gov.vn/tong-quan-ve-duong-bien-gioi-viet-nam-lao-59238.html"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+        "english_claim": "Vietnam has borders with China, Laos and Cambodia",
+        "vietnamese_evidence": [
+          "Biên giới đất liền Việt Nam-Campuchia dài khoảng 1255km (trong đó 84% đã phân giới cắm mốc). Biên giới bắt đầu từ vị trí ngã ba biên giới Việt Nam-Lào-Campuchia (đồi 1086 gần Bờ Y-Kon Tum), ...",
+          "Tại đây, hành khách có thể làm thủ tục hải quan xuất cảnh sang Trung Quốc. 2/ Cửa khẩu biên giới tại Việt Nam đến Lào",
+          "Từ cuối thế kỷ XIX đất nước ta bị thực dân Pháp xâm lược, chính quyền thực dân Pháp đã đàm phán, ký kết hiệp ước biên giới với Trung Quốc và Thái Lan để xác lập đường biên giới của xứ Đông Dương thuộc Pháp trong thời kỳ cận đại. Chính quyền thực dân Pháp cũng đã ấn định đường biên giới hành chính giữa các xứ thuộc địa Việt Nam - Lào - Campuchia căn cứ theo đường ranh giới tập quán tử lâu hình thàn..."
+        ],
+        "english_evidence": [
+          "The Vietnam-Cambodia land border is about 1255km long (of which 84% has been demarcated). The border begins at the junction of the Vietnam-Laos-Cambodia border (hill 1086 near Y-Kon Tum Bank),...",
+          "Here, passengers can go through customs procedures for exit to China. 2/ Border gates in Vietnam to Laos",
+          "Since the end of the nineteenth century, our country has been invaded by the French colonialists, the French colonial authorities have negotiated and signed border treaties with China and Thailand to establish the borders of French Indochina in the modern period. The French colonial authorities have also set the administrative borders between the colonies of Vietnam - Laos - Cambodia based on the boundary line of the traditional practice of the death penalty..."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Vietnam has borders with China, Laos and Cambodia",
+        "evidence": [
+          "The Vietnam-Cambodia land border is about 1255km long (of which 84% has been demarcated). The border begins at the junction of the Vietnam-Laos-Cambodia border (hill 1086 near Y-Kon Tum Bank),...",
+          "Here, passengers can go through customs procedures for exit to China. 2/ Border gates in Vietnam to Laos",
+          "Since the end of the nineteenth century, our country has been invaded by the French colonialists, the French colonial authorities have negotiated and signed border treaties with China and Thailand to establish the borders of French Indochina in the modern period. The French colonial authorities have also set the administrative borders between the colonies of Vietnam - Laos - Cambodia based on the boundary line of the traditional practice of the death penalty..."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "NEITHER",
+        "confidence": 0.444717675447464,
+        "rationale": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.445",
+        "raw_result": {
+          "label": "REFUTED",
+          "score": 0.444717675447464,
+          "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.445",
+          "processing_time": 0.2180628776550293,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "NEITHER",
+        "confidence": 0.444717675447464,
+        "rationale": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.445",
+        "raw_result": {
+          "label": "REFUTED",
+          "score": 0.444717675447464,
+          "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.445",
+          "processing_time": 0.2180628776550293,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "SUPPORTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam có chế độ đa đảng",
+    "verdict": "SUPPORTED",
+    "confidence": 0.892725944519043,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893]",
+    "evidence": [
+      {
+        "text": "Chế độ một đảng duy nhất ... cách mạng Việt Nam cho phép khẳng định: Ở Việt Nam không cần và không chấp nhận chế độ đa đảng....",
+        "url": "https://baodongnai.com.vn/chinhtri/202007/viet-nam-khong-can-va-khong-chap-nhan-che-do-da-dang-3013680/",
+        "title": "Việt Nam không cần và không chấp nhận chế độ đa đảng - Báo Đồng Nai điện tử"
+      },
+      {
+        "text": "Thực tiễn ở Việt Nam, đi lên chủ nghĩa xã hội dưới sự lãnh đạo của Đảng Cộng sản Việt Nam là nguyện vọng và sự lựa chọn đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:",
+        "url": "https://truongchinhtri.camau.gov.vn/wps/portal/?page=ct.chitiet&urile=wcm:path:/truongchinhchilibrary/truongchinhtrisite/trangchu/nghiencuukhoahoc/hoithaokhoahoc/vcvmcnvmcnvmnhsghfghdnbvnbvncnv",
+        "title": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM"
+      },
+      {
+        "text": "Xây dựng một chế độ dân chủ hậu thuẫn bởi nền tảng đa đảng chính trị đối lập và đa nguyên tư tưởng là điều kiện cần để Việt Nam văn minh và cường thịnh.",
+        "url": "https://www.bbc.com/vietnamese/vietnam-52514170",
+        "title": "Việt Nam: Thảo luận về triển vọng đa đảng trong tương lai - BBC News Tiếng Việt"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 9.804578304290771,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://baodongnai.com.vn/chinhtri/202007/viet-nam-khong-can-va-khong-chap-nhan-che-do-da-dang-3013680/",
+      "https://truongchinhtri.camau.gov.vn/wps/portal/?page=ct.chitiet&urile=wcm:path:/truongchinhchilibrary/truongchinhtrisite/trangchu/nghiencuukhoahoc/hoithaokhoahoc/vcvmcnvmcnvmnhsghfghdnbvnbvncnv",
+      "https://www.bbc.com/vietnamese/vietnam-52514170"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Việt Nam có chế độ đa đảng",
+        "english_claim": "Vietnam has a multi-party system",
+        "vietnamese_evidence": [
+          "Chế độ một đảng duy nhất ... cách mạng Việt Nam cho phép khẳng định: Ở Việt Nam không cần và không chấp nhận chế độ đa đảng....",
+          "Thực tiễn ở Việt Nam, đi lên chủ nghĩa xã hội dưới sự lãnh đạo của Đảng Cộng sản Việt Nam là nguyện vọng và sự lựa chọn đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:",
+          "Xây dựng một chế độ dân chủ hậu thuẫn bởi nền tảng đa đảng chính trị đối lập và đa nguyên tư tưởng là điều kiện cần để Việt Nam văn minh và cường thịnh."
+        ],
+        "english_evidence": [
+          "The one - party system... the Vietnamese revolution allowed to assert: In Vietnam there is no need and no acceptance of multi - party system....",
+          "In practice in Vietnam, going to socialism under the leadership of the Communist Party of Vietnam is the right aspiration and choice of our People. And it is certainly affirmed that in Vietnam there is no need and no acceptance of multi-party regime for the following reasons:",
+          "Building a democracy backed by opposition multiparty politics and ideological pluralism is a necessary condition for Vietnam to be civilized and prosperous."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Vietnam has a multi-party system",
+        "evidence": [
+          "The one - party system... the Vietnamese revolution allowed to assert: In Vietnam there is no need and no acceptance of multi - party system....",
+          "In practice in Vietnam, going to socialism under the leadership of the Communist Party of Vietnam is the right aspiration and choice of our People. And it is certainly affirmed that in Vietnam there is no need and no acceptance of multi-party regime for the following reasons:",
+          "Building a democracy backed by opposition multiparty politics and ideological pluralism is a necessary condition for Vietnam to be civilized and prosperous."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.892725944519043,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.892725944519043,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893",
+          "processing_time": 0.12851834297180176,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.892725944519043,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.892725944519043,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893",
+          "processing_time": 0.12851834297180176,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "REFUTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+    "verdict": "SUPPORTED",
+    "confidence": 0.9333164095878601,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933]",
+    "evidence": [
+      {
+        "text": "Từ những lần dự vòng loại đầu tiên cho đến chiến tích lịch sử tại vòng loại thứ 3 World Cup 2022, đội tuyển Việt Nam đang từng bước tiệm cận giấc mơ World Cup. Lần đầu tham dự: Vòng loại World Cup 1994 (diễn ra năm 1993). Trước đó, Việt Nam không góp mặt trong các kỳ vòng loại do nhiều lý do về điều kiện và tổ chức quốc gia. Kể từ năm 1993 đến nay, Việt Nam đã tham dự đầy đủ mọi vòng loại World Cu...",
+        "url": "https://vnbongda25.wordpress.com/2025/07/22/lich-su-tham-du-world-cup-cua-viet-nam-hanh-trinh-nhieu-khat-vong/",
+        "title": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN"
+      },
+      {
+        "text": "Bóng đá Việt Nam dự World Cup 2030. 10,005 likes · 15 talking about this. Hành trình cùng đội tuyển bóng đá quốc gia Việt Nam tham dự world cup 2030 Chiến Binh Rồng Vàng",
+        "url": "https://www.facebook.com/bongdavietnamworldcup/",
+        "title": "Bóng đá Việt Nam dự World Cup 2030 | Facebook"
+      },
+      {
+        "text": "Nỗi thất vọng càng lớn hơn khi mục tiêu của Liên đoàn Bóng đá Việt Nam (VFF) đề ra trong nhiệm kỳ 9 (2022 - 2026) là đội tuyển bóng đá nam quốc gia giành quyền vào vòng loại thứ 3 World Cup 2026 khu vực châu Á, cạnh tranh cơ hội dự vòng chung kết FIFA World Cup 2026 và hướng tới tham dự vòng chung kết FIFA World Cup 2030.",
+        "url": "https://tuoitre.vn/bong-da-viet-nam-tan-giac-mo-world-cup-2026-20240611224210614.htm",
+        "title": "Bóng đá Việt Nam tan giấc mơ World Cup 2026"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.59807825088501,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://vnbongda25.wordpress.com/2025/07/22/lich-su-tham-du-world-cup-cua-viet-nam-hanh-trinh-nhieu-khat-vong/",
+      "https://www.facebook.com/bongdavietnamworldcup/",
+      "https://tuoitre.vn/bong-da-viet-nam-tan-giac-mo-world-cup-2026-20240611224210614.htm"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+        "english_claim": "Vietnam has participated in the men's football World Cup",
+        "vietnamese_evidence": [
+          "Từ những lần dự vòng loại đầu tiên cho đến chiến tích lịch sử tại vòng loại thứ 3 World Cup 2022, đội tuyển Việt Nam đang từng bước tiệm cận giấc mơ World Cup. Lần đầu tham dự: Vòng loại World Cup 1994 (diễn ra năm 1993). Trước đó, Việt Nam không góp mặt trong các kỳ vòng loại do nhiều lý do về điều kiện và tổ chức quốc gia. Kể từ năm 1993 đến nay, Việt Nam đã tham dự đầy đủ mọi vòng loại World Cu...",
+          "Bóng đá Việt Nam dự World Cup 2030. 10,005 likes · 15 talking about this. Hành trình cùng đội tuyển bóng đá quốc gia Việt Nam tham dự world cup 2030 Chiến Binh Rồng Vàng",
+          "Nỗi thất vọng càng lớn hơn khi mục tiêu của Liên đoàn Bóng đá Việt Nam (VFF) đề ra trong nhiệm kỳ 9 (2022 - 2026) là đội tuyển bóng đá nam quốc gia giành quyền vào vòng loại thứ 3 World Cup 2026 khu vực châu Á, cạnh tranh cơ hội dự vòng chung kết FIFA World Cup 2026 và hướng tới tham dự vòng chung kết FIFA World Cup 2030."
+        ],
+        "english_evidence": [
+          "From the first qualifiers to the historic victory in the third qualifying round of the 2022 World Cup, the Vietnamese team is gradually approaching the dream of the World Cup. First participation: 1994 World Cup qualifiers (taken place in 1993). Previously, Vietnam did not participate in the qualifiers due to many reasons of conditions and national organization. Since 1993, Vietnam has participated in all World Cup qualifiers...",
+          "Vietnam football to the World Cup 2030. 10,005 likes · 15 talking about this. Journey with the Vietnam national football team to the world cup 2030 Golden Dragon Warrior",
+          "The disappointment was further heightened when the goal set by the Vietnam Football Federation (VFF) in its 9th term (2022 - 2026) was for the national men's football team to qualify for the third qualifying round of the 2026 FIFA World Cup in Asia, competing for the chance to qualify for the 2026 FIFA World Cup finals and aim to qualify for the 2030 FIFA World Cup finals."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Vietnam has participated in the men's football World Cup",
+        "evidence": [
+          "From the first qualifiers to the historic victory in the third qualifying round of the 2022 World Cup, the Vietnamese team is gradually approaching the dream of the World Cup. First participation: 1994 World Cup qualifiers (taken place in 1993). Previously, Vietnam did not participate in the qualifiers due to many reasons of conditions and national organization. Since 1993, Vietnam has participated in all World Cup qualifiers...",
+          "Vietnam football to the World Cup 2030. 10,005 likes · 15 talking about this. Journey with the Vietnam national football team to the world cup 2030 Golden Dragon Warrior",
+          "The disappointment was further heightened when the goal set by the Vietnam Football Federation (VFF) in its 9th term (2022 - 2026) was for the national men's football team to qualify for the third qualifying round of the 2026 FIFA World Cup in Asia, competing for the chance to qualify for the 2026 FIFA World Cup finals and aim to qualify for the 2030 FIFA World Cup finals."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9333164095878601,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.9333164095878601,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933",
+          "processing_time": 0.23697280883789062,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9333164095878601,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.9333164095878601,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933",
+          "processing_time": 0.23697280883789062,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "REFUTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Áo dài là quốc phục của Việt Nam",
+    "verdict": "REFUTED",
+    "confidence": 0.2503088712692261,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: REFUTED with confidence 0.250]",
+    "evidence": [
+      {
+        "text": "Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+        "url": "https://vov.gov.vn/ao-dai-xung-dang-duoc-ton-vinh-la-quoc-phuc-viet-nam-dtnew-182861",
+        "title": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?"
+      },
+      {
+        "text": "Thực tế, chưa có văn bản chính thức nào công nhận áo dài là quốc phục Việt Nam.",
+        "url": "https://ngoisao.vnexpress.net/phat-ngon-ao-dai-la-quoc-phuc-viet-nam-cua-tran-thanh-gay-chu-y-4838508.html",
+        "title": "Phát ngôn 'áo dài là quốc phục Việt Nam' của Trấn Thành gây chú ý - Ngôi sao"
+      },
+      {
+        "text": "Là công dân Việt Nam ai cũng biết “Áo dài” là quốc phục thể hiện bản sắc dân tộc Việt Nam. Nhưng không phải ai mặc áo dài cũng hiểu hết được ý nghĩa của nó, áo dài không chỉ là quốc ...",
+        "url": "https://lamia.com.vn/blog/ao-dai-viet-nam-trang-phuc-truyen-thong-niem-tu-hao-dan-toc-viet",
+        "title": "Áo dài Việt Nam - trang phục truyền thống của dân tộc Việt"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.58887004852295,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://vov.gov.vn/ao-dai-xung-dang-duoc-ton-vinh-la-quoc-phuc-viet-nam-dtnew-182861",
+      "https://ngoisao.vnexpress.net/phat-ngon-ao-dai-la-quoc-phuc-viet-nam-cua-tran-thanh-gay-chu-y-4838508.html",
+      "https://lamia.com.vn/blog/ao-dai-viet-nam-trang-phuc-truyen-thong-niem-tu-hao-dan-toc-viet"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Áo dài là quốc phục của Việt Nam",
+        "english_claim": "Ao dai is the national costume of Vietnam",
+        "vietnamese_evidence": [
+          "Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+          "Thực tế, chưa có văn bản chính thức nào công nhận áo dài là quốc phục Việt Nam.",
+          "Là công dân Việt Nam ai cũng biết “Áo dài” là quốc phục thể hiện bản sắc dân tộc Việt Nam. Nhưng không phải ai mặc áo dài cũng hiểu hết được ý nghĩa của nó, áo dài không chỉ là quốc ..."
+        ],
+        "english_evidence": [
+          "Assessing the importance of... Son acknowledges: Although the Vietnamese state has not issued an official law affirming that ao dai is “national costume” Vietnam, but for a long time, it...",
+          "In fact, there is no official document recognizing ao dai as the national costume of Vietnam.",
+          "As a Vietnamese citizen, everyone knows that “Long Dress” is a national costume that expresses the national identity of Vietnam. But not everyone who wears long dresses understands the meaning of it, long dress is not only a national..."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Ao dai is the national costume of Vietnam",
+        "evidence": [
+          "Assessing the importance of... Son acknowledges: Although the Vietnamese state has not issued an official law affirming that ao dai is “national costume” Vietnam, but for a long time, it...",
+          "In fact, there is no official document recognizing ao dai as the national costume of Vietnam.",
+          "As a Vietnamese citizen, everyone knows that “Long Dress” is a national costume that expresses the national identity of Vietnam. But not everyone who wears long dresses understands the meaning of it, long dress is not only a national..."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "REFUTED",
+        "confidence": 0.2503088712692261,
+        "rationale": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.250",
+        "raw_result": {
+          "label": "REFUTED",
+          "score": 0.2503088712692261,
+          "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.250",
+          "processing_time": 0.1850733757019043,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "REFUTED",
+        "confidence": 0.2503088712692261,
+        "rationale": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.250",
+        "raw_result": {
+          "label": "REFUTED",
+          "score": 0.2503088712692261,
+          "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.250",
+          "processing_time": 0.1850733757019043,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "SUPPORTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam giáp biên giới với Thái Lan",
+    "verdict": "SUPPORTED",
+    "confidence": 0.7851472496986389,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785]",
+    "evidence": [
+      {
+        "text": "Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2.",
+        "url": "https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/dsgsdgdsgdsgdsgdsg",
+        "title": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan"
+      },
+      {
+        "text": "TikTok video from HTT (@htt.tv)",
+        "url": "https://www.tiktok.com/@htt.tv/video/7530635660894407943",
+        "title": "Biên Giới Việt Nam: Hòa Bình Trong Quan Hệ Thái Lan ..."
+      },
+      {
+        "text": "Tổng diện tích đất liền ... 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ở phía tây....",
+        "url": "https://vnexpress.net/crossword-giai-o-chu-o-chu-doan-bien-gioi-thang-dai-nhat-viet-nam-tiep-giap-nuoc-nao-4955211.html",
+        "title": "Đoạn biên giới thẳng dài nhất Việt Nam tiếp giáp nước nào?"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 9.65296721458435,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/dsgsdgdsgdsgdsgdsg",
+      "https://www.tiktok.com/@htt.tv/video/7530635660894407943",
+      "https://vnexpress.net/crossword-giai-o-chu-o-chu-doan-bien-gioi-thang-dai-nhat-viet-nam-tiep-giap-nuoc-nao-4955211.html"
+    ],
+    "debug_info": {
+      "translation": {
+        "translation_api": "http://localhost:8003/translate",
+        "translation_model": "facebook/nllb-200-distilled-600M",
+        "cache_directory": "D:/huggingface_cache",
+        "translation_method": "Baseline Translation System API",
+        "original_claim": "Việt Nam giáp biên giới với Thái Lan",
+        "english_claim": "Vietnam borders with Thailand",
+        "vietnamese_evidence": [
+          "Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2.",
+          "TikTok video from HTT (@htt.tv)",
+          "Tổng diện tích đất liền ... 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ở phía tây...."
+        ],
+        "english_evidence": [
+          "Thailand and Vietnam, which have opposite coasts, both have the right to expand their waters in accordance with the 1982 UN Convention on the Law of the Sea, thus creating an overlap of about 6,074 km2.",
+          "TikTok video from HTT (@htt.tv)",
+          "Total land area... 4,639 km, bordering the Gulf of Thailand in the southwest, the Gulf of Tonkin and the East Sea in the east, China in the north, Laos and Cambodia in the west...."
+        ]
+      },
+      "minicheck_input": {
+        "claim": "Vietnam borders with Thailand",
+        "evidence": [
+          "Thailand and Vietnam, which have opposite coasts, both have the right to expand their waters in accordance with the 1982 UN Convention on the Law of the Sea, thus creating an overlap of about 6,074 km2.",
+          "TikTok video from HTT (@htt.tv)",
+          "Total land area... 4,639 km, bordering the Gulf of Thailand in the southwest, the Gulf of Tonkin and the East Sea in the east, China in the north, Laos and Cambodia in the west...."
+        ]
+      },
+      "minicheck_raw_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.7851472496986389,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.7851472496986389,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785",
+          "processing_time": 0.17687296867370605,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      },
+      "minicheck_parsed_output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.7851472496986389,
+        "rationale": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785",
+        "raw_result": {
+          "label": "SUPPORTED",
+          "score": 0.7851472496986389,
+          "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785",
+          "processing_time": 0.17687296867370605,
+          "model": "MiniCheck-roberta-large"
+        },
+        "thresholds": {
+          "supported": 0.5,
+          "refuted": 0.3
+        }
+      }
+    },
+    "expected": "REFUTED",
+    "is_correct": false
+  }
+]

@@ -1,0 +1,208 @@
+{
+  "version": "1.0",
+  "created": "2026-02-07",
+  "description": "Vietnamese Fact Checker Test Dataset - 5 domains x 5 claims",
+  "domains": ["geography", "history", "politics", "culture", "sports"],
+  "test_cases": [
+    {
+      "id": "geo_001",
+      "domain": "geography",
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Basic geographic fact"
+    },
+    {
+      "id": "geo_002",
+      "domain": "geography",
+      "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "expected": "SUPPORTED",
+      "difficulty": "medium",
+      "note": "Multi-entity claim - requires decomposition"
+    },
+    {
+      "id": "geo_003",
+      "domain": "geography",
+      "claim": "Việt Nam giáp biên giới đất liền với Thái Lan",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "False geographic claim - negation detection"
+    },
+    {
+      "id": "geo_004",
+      "domain": "geography",
+      "claim": "Sông Mekong chảy qua lãnh thổ Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "River geography"
+    },
+    {
+      "id": "geo_005",
+      "domain": "geography",
+      "claim": "Đà Nẵng là thành phố lớn nhất Việt Nam",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "HCMC is largest - superlative comparison"
+    },
+    {
+      "id": "his_001",
+      "domain": "history",
+      "claim": "Việt Nam giành độc lập năm 1945",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Independence declaration"
+    },
+    {
+      "id": "his_002",
+      "domain": "history",
+      "claim": "Chiến thắng Điện Biên Phủ diễn ra năm 1954",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Historic battle date"
+    },
+    {
+      "id": "his_003",
+      "domain": "history",
+      "claim": "Việt Nam thống nhất đất nước năm 1976",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "Wrong date - unified in 1975"
+    },
+    {
+      "id": "his_004",
+      "domain": "history",
+      "claim": "Triều đại nhà Nguyễn là triều đại phong kiến cuối cùng của Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "medium",
+      "note": "Last feudal dynasty"
+    },
+    {
+      "id": "his_005",
+      "domain": "history",
+      "claim": "Hà Nội từng là thuộc địa của Pháp",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "French colonization"
+    },
+    {
+      "id": "pol_001",
+      "domain": "politics",
+      "claim": "Việt Nam có chế độ đa đảng",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "One-party system - negation detection"
+    },
+    {
+      "id": "pol_002",
+      "domain": "politics",
+      "claim": "Việt Nam là thành viên của ASEAN",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "ASEAN membership"
+    },
+    {
+      "id": "pol_003",
+      "domain": "politics",
+      "claim": "Việt Nam là thành viên thường trực của Hội đồng Bảo an Liên Hợp Quốc",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "Not a permanent member"
+    },
+    {
+      "id": "pol_004",
+      "domain": "politics",
+      "claim": "Quốc hội Việt Nam có nhiệm kỳ 5 năm",
+      "expected": "SUPPORTED",
+      "difficulty": "medium",
+      "note": "Parliamentary term"
+    },
+    {
+      "id": "pol_005",
+      "domain": "politics",
+      "claim": "Việt Nam theo chế độ tổng thống",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "Socialist republic system - semantic confusion"
+    },
+    {
+      "id": "cul_001",
+      "domain": "culture",
+      "claim": "Áo dài là trang phục truyền thống của Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Traditional costume"
+    },
+    {
+      "id": "cul_002",
+      "domain": "culture",
+      "claim": "Phở là món ăn có nguồn gốc từ Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Vietnamese cuisine"
+    },
+    {
+      "id": "cul_003",
+      "domain": "culture",
+      "claim": "Tết Nguyên Đán là ngày lễ lớn nhất của người Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Lunar New Year"
+    },
+    {
+      "id": "cul_004",
+      "domain": "culture",
+      "claim": "Chữ Quốc ngữ được phát minh bởi người Việt Nam",
+      "expected": "REFUTED",
+      "difficulty": "hard",
+      "note": "Created by Portuguese missionaries - attribution error"
+    },
+    {
+      "id": "cul_005",
+      "domain": "culture",
+      "claim": "Nhã nhạc cung đình Huế được UNESCO công nhận là di sản văn hóa phi vật thể",
+      "expected": "SUPPORTED",
+      "difficulty": "medium",
+      "note": "UNESCO heritage"
+    },
+    {
+      "id": "spo_001",
+      "domain": "sports",
+      "claim": "Việt Nam đã vô địch AFF Cup",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Won AFF Cup multiple times"
+    },
+    {
+      "id": "spo_002",
+      "domain": "sports",
+      "claim": "Việt Nam đã tham dự vòng chung kết World Cup bóng đá nam",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "Never qualified for WC finals"
+    },
+    {
+      "id": "spo_003",
+      "domain": "sports",
+      "claim": "Park Hang-seo từng là huấn luyện viên đội tuyển Việt Nam",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Famous coach"
+    },
+    {
+      "id": "spo_004",
+      "domain": "sports",
+      "claim": "Việt Nam đã từng đăng cai tổ chức SEA Games",
+      "expected": "SUPPORTED",
+      "difficulty": "easy",
+      "note": "Hosted SEA Games"
+    },
+    {
+      "id": "spo_005",
+      "domain": "sports",
+      "claim": "Việt Nam có huy chương vàng Olympic môn bóng đá nam",
+      "expected": "REFUTED",
+      "difficulty": "medium",
+      "note": "No Olympic gold in football"
+    }
+  ]
+}

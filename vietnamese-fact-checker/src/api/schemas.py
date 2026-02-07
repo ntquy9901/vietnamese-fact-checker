@@ -20,6 +20,7 @@ class ClaimResponse(BaseModel):
     method: str
     error: Optional[str] = None
     sources: List[str] = []
+    debug_info: Optional[dict] = None  # Contains translation, minicheck I/O for debugging
 
 class HealthResponse(BaseModel):
     status: str

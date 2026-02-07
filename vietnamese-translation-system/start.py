@@ -12,13 +12,13 @@ import os
 
 def start_server():
     """Start the Facebook NLLB translation server"""
-    print("🚀 Starting Facebook NLLB Translation Server...")
+    print(" Starting Facebook NLLB Translation Server...")
     try:
         subprocess.Popen([sys.executable, "facebook_backend.py"])
-        print("✅ Server starting on http://localhost:8003")
+        print(" Server starting on http://localhost:8003")
         return True
     except Exception as e:
-        print(f"❌ Failed to start server: {e}")
+        print(f" Failed to start server: {e}")
         return False
 
 def open_web_interface():
@@ -27,15 +27,15 @@ def open_web_interface():
     try:
         web_path = os.path.abspath("web/index.html")
         webbrowser.open(f"file://{web_path}")
-        print(f"✅ Web interface opened: {web_path}")
+        print(f" Web interface opened: {web_path}")
         return True
     except Exception as e:
-        print(f"❌ Failed to open web interface: {e}")
+        print(f" Failed to open web interface: {e}")
         return False
 
 def main():
     """Main launcher function"""
-    print("🌐 Vietnamese Translation System Launcher")
+    print(" Vietnamese Translation System Launcher")
     print("=" * 50)
     
     # Check if requirements are installed
@@ -44,9 +44,9 @@ def main():
         import uvicorn
         import torch
         import transformers
-        print("✅ All dependencies found")
+        print(" All dependencies found")
     except ImportError as e:
-        print(f"❌ Missing dependency: {e}")
+        print(f" Missing dependency: {e}")
         print("Please run: pip install -r requirements.txt")
         return
     
@@ -58,9 +58,9 @@ def main():
     if not open_web_interface():
         return
     
-    print("\n🎉 Facebook NLLB Translation System is ready!")
-    print("📝 Server: http://localhost:8003")
-    print("🌐 Web Interface: web/index.html")
+    print("\n Facebook NLLB Translation System is ready!")
+    print(" Server: http://localhost:8003")
+    print(" Web Interface: web/index.html")
     print("\nPress Ctrl+C to stop the server")
 
 if __name__ == "__main__":

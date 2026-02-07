@@ -10,45 +10,45 @@ import time
 
 def test_translation_system():
     """Test translation system"""
-    print("🔄 Testing Translation System...")
+    print(" Testing Translation System...")
     try:
         os.chdir("d:/bmad/vietnamese-translation-system")
         process = subprocess.Popen([sys.executable, "clean_backend.py"])
         time.sleep(5)
-        print("✅ Translation System started")
+        print(" Translation System started")
         return process
     except Exception as e:
-        print(f"❌ Translation System failed: {e}")
+        print(f" Translation System failed: {e}")
         return None
 
 def test_minicheck():
     """Test MiniCheck"""
-    print("🔄 Testing MiniCheck...")
+    print(" Testing MiniCheck...")
     try:
         os.chdir("d:/bmad/minicheck")
         process = subprocess.Popen([sys.executable, "minicheck_server.py"])
         time.sleep(5)
-        print("✅ MiniCheck started")
+        print(" MiniCheck started")
         return process
     except Exception as e:
-        print(f"❌ MiniCheck failed: {e}")
+        print(f" MiniCheck failed: {e}")
         return None
 
 def test_brave_search():
     """Test Brave Search"""
-    print("🔄 Testing Brave Search...")
+    print(" Testing Brave Search...")
     try:
         os.chdir("d:/bmad/brave-search-baseline")
         process = subprocess.Popen([sys.executable, "brave_search_server.py"])
         time.sleep(5)
-        print("✅ Brave Search started")
+        print(" Brave Search started")
         return process
     except Exception as e:
-        print(f"❌ Brave Search failed: {e}")
+        print(f" Brave Search failed: {e}")
         return None
 
 def main():
-    print("🚀 Simple Server Test")
+    print(" Simple Server Test")
     print("=" * 30)
     
     # Kill existing processes
@@ -70,14 +70,14 @@ def main():
     if p3:
         processes.append(p3)
     
-    print(f"\n🎉 Started {len(processes)} servers")
+    print(f"\n Started {len(processes)} servers")
     
     # Keep running
     try:
         while True:
             time.sleep(10)
     except KeyboardInterrupt:
-        print("\n🛑 Stopping servers...")
+        print("\n Stopping servers...")
         for p in processes:
             p.terminate()
 

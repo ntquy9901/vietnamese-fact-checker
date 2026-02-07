@@ -7,7 +7,7 @@ import requests
 
 def test_minicheck_multiple_evidences():
     """Test MiniCheck with multiple evidences individually"""
-    print("🧪 Testing MiniCheck with Multiple Evidences Individually")
+    print(" Testing MiniCheck with Multiple Evidences Individually")
     print("=" * 70)
     
     base_url = "http://localhost:8002"
@@ -23,13 +23,13 @@ def test_minicheck_multiple_evidences():
         "At the time, Mr. Tong had announced to the Political Ministry that he would vote unanimously to discipline a Comrade Commissar of the Political..."
     ]
     
-    print(f"📝 Claim: {english_claim}")
-    print(f"📄 Testing {len(evidences)} evidences individually:")
+    print(f" Claim: {english_claim}")
+    print(f" Testing {len(evidences)} evidences individually:")
     
     results = []
     
     for i, evidence in enumerate(evidences, 1):
-        print(f"\n🔍 Evidence {i}:")
+        print(f"\n Evidence {i}:")
         print(f"   {evidence[:100]}...")
         
         try:
@@ -48,9 +48,9 @@ def test_minicheck_multiple_evidences():
                 score = result.get('score', 0.0)
                 explanation = result.get('explanation', '')
                 
-                print(f"   ✅ Result: {label}")
-                print(f"   📊 Score: {score:.3f}")
-                print(f"   💬 {explanation[:80]}...")
+                print(f"    Result: {label}")
+                print(f"    Score: {score:.3f}")
+                print(f"    {explanation[:80]}...")
                 
                 results.append({
                     'evidence_num': i,
@@ -60,7 +60,7 @@ def test_minicheck_multiple_evidences():
                     'explanation': explanation
                 })
             else:
-                print(f"   ❌ Failed: {response.status_code}")
+                print(f"    Failed: {response.status_code}")
                 results.append({
                     'evidence_num': i,
                     'evidence': evidence,
@@ -70,7 +70,7 @@ def test_minicheck_multiple_evidences():
                 })
                 
         except Exception as e:
-            print(f"   ❌ Exception: {e}")
+            print(f"    Exception: {e}")
             results.append({
                 'evidence_num': i,
                 'evidence': evidence,
@@ -81,48 +81,48 @@ def test_minicheck_multiple_evidences():
     
     # Analysis
     print(f"\n" + "=" * 70)
-    print("📊 MULTIPLE EVIDENCE ANALYSIS")
+    print(" MULTIPLE EVIDENCE ANALYSIS")
     print("=" * 70)
     
     supported_results = [r for r in results if r['label'] == 'SUPPORTED']
     refuted_results = [r for r in results if r['label'] == 'REFUTED']
     error_results = [r for r in results if r['label'] in ['ERROR', 'EXCEPTION']]
     
-    print(f"✅ Supported: {len(supported_results)} evidences")
-    print(f"❌ Refuted: {len(refuted_results)} evidences")
-    print(f"🚨 Errors: {len(error_results)} evidences")
+    print(f" Supported: {len(supported_results)} evidences")
+    print(f" Refuted: {len(refuted_results)} evidences")
+    print(f" Errors: {len(error_results)} evidences")
     
     # Find best evidence
     if results:
         best_result = max(results, key=lambda x: x['score'])
-        print(f"\n🎯 Best Evidence:")
+        print(f"\n Best Evidence:")
         print(f"   Evidence {best_result['evidence_num']}: {best_result['label']} (Score: {best_result['score']:.3f})")
         print(f"   {best_result['evidence'][:100]}...")
     
     # Aggregate decision
-    print(f"\n🔍 Aggregate Decision:")
+    print(f"\n Aggregate Decision:")
     if supported_results:
         avg_support_score = sum(r['score'] for r in supported_results) / len(supported_results)
-        print(f"   ✅ SUPPORTED with {len(supported_results)} evidences")
-        print(f"   📊 Average Support Score: {avg_support_score:.3f}")
+        print(f"    SUPPORTED with {len(supported_results)} evidences")
+        print(f"    Average Support Score: {avg_support_score:.3f}")
     
     if refuted_results:
         avg_refute_score = sum(r['score'] for r in refuted_results) / len(refuted_results)
-        print(f"   ❌ REFUTED with {len(refuted_results)} evidences")
-        print(f"   📊 Average Refute Score: {avg_refute_score:.3f}")
+        print(f"    REFUTED with {len(refuted_results)} evidences")
+        print(f"    Average Refute Score: {avg_refute_score:.3f}")
     
     # Test with current Vietnamese Fact Checker approach
     print(f"\n" + "=" * 70)
-    print("🔄 Current Vietnamese Fact Checker Approach")
+    print(" Current Vietnamese Fact Checker Approach")
     print("=" * 70)
     
-    print(f"📝 Using only FIRST evidence (current approach):")
+    print(f" Using only FIRST evidence (current approach):")
     if results:
         first_result = results[0]
         print(f"   Evidence 1: {first_result['label']} (Score: {first_result['score']:.3f})")
         print(f"   This is what Vietnamese Fact Checker currently returns!")
     
-    print(f"\n💡 Proposed Improvement:")
+    print(f"\n Proposed Improvement:")
     print(f"   Test all evidences individually and use the best scoring one")
     print(f"   Or aggregate results from multiple evidences")
     
@@ -131,7 +131,7 @@ def test_minicheck_multiple_evidences():
 def test_with_real_vietnam_evidence():
     """Test with real Vietnam evidence from Brave Search"""
     print(f"\n" + "=" * 70)
-    print("🇻🇳 TESTING WITH REAL VIETNAM EVIDENCE")
+    print(" TESTING WITH REAL VIETNAM EVIDENCE")
     print("=" * 70)
     
     base_url = "http://localhost:8002"
@@ -147,11 +147,11 @@ def test_with_real_vietnam_evidence():
         "Following a deep morning of adjustments influenced by Vingroup's stock group, the stock gradually recovered during the afternoon session"
     ]
     
-    print(f"📝 Claim: {english_claim}")
-    print(f"📄 Real Vietnam Stock Evidence:")
+    print(f" Claim: {english_claim}")
+    print(f" Real Vietnam Stock Evidence:")
     
     for i, evidence in enumerate(evidences, 1):
-        print(f"\n🔍 Evidence {i}:")
+        print(f"\n Evidence {i}:")
         print(f"   {evidence[:100]}...")
         
         try:
@@ -166,21 +166,21 @@ def test_with_real_vietnam_evidence():
             
             if response.status_code == 200:
                 result = response.json()
-                print(f"   ✅ Result: {result['label']} (Score: {result['score']:.3f})")
+                print(f"    Result: {result['label']} (Score: {result['score']:.3f})")
             else:
-                print(f"   ❌ Failed: {response.status_code}")
+                print(f"    Failed: {response.status_code}")
                 
         except Exception as e:
-            print(f"   ❌ Exception: {e}")
+            print(f"    Exception: {e}")
 
 if __name__ == "__main__":
-    print("🎯 HYPOTHESIS: Multiple evidences should give better results than single evidence")
+    print(" HYPOTHESIS: Multiple evidences should give better results than single evidence")
     print("=" * 70)
     
     results = test_minicheck_multiple_evidences()
     test_with_real_vietnam_evidence()
     
-    print(f"\n🎉 MULTIPLE EVIDENCE TEST COMPLETED!")
-    print(f"\n💡 CONCLUSION:")
+    print(f"\n MULTIPLE EVIDENCE TEST COMPLETED!")
+    print(f"\n CONCLUSION:")
     print(f"   If multiple evidences give high scores while single evidence gives low scores,")
     print(f"   then the issue is evidence selection, not MiniCheck capability.")

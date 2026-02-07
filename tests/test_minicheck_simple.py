@@ -7,7 +7,7 @@ import requests
 
 def test_minicheck_simple():
     """Test MiniCheck with simple evidence"""
-    print("🧪 Testing MiniCheck with Simple Evidence")
+    print(" Testing MiniCheck with Simple Evidence")
     print("=" * 50)
     
     base_url = "http://localhost:8002"
@@ -40,7 +40,7 @@ def test_minicheck_simple():
     ]
     
     for i, test_case in enumerate(test_cases, 1):
-        print(f"\n📝 Test {i}: {test_case['name']}")
+        print(f"\n Test {i}: {test_case['name']}")
         print(f"   Claim: {test_case['claim']}")
         print(f"   Evidence: {len(test_case['evidence'])} items")
         
@@ -56,18 +56,18 @@ def test_minicheck_simple():
             
             if response.status_code == 200:
                 result = response.json()
-                print(f"   ✅ Result: {result['label']}")
-                print(f"   📊 Score: {result['score']:.3f}")
-                print(f"   ⏱️ Time: {result.get('processing_time', 0):.3f}s")
-                print(f"   💬 Explanation: {result['explanation'][:100]}...")
+                print(f"    Result: {result['label']}")
+                print(f"    Score: {result['score']:.3f}")
+                print(f"   ⏱ Time: {result.get('processing_time', 0):.3f}s")
+                print(f"    Explanation: {result['explanation'][:100]}...")
             else:
-                print(f"   ❌ Failed: {response.status_code}")
+                print(f"    Failed: {response.status_code}")
                 print(f"   Error: {response.text[:100]}...")
                 
         except Exception as e:
-            print(f"   ❌ Exception: {e}")
+            print(f"    Exception: {e}")
     
-    print(f"\n🎉 MiniCheck simple test completed!")
+    print(f"\n MiniCheck simple test completed!")
 
 if __name__ == "__main__":
     test_minicheck_simple()

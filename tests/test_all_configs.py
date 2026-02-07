@@ -11,11 +11,11 @@ BASE_URL = "http://localhost:8005"
 
 def print_header(title):
     print(f"\n{'='*80}")
-    print(f"🧪 {title}")
+    print(f" {title}")
     print('='*80)
 
 def print_result(test_name, passed, details=""):
-    status = "✅ PASS" if passed else "❌ FAIL"
+    status = " PASS" if passed else " FAIL"
     print(f"   {status}: {test_name}")
     if details:
         print(f"      → {details}")
@@ -61,7 +61,7 @@ def test_brave_search_config():
     r = requests.get(f"{BASE_URL}/config/brave_search")
     config = r.json().get("config", {})
     
-    print(f"\n   📋 Current Brave Search Config:")
+    print(f"\n    Current Brave Search Config:")
     print(f"      • Source filter mode: {config.get('source_filter_mode')}")
     print(f"      • Trusted sources: {len(config.get('trusted_sources', []))} domains")
     print(f"      • Untrusted sources: {len(config.get('untrusted_sources', []))} domains")
@@ -88,7 +88,7 @@ def test_minicheck_config():
     r = requests.get(f"{BASE_URL}/config/minicheck")
     config = r.json().get("config", {})
     
-    print(f"\n   📋 Current MiniCheck Config:")
+    print(f"\n    Current MiniCheck Config:")
     print(f"      • Threshold SUPPORTED: {config.get('threshold_supported')}")
     print(f"      • Threshold REFUTED: {config.get('threshold_refuted')}")
     print(f"      • Aggregation strategy: {config.get('aggregation_strategy')}")
@@ -110,7 +110,7 @@ def test_translation_config():
     r = requests.get(f"{BASE_URL}/config/translation")
     config = r.json().get("config", {})
     
-    print(f"\n   📋 Current Translation Config:")
+    print(f"\n    Current Translation Config:")
     print(f"      • API URL: {config.get('api_url')}")
     print(f"      • Model: {config.get('model_name')}")
     print(f"      • Use GPU: {config.get('use_gpu')}")
@@ -165,7 +165,7 @@ def test_fact_check_with_config():
     # Test claim
     claim = "Hồ Chí Minh là Chủ tịch đầu tiên của Việt Nam"
     
-    print(f"\n   📝 Test claim: {claim}")
+    print(f"\n    Test claim: {claim}")
     
     start = time.time()
     try:
@@ -177,7 +177,7 @@ def test_fact_check_with_config():
             verdict = result.get('verdict')
             confidence = result.get('confidence', 0)
             
-            print(f"\n   📊 Result:")
+            print(f"\n    Result:")
             print(f"      • Verdict: {verdict}")
             print(f"      • Confidence: {confidence:.2%}")
             print(f"      • Time: {elapsed:.2f}s")
@@ -208,7 +208,7 @@ def test_evidence_config():
     r = requests.get(f"{BASE_URL}/config/evidence")
     config = r.json().get("config", {})
     
-    print(f"\n   📋 Current Evidence Config:")
+    print(f"\n    Current Evidence Config:")
     print(f"      • Max chunks: {config.get('max_chunks')}")
     print(f"      • Min chunks: {config.get('min_chunks')}")
     print(f"      • Max length: {config.get('max_length')}")
@@ -224,7 +224,7 @@ def test_logging_config():
     r = requests.get(f"{BASE_URL}/config/logging")
     config = r.json().get("config", {})
     
-    print(f"\n   📋 Current Logging Config:")
+    print(f"\n    Current Logging Config:")
     print(f"      • Log level: {config.get('level')}")
     print(f"      • Log service IO: {config.get('log_service_io')}")
     print(f"      • Log timing: {config.get('log_timing')}")
@@ -234,7 +234,7 @@ def test_logging_config():
 
 def main():
     print("\n" + "="*80)
-    print("🔧 VIETNAMESE FACT CHECKER - CONFIGURATION TEST SUITE")
+    print(" VIETNAMESE FACT CHECKER - CONFIGURATION TEST SUITE")
     print("="*80)
     
     # Run all tests
@@ -248,7 +248,7 @@ def main():
     test_fact_check_with_config()
     
     print("\n" + "="*80)
-    print("✅ CONFIGURATION TEST SUITE COMPLETE")
+    print(" CONFIGURATION TEST SUITE COMPLETE")
     print("="*80 + "\n")
 
 if __name__ == "__main__":

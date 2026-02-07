@@ -1,0 +1,1154 @@
+[
+  {
+    "timestamp": "2026-02-07T12:27:22.355455",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hà Nội là thủ đô của Việt Nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hà Nội là thủ đô của Việt Nam",
+      "english": "Hanoi is the capital of Vietnam",
+      "translation_time": 0.3366737365722656,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2363.61,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:26.798316",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Hà Nội là thủ đô của Việt Nam",
+      "count": 5
+    },
+    "output": {
+      "query": "Hà Nội là thủ đô của Việt Nam",
+      "results": [
+        {
+          "title": "Hà Nội – Wikipedia tiếng Việt",
+          "url": "https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i",
+          "snippet": "Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa....",
+          "content": "Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa....",
+          "published_date": "2 days ago",
+          "language": "vi"
+        },
+        {
+          "title": "Thủ đô Hà Nội - thành phố di sản của Việt Nam",
+          "url": "https://vietnam.vnanet.vn/vietnamese/long-form/thu-do-ha-noi-thanh-pho-di-san-cua-viet-nam-378691.html",
+          "snippet": "Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử.",
+          "content": "Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử.",
+          "published_date": "October 9, 2024",
+          "language": "vi"
+        },
+        {
+          "title": "Giới thiệu về Hà Nội: TẤT TẦN TẬT về Thủ đô hơn 1000 năm tuổi – VinWonders",
+          "url": "https://vinwonders.com/vi/wonderpedia/news/gioi-thieu-ve-ha-noi/",
+          "snippet": "Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam.",
+          "content": "Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Thủ đô Hà Nội - Việt Nam | Hanoi",
+          "url": "https://www.facebook.com/thudo.gov.vn/?locale=vi_VN",
+          "snippet": "Thủ đô Hà Nội - Việt Nam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Trang tin công bố thông tin chỉ đạo, điều hành của UBND thành phố Hà Nội",
+          "content": "Thủ đô Hà Nội - Việt Nam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Trang tin công bố thông tin chỉ đạo, điều hành của UBND thành phố Hà Nội",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Hà Nội trở thành Thủ đô Việt Nam từ khi nào? Thủ đô Hà Nội có phải là trung tâm chính trị hành chính quốc gia?",
+          "url": "https://thuvienphapluat.vn/phap-luat/ha-noi-tro-thanh-thu-do-viet-nam-tu-khi-nao-thu-do-ha-noi-co-phai-la-trung-tam-chinh-tri-hanh-chinh-920987-122537.html",
+          "snippet": "Cờ của nước Việt Nam dân chủ cộng hoà nền đỏ, giữa có sao vàng năm cánh. Quốc ca là bài Tiến quân ca. Thủ đô đặt ở Hà Nội.",
+          "content": "Cờ của nước Việt Nam dân chủ cộng hoà nền đỏ, giữa có sao vàng năm cánh. Quốc ca là bài Tiến quân ca. Thủ đô đặt ở Hà Nội.",
+          "published_date": "November 14, 2023",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.4069999999919673,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4442.31,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:29.566630",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hà Nội – Wikipedia tiếng Việt. Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa....",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hà Nội – Wikipedia tiếng Việt. Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa....",
+      "english": "Hanoi – Vietnamese Wikipedia. The Head of State of Viet Minh helped Viet Minh control the entire North of Vietnam, Hanoi continues to hold the position of the capital of the Democratic Republic of Vietnam....",
+      "translation_time": 0.7415087223052979,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2768.31,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:31.590420",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "document": "Hà Nội – Wikipedia tiếng Việt. Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa...."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Hà Nội là thủ đô của Việt Nam\",\"document\":\"Hà Nội – Wikipedia tiếng Việt. Quốc trưởng Quốc gia Việt ... Phủ giúp Việt Minh kiểm soát toàn bộ miền Bắc Việt Nam, Hà Nội tiếp tục giữ vị trí thủ đô của Việt Nam Dân chủ Cộng hòa....\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2023.79,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:27:34.591947",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Thủ đô Hà Nội - thành phố di sản của Việt Nam. Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Thủ đô Hà Nội - thành phố di sản của Việt Nam. Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử.",
+      "english": "Hanoi Capital - a heritage city of Vietnam. With a history of more than 1, 000 years, Hanoi is a cultural capital, a heritage city and a city for peace. It has an extremely rich and special cultural heritage system formed and built up over thousands of years of history.",
+      "translation_time": 0.9580175876617432,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3001.53,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:36.625574",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "document": "Thủ đô Hà Nội - thành phố di sản của Việt Nam. Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Hà Nội là thủ đô của Việt Nam\",\"document\":\"Thủ đô Hà Nội - thành phố di sản của Việt Nam. Với lịch sử hơn 1.000 năm, Hà Nội là thủ đô văn hiến, thành phố di sản, thành phố vì hòa bình. Nơi đây có hệ thống di sản văn hóa vô cùng phong phú và đặc sắc được hình thành, bồi đắp qua hàng nghìn năm lịch sử.\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2033.63,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:27:39.438984",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Giới thiệu về Hà Nội: TẤT TẦN TẬT về Thủ đô hơn 1000 năm tuổi – VinWonders. Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Giới thiệu về Hà Nội: TẤT TẦN TẬT về Thủ đô hơn 1000 năm tuổi – VinWonders. Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam.",
+      "english": "Introduction to Hanoi: The Frequency of Hanoi Capital over 1000 years old – VinWonders. Hanoi is the Capital and one of the two special urban areas of Vietnam.",
+      "translation_time": 0.7830150127410889,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2813.41,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:41.491743",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "document": "Giới thiệu về Hà Nội: TẤT TẦN TẬT về Thủ đô hơn 1000 năm tuổi – VinWonders. Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Hà Nội là thủ đô của Việt Nam\",\"document\":\"Giới thiệu về Hà Nội: TẤT TẦN TẬT về Thủ đô hơn 1000 năm tuổi – VinWonders. Hà Nội là Thủ đô và một trong hai đô thị loại đặc biệt của Việt Nam.\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2052.76,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:27:43.934116",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "english": "Vietnam has borders with China, Laos and Cambodia",
+      "translation_time": 0.40172266960144043,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2442.37,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:48.308056",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "count": 5
+    },
+    "output": {
+      "query": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "results": [
+        {
+          "title": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương",
+          "url": "https://ttdn.vn/bien-gioi-bien-dao/duong-bien-gioi-tren-dat-lien-giua-viet-nam-va-campuchia-54918",
+          "snippet": "Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ...",
+          "content": "Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Danh sách tỉnh Việt Nam có biên giới với Campuchia – Wikipedia tiếng Việt",
+          "url": "https://vi.wikipedia.org/wiki/Danh_s%C3%A1ch_t%E1%BB%89nh_Vi%E1%BB%87t_Nam_c%C3%B3_bi%C3%AAn_gi%E1%BB%9Bi_v%E1%BB%9Bi_Campuchia",
+          "snippet": "Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ...",
+          "content": "Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ...",
+          "published_date": "December 7, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia",
+          "url": "http://bienphongvietnam.gov.vn/cua-khau-quoc-te-bien-gioi-viet-nam-den-cac-nuoc-trung-quoc-lao-campuchia.html",
+          "snippet": "1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ...",
+          "content": "1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Biên giới Việt Nam - Campuchia - VIỆN QUY HOẠCH THỦY LỢI MIỀN NAM",
+          "url": "https://siwrp.org.vn/tin-tuc/bien-gioi-viet-nam-campuchia_2209.html",
+          "snippet": "Biên giới trên đất liền Việt Nam và Campuchia có chiều dài khoảng 1.137km, khởi đầu tại cột mốc số 0 ở vị trí là giao điểm đường biên giới ba nước Việt Nam - Campuchia - Lào.",
+          "content": "Biên giới trên đất liền Việt Nam và Campuchia có chiều dài khoảng 1.137km, khởi đầu tại cột mốc số 0 ở vị trí là giao điểm đường biên giới ba nước Việt Nam - Campuchia - Lào.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Ngã 3 Đông Dương - Khám phá giao điểm đường biên giới 3 nước Việt Nam - Lào - Campuchia",
+          "url": "https://vtv.vn/doi-song/nga-3-dong-duong-kham-pha-giao-diem-duong-bien-gioi-3-nuoc-viet-nam-lao-campuchia-20240704103923293.htm",
+          "snippet": "Đất nước Việt Nam trải dài từ Bắc đến Nam theo hình chữ &quot;S:&quot; với đường biên giới phía Bắc giáp với Trung Quốc, phía Tây giáp với Lào và Campuchia.",
+          "content": "Đất nước Việt Nam trải dài từ Bắc đến Nam theo hình chữ &quot;S:&quot; với đường biên giới phía Bắc giáp với Trung Quốc, phía Tây giáp với Lào và Campuchia.",
+          "published_date": "July 4, 2024",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.3429999999934807,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4373.94,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:51.554508",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương. Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương. Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ...",
+      "english": "Land borderline between Vietnam and Cambodia | External Relations - Central Propaganda Department. Trans - Asian border - gate economic zones. Strongly developed road system, construction of national highway N1 connecting border provinces with border - gate economic zones in accordance with the provisions of law.",
+      "translation_time": 1.226860523223877,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3246.45,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:53.575177",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "document": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương. Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia\",\"document\":\"Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương. Các khu kinh tế cửa khẩu ... xuyên Á. Hệ thống đường giao thông phát triển mạnh, xây dựng đường quốc lộ N1 nối liền các tỉnh có biên giới với khu kinh tế cửa khẩu theo quy ...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/mis"
+    },
+    "duration_ms": 2020.67,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:27:56.782262",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Danh sách tỉnh Việt Nam có biên giới với Campuchia – Wikipedia tiếng Việt. Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Danh sách tỉnh Việt Nam có biên giới với Campuchia – Wikipedia tiếng Việt. Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ...",
+      "english": "List of provinces of Vietnam bordering Cambodia – Wikipedia in Vietnamese. Vietnam is a territory... Ocean to the east and southeast. North borders China, west borders Laos and Cambodia, southwest borders Cambodia and the Gulf of Thailand, east and southeast borders the East Sea. Vietnam has borders on land...",
+      "translation_time": 1.1812667846679688,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3207.09,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:27:58.807604",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "document": "Danh sách tỉnh Việt Nam có biên giới với Campuchia – Wikipedia tiếng Việt. Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia\",\"document\":\"Danh sách tỉnh Việt Nam có biên giới với Campuchia – Wikipedia tiếng Việt. Việt Nam là một lãnh thổ ... Dương về phía đông và đông nam. Bắc giáp Trung Quốc, tây giáp Lào và Campuchia, tây nam giáp Campuchia và vịnh Thái Lan, đông và đông nam giáp Biển Đông. Việt Nam có đường biên giới trên đất ...\"},\"url\":\"https://errors.pydanti"
+    },
+    "duration_ms": 2025.34,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:02.242879",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia. 1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia. 1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ...",
+      "english": "1/ Border gates in Vietnam to China * Road international border gates: Lao Cai border gate (Lao Cai province): Lao Cai border gate is located in Lao Cai city to the north. From the center of Lao Cai city, through Ho Chi Minh City Bridge, Lao Cai border gate is located in the southern part of the province.",
+      "translation_time": 1.407466173171997,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3435.27,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:04.284898",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "document": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia. 1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia\",\"document\":\"Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia. 1/ Cửa khẩu biên giới tại Việt Nam đến Trung Quốc * Cửa khẩu quốc tế đường bộ: Cửa khẩu Lào Cai (tỉnh Lào Cai): Cửa khẩu Lào Cai thuộc địa bàn thành phố Lào Cai về phía bắc. Từ trung tâm thành phố Lào Cai, qua cầu Hồ...\"},\"url\":\"https://errors.pydantic."
+    },
+    "duration_ms": 2042.02,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:06.611603",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam có chế độ đa đảng",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam có chế độ đa đảng",
+      "english": "Vietnam has a multi-party system",
+      "translation_time": 0.30187034606933594,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2325.72,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:10.890860",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Việt Nam có chế độ đa đảng",
+      "count": 5
+    },
+    "output": {
+      "query": "Việt Nam có chế độ đa đảng",
+      "results": [
+        {
+          "title": "Việt Nam thực hiện dân chủ xã hội chủ nghĩa không chấp nhận đa nguyên, đa đảng",
+          "url": "https://truongchinhtri.edu.vn/home/dau-tranh-bao-ve-nen-tang-tu-tuong-cua-dang/viet-nam-thuc-hien-dan-chu-xa-hoi-chu-nghia-khong-can-da-nguyen-da-dang-1264.html",
+          "snippet": "Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó....",
+          "content": "Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó....",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM",
+          "url": "https://truongchinhtri.camau.gov.vn/wps/portal/?page=ct.chitiet&urile=wcm:path:/truongchinhchilibrary/truongchinhtrisite/trangchu/nghiencuukhoahoc/hoithaokhoahoc/vcvmcnvmcnvmnhsghfghdnbvnbvncnv",
+          "snippet": "Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:...",
+          "content": "Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Dân chủ không đồng nghĩa với đa nguyên, đa đảng | Học viện An ninh nhân dân",
+          "url": "https://hvannd.edu.vn/bv/ct/6045/dan-chu-khong-dong-nghia-voi-da-nguyen-da-dang",
+          "snippet": "Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam. Đồng thời, đó cũng là minh chứng rõ nét rằng bản chất của một nền dân chủ không phụ thuộc vào chế độ đa đảng hay một đảng và đối với Việt Nam dưới sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam, nền dân chủ trong xã hội không những không bị mất đi, không bị hạn chế mà còn được bảo đảm, được phát huy sâu rộng trong thực tế.",
+          "content": "Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam. Đồng thời, đó cũng là minh chứng rõ nét rằng bản chất của một nền dân chủ không phụ thuộc vào chế độ đa đảng hay một đảng và đối với Việt Nam dưới sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam, nền dân chủ trong xã hội không những không bị mất đi, không bị hạn chế mà còn được bảo đảm, được phát huy sâu rộng trong thực tế.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Vì sao Việt Nam không cần đa Đảng?",
+          "url": "https://vov.vn/chinh-tri/vi-sao-viet-nam-khong-can-da-dang-164852.vov",
+          "snippet": "We cannot provide a description for this page right now",
+          "content": "We cannot provide a description for this page right now",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Việt Nam không cần và không chấp nhận chế độ đa đảng - Báo Đồng Nai điện tử",
+          "url": "https://baodongnai.com.vn/chinhtri/202007/viet-nam-khong-can-va-khong-chap-nhan-che-do-da-dang-3013680/",
+          "snippet": "Chế độ một đảng duy nhất ... cách mạng Việt Nam cho phép khẳng định: Ở Việt Nam không cần và không chấp nhận chế độ đa đảng....",
+          "content": "Chế độ một đảng duy nhất ... cách mạng Việt Nam cho phép khẳng định: Ở Việt Nam không cần và không chấp nhận chế độ đa đảng....",
+          "published_date": "",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2339999999967404,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4279.26,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:13.923340",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam thực hiện dân chủ xã hội chủ nghĩa không chấp nhận đa nguyên, đa đảng. Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó....",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam thực hiện dân chủ xã hội chủ nghĩa không chấp nhận đa nguyên, đa đảng. Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó....",
+      "english": "Vietnamese practicing socialist democracy does not accept pluralism, multi-party. However, both of these parties... themselves. Indeed, Vietnam used to have a multi-party regime, but it is history and the Vietnamese people have denied that regime....",
+      "translation_time": 0.9883379936218262,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3025.97,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:15.971337",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có chế độ đa đảng",
+      "document": "Việt Nam thực hiện dân chủ xã hội chủ nghĩa không chấp nhận đa nguyên, đa đảng. Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó...."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có chế độ đa đảng\",\"document\":\"Việt Nam thực hiện dân chủ xã hội chủ nghĩa không chấp nhận đa nguyên, đa đảng. Tuy nhiên, cả hai đảng này ... mình. Thật vậy, Việt Nam đã từng có chế độ đa đảng, nhưng chính lịch sử và nhân dân Việt Nam đã phủ định chế độ đó....\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2048.0,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:18.608521",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM. Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM. Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:...",
+      "english": "The reality in Vietnam, go... the right of our People. And certainly confirmed that in Vietnam do not need and do not accept multi-party regime for the following reasons:...",
+      "translation_time": 0.6174731254577637,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2637.18,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:20.642491",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có chế độ đa đảng",
+      "document": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM. Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có chế độ đa đảng\",\"document\":\"ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM. Thực tiễn ở Việt Nam, đi ... đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2033.97,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:24.959760",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Dân chủ không đồng nghĩa với đa nguyên, đa đảng | Học viện An ninh nhân dân. Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam. Đồng thời, đó cũng là minh chứng rõ nét rằng bản chất của một nền dân chủ không phụ thuộc vào chế độ đa đảng hay một đảng và đối với Việt Nam dưới sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam, nền dân chủ trong xã hội không những không bị mất đi, không bị hạn chế mà còn được bảo đảm, được phát huy sâu rộng trong thực tế.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Dân chủ không đồng nghĩa với đa nguyên, đa đảng | Học viện An ninh nhân dân. Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam. Đồng thời, đó cũng là minh chứng rõ nét rằng bản chất của một nền dân chủ không phụ thuộc vào chế độ đa đảng hay một đảng và đối với Việt Nam dưới sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam, nền dân chủ trong xã hội không những không bị mất đi, không bị hạn chế mà còn được bảo đảm, được phát huy sâu rộng trong thực tế.",
+      "english": "Democracy is not synonymous with pluralism, multi-party | Academy of People's Security. The great achievements and historical significance crystallized the creativity of the Party and People of Vietnam has affirmed the path to socialism of our country is consistent with the reality of Vietnam and the trend of the era; asserted the right leadership of the Party is the leading factor determining the victory of the Vietnamese revolution. At the same time, it is also a clear demonstration that the essence of a democracy does not depend on multi-party or one-party regime and for Vietnam under the sole leadership of the Communist Party of Vietnam, democracy in society is not only not lost, not restricted but also guaranteed, promoted in practice.",
+      "translation_time": 2.282076120376587,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 4317.27,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:27.008248",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam có chế độ đa đảng",
+      "document": "Dân chủ không đồng nghĩa với đa nguyên, đa đảng | Học viện An ninh nhân dân. Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của cách mạng Việt Nam. Đồng thời, đó cũng là minh chứng rõ nét rằng bản chất của một nền dân chủ không phụ thuộc vào chế độ đa đảng hay một đảng và đối với Việt Nam dưới sự lãnh đạo duy nhất của Đảng Cộng sản Việt Nam, nền dân chủ trong xã hội không những không bị mất đi, không bị hạn chế mà còn được bảo đảm, được phát huy sâu rộng trong thực tế."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam có chế độ đa đảng\",\"document\":\"Dân chủ không đồng nghĩa với đa nguyên, đa đảng | Học viện An ninh nhân dân. Những thành tựu to lớn và ý nghĩa lịch sử kết tinh sức sáng tạo của Đảng và Nhân dân Việt Nam đã khẳng định con đường đi lên CNXH của nước ta là phù hợp với thực tiễn Việt Nam và xu thế của thời đại; khẳng định sự lãnh đạo đúng đắn của Đảng là nhân tố hàng đầu quyết định thắng lợi của c"
+    },
+    "duration_ms": 2048.49,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:29.435355",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "english": "Vietnam has participated in the men's football World Cup",
+      "translation_time": 0.390728235244751,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2427.11,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:33.652956",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "count": 5
+    },
+    "output": {
+      "query": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "results": [
+        {
+          "title": "Đội tuyển bóng đá quốc gia Việt Nam – Wikipedia tiếng Việt",
+          "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%99i_tuy%E1%BB%83n_b%C3%B3ng_%C4%91%C3%A1_qu%E1%BB%91c_gia_Vi%E1%BB%87t_Nam",
+          "snippet": "Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm.",
+          "content": "Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm.",
+          "published_date": "3 days ago",
+          "language": "vi"
+        },
+        {
+          "title": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN",
+          "url": "https://vnbongda25.wordpress.com/2025/07/22/lich-su-tham-du-world-cup-cua-viet-nam-hanh-trinh-nhieu-khat-vong/",
+          "snippet": "Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026.",
+          "content": "Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026.",
+          "published_date": "July 22, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "Hành trình vòng loại World Cup: Bước đi lịch sử của bóng đá Việt Nam",
+          "url": "https://thanhnien.vn/hanh-trinh-vong-loai-world-cup-buoc-di-lich-su-cua-bong-da-viet-nam-1851369529.htm",
+          "snippet": "Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ...",
+          "content": "Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ...",
+          "published_date": "October 18, 2021",
+          "language": "vi"
+        },
+        {
+          "title": "Tuyển Việt Nam và hành trình 28 năm để thay đổi lịch sử",
+          "url": "https://laodong.vn/bong-da/tuyen-viet-nam-va-hanh-trinh-28-nam-de-thay-doi-lich-su-918495.ldo",
+          "snippet": "We cannot provide a description for this page right now",
+          "content": "We cannot provide a description for this page right now",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "VFF: 'Việt Nam vẫn bám sát lộ trình dự World Cup 2030' - Báo VnExpress Thể thao",
+          "url": "https://vnexpress.net/vff-viet-nam-van-bam-sat-lo-trinh-du-world-cup-2030-4800223.html",
+          "snippet": "Còn từ nay đến 2026, chúng ta đặt mục tiêu giành quyền dự Asian Cup 2027 và ít nhất một lần vô địch Đông Nam Á. Dù bối cảnh hiện tại không thuận lợi, VFF vẫn tiếp tục bám sát và triển khai các nhiệm vụ theo lộ trình đã đặt ra từ trước, trong đó có đề án phát triển nguồn lực tham gia World Cup 2030, Asian Games 2027, 2031 và Olympic 2028, 2032 mà Ban chiến lược VFF đã vạch ra.",
+          "content": "Còn từ nay đến 2026, chúng ta đặt mục tiêu giành quyền dự Asian Cup 2027 và ít nhất một lần vô địch Đông Nam Á. Dù bối cảnh hiện tại không thuận lợi, VFF vẫn tiếp tục bám sát và triển khai các nhiệm vụ theo lộ trình đã đặt ra từ trước, trong đó có đề án phát triển nguồn lực tham gia World Cup 2030, Asian Games 2027, 2031 và Olympic 2028, 2032 mà Ban chiến lược VFF đã vạch ra.",
+          "published_date": "October 4, 2024",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2030000000086147,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4217.6,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:36.668253",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Đội tuyển bóng đá quốc gia Việt Nam – Wikipedia tiếng Việt. Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Đội tuyển bóng đá quốc gia Việt Nam – Wikipedia tiếng Việt. Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm.",
+      "english": "The period from 2009 to 2014 saw a decline in the performance of Vietnamese football. The team participated in the 2010 and 2014 World Cup qualifying campaigns, along with the 2011 and 2015 Asian Cup qualifying campaigns, but were eliminated early.",
+      "translation_time": 0.9986546039581299,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3015.3,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:38.700163",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "document": "Đội tuyển bóng đá quốc gia Việt Nam – Wikipedia tiếng Việt. Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam đã tham dự World Cup bóng đá nam\",\"document\":\"Đội tuyển bóng đá quốc gia Việt Nam – Wikipedia tiếng Việt. Giai đoạn từ năm 2009 đến 2014 chứng kiến sự đi xuống về thành tích của bóng đá Việt Nam. Đội đã tham dự các chiến dịch vòng loại World Cup 2010, 2014, cùng với vòng loại Asian Cup các năm 2011 và 2015, nhưng đều bị loại sớm.\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2031.91,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:41.422804",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN. Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN. Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026.",
+      "english": "Vietnam's history of World Cup participation: A journey of many aspirations - Vietnamese football. Find out the history of Vietnam's World Cup qualification through the 1994 to 2026 editions.",
+      "translation_time": 0.701533317565918,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2721.82,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:43.442308",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "document": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN. Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam đã tham dự World Cup bóng đá nam\",\"document\":\"Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN. Tìm hiểu lịch sử tham dự vòng loại World Cup của đội tuyển Việt Nam qua các kỳ giải từ 1994 đến 2026.\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2019.5,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:46.752622",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hành trình vòng loại World Cup: Bước đi lịch sử của bóng đá Việt Nam. Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hành trình vòng loại World Cup: Bước đi lịch sử của bóng đá Việt Nam. Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ...",
+      "english": "The World Cup qualifying journey: The historic step of Vietnamese football. But all of these incomplete steps have given way to a milestone: For the first time, Vietnamese football has participated in the World Cup! Kiatisak, one of the contemporary legends of Vietnamese football, is one of the most famous players of the World Cup....",
+      "translation_time": 1.263427734375,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3310.31,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:48.792519",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "document": "Hành trình vòng loại World Cup: Bước đi lịch sử của bóng đá Việt Nam. Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam đã tham dự World Cup bóng đá nam\",\"document\":\"Hành trình vòng loại World Cup: Bước đi lịch sử của bóng đá Việt Nam. Nhưng tất cả những chưa trọn vẹn đó đều nhường lại cho mốc son: Lần đầu tiên bóng đá Việt Nam đã góp mặt ở sân chơi World Cup! Kiatisak, một trong những huyền thoại đương đại của bóng ...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2039.9,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:28:51.131952",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Áo dài là quốc phục của Việt Nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Áo dài là quốc phục của Việt Nam",
+      "english": "Ao dai is the national costume of Vietnam",
+      "translation_time": 0.31244730949401855,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2339.43,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:55.410232",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Áo dài là quốc phục của Việt Nam",
+      "count": 5
+    },
+    "output": {
+      "query": "Áo dài là quốc phục của Việt Nam",
+      "results": [
+        {
+          "title": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?",
+          "url": "https://vov.gov.vn/ao-dai-xung-dang-duoc-ton-vinh-la-quoc-phuc-viet-nam-dtnew-182861",
+          "snippet": "Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+          "content": "Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Quốc phục Việt Nam thay đổi qua các thời kỳ",
+          "url": "https://aodaivietnam.vceo.vn/post/quoc-phuc-viet-nam-thay-doi-qua-cac-thoi-ky",
+          "snippet": "Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ...",
+          "content": "Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Lịch sử phát triển áo dài Việt Nam qua các thời kỳ - Cổng Thông Tin Hội Liên hiệp Phụ nữ Việt Nam",
+          "url": "https://hoilhpn.org.vn/en/tin-chi-tiet/-/chi-tiet/lich-su-phat-trien-ao-dai-viet-nam-qua-cac-thoi-ky-35475-4512.html",
+          "snippet": "Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam....",
+          "content": "Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam....",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Áo dài: Nét đẹp văn hóa truyền thống của người phụ nữ Việt Nam",
+          "url": "https://mega.vietnamplus.vn/ao-dai-net-dep-van-hoa-truyen-thong-cua-nguoi-phu-nu-viet-nam-5499.html",
+          "snippet": "“Chiếc áo quê hương dáng ... Hương lúa ba miền thơm thịt da.” · Tuy chưa có văn bản chính thức nào quy định áo dài là quốc phục, nhưng từ xưa đến nay, trong tâm thức người ...",
+          "content": "“Chiếc áo quê hương dáng ... Hương lúa ba miền thơm thịt da.” · Tuy chưa có văn bản chính thức nào quy định áo dài là quốc phục, nhưng từ xưa đến nay, trong tâm thức người ...",
+          "published_date": "October 26, 2023",
+          "language": "vi"
+        },
+        {
+          "title": "Áo dài - Biểu tượng văn hóa của dân tộc Việt Nam",
+          "url": "https://aodaivietnam.vceo.vn/post/ao-dai-bieu-tuong-van-hoa-cua-dan-toc-viet-nam",
+          "snippet": "Hơn một ngàn năm Bắc thuộc, ... (Pháp). Chiếc Áo Dài đã vượt qua mọi thử thách để trở thành &quot;quốc phục&quot;, một biểu tượng của phụ nữ, niềm kiêu hãnh của dân tộc Việt Nam...",
+          "content": "Hơn một ngàn năm Bắc thuộc, ... (Pháp). Chiếc Áo Dài đã vượt qua mọi thử thách để trở thành &quot;quốc phục&quot;, một biểu tượng của phụ nữ, niềm kiêu hãnh của dân tộc Việt Nam...",
+          "published_date": "",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2659999999887077,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4278.28,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:28:58.669197",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?. Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?. Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+      "english": "Ao dai deserves to be honored as “national costume” Vietnam?. Assessing the importance of... Son acknowledges: Although the Vietnamese state has not issued an official law affirming the Ao Dai is “national costume” Vietnam, but for a long time, it...",
+      "translation_time": 1.2131659984588623,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3258.96,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:00.695910",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Áo dài là quốc phục của Việt Nam",
+      "document": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?. Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Áo dài là quốc phục của Việt Nam\",\"document\":\"Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?. Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2026.71,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:29:03.758410",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Quốc phục Việt Nam thay đổi qua các thời kỳ. Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Quốc phục Việt Nam thay đổi qua các thời kỳ. Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ...",
+      "english": "The Vietnamese national uniform changed through the periods. Before the Ao Dai became the official national uniform, in 4,000 years of history Vietnam also witnessed many beautiful national uniforms. Our ancestors used to say: \"People must know our history\". So you are familiar with the national uniform of...",
+      "translation_time": 1.0098485946655273,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3062.5,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:05.784643",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Áo dài là quốc phục của Việt Nam",
+      "document": "Quốc phục Việt Nam thay đổi qua các thời kỳ. Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Áo dài là quốc phục của Việt Nam\",\"document\":\"Quốc phục Việt Nam thay đổi qua các thời kỳ. Trước khi áo dài thành quốc phục chính thức, trong 4.000 năm lịch sử Việt Nam cũng chứng kiến nhiều mẫu quốc phục đẹp mắt lắm nhé. Ông cha ta vẫn thường nói: &quot;Dân ta phải biết sử ta&quot;. Vậy bạn đã tường tận về bộ quốc phục của ...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2026.23,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:29:08.755747",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Lịch sử phát triển áo dài Việt Nam qua các thời kỳ - Cổng Thông Tin Hội Liên hiệp Phụ nữ Việt Nam. Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam....",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Lịch sử phát triển áo dài Việt Nam qua các thời kỳ - Cổng Thông Tin Hội Liên hiệp Phụ nữ Việt Nam. Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam....",
+      "english": "The history of development of Vietnamese Ao Dai through the periods - Vietnam Women's Union Portal. The traditional Ao Dai... the five bodies of King Gia Long. Ao Dai has long been a traditional costume and cultural characteristics of the Vietnamese nation....",
+      "translation_time": 0.9570667743682861,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2971.1,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:10.802921",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Áo dài là quốc phục của Việt Nam",
+      "document": "Lịch sử phát triển áo dài Việt Nam qua các thời kỳ - Cổng Thông Tin Hội Liên hiệp Phụ nữ Việt Nam. Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam...."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Áo dài là quốc phục của Việt Nam\",\"document\":\"Lịch sử phát triển áo dài Việt Nam qua các thời kỳ - Cổng Thông Tin Hội Liên hiệp Phụ nữ Việt Nam. Chiếc áo dài truyền thống ... ngũ thân thời vua Gia Long. Áo dài từ lâu đã là trang phục truyền thống và là nét văn hóa đặc trưng của dân tộc Việt Nam....\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2047.17,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:29:13.088228",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam giáp biên giới với Thái Lan",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam giáp biên giới với Thái Lan",
+      "english": "Vietnam borders with Thailand",
+      "translation_time": 0.24278879165649414,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2285.31,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:17.367944",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Việt Nam giáp biên giới với Thái Lan",
+      "count": 5
+    },
+    "output": {
+      "query": "Việt Nam giáp biên giới với Thái Lan",
+      "results": [
+        {
+          "title": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan",
+          "url": "https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/dsgsdgdsgdsgdsgdsg",
+          "snippet": "Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2....",
+          "content": "Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2....",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Các nước tiếp giáp với Việt Nam là những nước nào?",
+          "url": "https://fado.vn/blog/cac-nuoc-tiep-giap-voi-viet-nam-fdi-2402.n98002/",
+          "snippet": "Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển.",
+          "content": "Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển.",
+          "published_date": "February 13, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "Địa lý Việt Nam – Wikipedia tiếng Việt",
+          "url": "https://vi.wikipedia.org/wiki/%C4%90%E1%BB%8Ba_l%C3%BD_Vi%E1%BB%87t_Nam",
+          "snippet": "Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ...",
+          "content": "Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ...",
+          "published_date": "1 month ago",
+          "language": "vi"
+        },
+        {
+          "title": "Vấn đề phân định vùng biển giữa Việt Nam và một số quốc gia láng giềng liên quan",
+          "url": "http://bienphongvietnam.gov.vn/van-de-phan-dinh-vung-bien-giua-viet-nam-va-mot-so-quoc-gia-lang-gieng-lien-quan.html",
+          "snippet": "Tháng 8/1997, chính phủ hai quốc gia đã ký hiệp định vạch đường ranh giới vùng biển đặc quyền về kinh tế và thềm lục địa giữa hai bên theo một đường dài khoảng 74 hải lý (137km).",
+          "content": "Tháng 8/1997, chính phủ hai quốc gia đã ký hiệp định vạch đường ranh giới vùng biển đặc quyền về kinh tế và thềm lục địa giữa hai bên theo một đường dài khoảng 74 hải lý (137km).",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Việt Nam – Wikivoyage, cẩm nang du lịch mở",
+          "url": "https://vi.wikivoyage.org/wiki/Vi%E1%BB%87t_Nam",
+          "snippet": "Việt Nam, tên chính thức là Cộng hoà xã hội chủ nghĩa Việt Nam, là một quốc gia thuộc khu vực Đông Nam Á, phía bắc giáp với Trung Quốc, phía tây giáp Lào và Campuchia, phía tây nam giáp vịnh Thái Lan, ...",
+          "content": "Việt Nam, tên chính thức là Cộng hoà xã hội chủ nghĩa Việt Nam, là một quốc gia thuộc khu vực Đông Nam Á, phía bắc giáp với Trung Quốc, phía tây giáp Lào và Campuchia, phía tây nam giáp vịnh Thái Lan, ...",
+          "published_date": "February 21, 2013",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2660000000032596,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4279.72,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:20.461931",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan. Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2....",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan. Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2....",
+      "english": "The agreement demarcates the sea boundaries between Vietnam and Thailand. Thailand and Vietnam are two countries with opposite coasts, both have the right to expand their waters in accordance with the provisions of the UN Convention on the Law of the Sea in 1982, thus creating an overlapping area of about 6,074km2....",
+      "translation_time": 1.0545356273651123,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3093.99,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:22.489800",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam giáp biên giới với Thái Lan",
+      "document": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan. Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2...."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam giáp biên giới với Thái Lan\",\"document\":\"Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan. Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2....\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2027.87,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:29:25.301554",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Các nước tiếp giáp với Việt Nam là những nước nào?. Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Các nước tiếp giáp với Việt Nam là những nước nào?. Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển.",
+      "english": "With its narrow and long shape, Vietnam has a borderline of about 4,639km, bordering China, Laos, Cambodia on the mainland and with Thailand, Malaysia, Brunei, Philippines on the sea.",
+      "translation_time": 0.7562248706817627,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2811.75,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:27.338669",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam giáp biên giới với Thái Lan",
+      "document": "Các nước tiếp giáp với Việt Nam là những nước nào?. Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam giáp biên giới với Thái Lan\",\"document\":\"Các nước tiếp giáp với Việt Nam là những nước nào?. Với hình dáng hẹp và dài, Việt Nam có đường biên giới dài khoảng 4.639km, tiếp giáp với Trung Quốc, Lào, Campuchia trên đất liền và với Thái Lan, Malaysia, Brunei, Philippines trên biển.\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2037.11,
+    "success": false,
+    "error": "HTTP 422"
+  },
+  {
+    "timestamp": "2026-02-07T12:29:30.462038",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Địa lý Việt Nam – Wikipedia tiếng Việt. Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Địa lý Việt Nam – Wikipedia tiếng Việt. Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ...",
+      "english": "Geography of Vietnam – Vietnamese Wikipedia. Geography of Vietnam is the... of Vietnam is 331,212 km2. Vietnam's land border is 4,639 km long, bordering the Gulf of Thailand to the southwest, the Gulf of Tonkin and the East Sea to the east, China to the north, Laos and Cambodia...",
+      "translation_time": 1.1015856266021729,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3123.37,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:29:32.497635",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Việt Nam giáp biên giới với Thái Lan",
+      "document": "Địa lý Việt Nam – Wikipedia tiếng Việt. Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ..."
+    },
+    "output": {
+      "status_code": 422,
+      "text": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"evidence\"],\"msg\":\"Field required\",\"input\":{\"claim\":\"Việt Nam giáp biên giới với Thái Lan\",\"document\":\"Địa lý Việt Nam – Wikipedia tiếng Việt. Địa lí Việt Nam là các ... của Việt Nam là 331.212 km². Biên giới Việt Nam trên đất liền dài 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ...\"},\"url\":\"https://errors.pydantic.dev/2.5/v/missing\"}]}"
+    },
+    "duration_ms": 2035.6,
+    "success": false,
+    "error": "HTTP 422"
+  }
+]

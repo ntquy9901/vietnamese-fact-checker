@@ -9,7 +9,7 @@ import os
 
 def direct_start():
     """Direct start Vietnamese Fact Checker"""
-    print("🚀 Direct starting Vietnamese Fact Checker...")
+    print(" Direct starting Vietnamese Fact Checker...")
     
     # Change directory
     os.chdir("d:/bmad/vietnamese-fact-checker")

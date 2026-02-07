@@ -29,7 +29,7 @@ class NLLBTranslator:
         if self.is_loaded:
             return
             
-        print(f"📥 Loading model: {self.model_path}")
+        print(f" Loading model: {self.model_path}")
         start_time = time.time()
         
         # Load tokenizer and model
@@ -45,7 +45,7 @@ class NLLBTranslator:
         self.model.to(self.device)
         
         load_time = time.time() - start_time
-        print(f"✅ Model loaded in {load_time:.2f} seconds")
+        print(f" Model loaded in {load_time:.2f} seconds")
         
         # Language codes for NLLB
         self.vi_lang_code = "vie_Latn"
@@ -87,7 +87,7 @@ class NLLBTranslator:
             return translation.strip()
             
         except Exception as e:
-            print(f"❌ Translation error: {e}")
+            print(f" Translation error: {e}")
             return text
 
 # Global instance

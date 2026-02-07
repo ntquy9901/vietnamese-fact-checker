@@ -1,0 +1,138 @@
+{
+  "test_name": "minicheck_fix_unit_test",
+  "timestamp": "2026-02-07T15:54:20.723527",
+  "server_url": "http://localhost:8002",
+  "total_tests": 4,
+  "passed": 4,
+  "failed": 0,
+  "test_cases": [
+    {
+      "name": "test_single_evidence",
+      "input": {
+        "claim": "Hanoi is the capital of Vietnam",
+        "evidence": [
+          "Hanoi is the capital city of Vietnam, located in the northern region."
+        ]
+      },
+      "output": {
+        "label": "SUPPORTED",
+        "score": 0.983693540096283,
+        "avg_score": 0.983693540096283,
+        "explanation": "MiniCheck verified 1 evidence(s). Best score: 0.984 (SUPPORTED), Avg score: 0.984",
+        "processing_time": 6.991419553756714,
+        "model": "MiniCheck-roberta-large",
+        "all_scores": [
+          {
+            "evidence_index": 0,
+            "evidence_preview": "Hanoi is the capital city of Vietnam, located in the northern region.",
+            "label": "SUPPORTED",
+            "score": 0.983693540096283
+          }
+        ],
+        "aggregation": "max",
+        "evidence_count": 1
+      },
+      "passed": true,
+      "duration_ms": 9032.651901245117
+    },
+    {
+      "name": "test_multiple_evidences",
+      "input": {
+        "claim": "Vietnam has a border with China",
+        "evidence": [
+          "Vietnam shares a 1,449 km border with China in the north.",
+          "The northern region of Vietnam is mountainous.",
+          "Vietnam-China border is one of the longest in Southeast Asia."
+        ]
+      },
+      "output": {
+        "label": "SUPPORTED",
+        "score": 0.9889167547225952,
+        "avg_score": 0.6624929594496886,
+        "explanation": "MiniCheck verified 3 evidence(s). Best score: 0.989 (SUPPORTED), Avg score: 0.662",
+        "processing_time": 0.2763710021972656,
+        "model": "MiniCheck-roberta-large",
+        "all_scores": [
+          {
+            "evidence_index": 0,
+            "evidence_preview": "Vietnam shares a 1,449 km border with China in the north.",
+            "label": "SUPPORTED",
+            "score": 0.9888251423835754
+          },
+          {
+            "evidence_index": 1,
+            "evidence_preview": "The northern region of Vietnam is mountainous.",
+            "label": "REFUTED",
+            "score": 0.009736981242895126
+          },
+          {
+            "evidence_index": 2,
+            "evidence_preview": "Vietnam-China border is one of the longest in Southeast Asia.",
+            "label": "SUPPORTED",
+            "score": 0.9889167547225952
+          }
+        ],
+        "aggregation": "max",
+        "evidence_count": 3
+      },
+      "passed": true,
+      "duration_ms": 2319.1750049591064
+    },
+    {
+      "name": "test_negation_detection",
+      "input": {
+        "claim": "Vietnam has a multi-party political system",
+        "evidence": [
+          "In Vietnam there is no need and no acceptance of multi-party system.",
+          "Vietnam follows a one-party system led by the Communist Party of Vietnam."
+        ]
+      },
+      "output": {
+        "label": "REFUTED",
+        "score": 0.18067483603954315,
+        "avg_score": 0.12374770268797874,
+        "explanation": "MiniCheck verified 2 evidence(s). Best score: 0.181 (REFUTED), Avg score: 0.124",
+        "processing_time": 0.21429824829101562,
+        "model": "MiniCheck-roberta-large",
+        "all_scores": [
+          {
+            "evidence_index": 0,
+            "evidence_preview": "In Vietnam there is no need and no acceptance of multi-party system.",
+            "label": "REFUTED",
+            "score": 0.18067483603954315
+          },
+          {
+            "evidence_index": 1,
+            "evidence_preview": "Vietnam follows a one-party system led by the Communist Party of Vietnam.",
+            "label": "REFUTED",
+            "score": 0.06682056933641434
+          }
+        ],
+        "aggregation": "max",
+        "evidence_count": 2
+      },
+      "passed": true,
+      "duration_ms": 2269.627809524536
+    },
+    {
+      "name": "test_empty_evidence",
+      "input": {
+        "claim": "Some claim",
+        "evidence": []
+      },
+      "output": {
+        "label": "ERROR",
+        "score": 0.0,
+        "avg_score": 0.0,
+        "explanation": "No evidence provided",
+        "processing_time": 0.0,
+        "model": "MiniCheck-roberta-large",
+        "all_scores": [],
+        "aggregation": "max",
+        "evidence_count": 0
+      },
+      "passed": true,
+      "duration_ms": 2042.794942855835
+    }
+  ]
+}

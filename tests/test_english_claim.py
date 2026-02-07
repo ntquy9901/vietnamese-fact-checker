@@ -8,7 +8,7 @@ import time
 
 def test_english_claim():
     """Test with English claim"""
-    print("🧪 Testing Vietnamese Fact Checker with English Claim")
+    print(" Testing Vietnamese Fact Checker with English Claim")
     print("=" * 60)
     
     base_url = "http://localhost:8005"
@@ -16,8 +16,8 @@ def test_english_claim():
     # Test with English claim
     claim = "Ho Chi Minh City is the largest city in Vietnam"
     
-    print(f"📝 Claim: {claim}")
-    print(f"🔍 Testing fact checking...")
+    print(f" Claim: {claim}")
+    print(f" Testing fact checking...")
     
     try:
         start_time = time.time()
@@ -31,7 +31,7 @@ def test_english_claim():
         if response.status_code == 200:
             result = response.json()
             
-            print(f"✅ Fact Check Result:")
+            print(f" Fact Check Result:")
             print(f"   Verdict: {result.get('verdict', 'UNKNOWN')}")
             print(f"   Confidence: {result.get('confidence', 0):.3f}")
             print(f"   Evidence Count: {result.get('evidence_count', 0)}")
@@ -39,10 +39,10 @@ def test_english_claim():
             print(f"   Rationale: {result.get('rationale', 'No rationale')[:200]}...")
             
         else:
-            print(f"❌ HTTP Error: {response.status_code}")
+            print(f" HTTP Error: {response.status_code}")
                 
     except Exception as e:
-        print(f"❌ Exception: {e}")
+        print(f" Exception: {e}")
 
 if __name__ == "__main__":
     test_english_claim()

@@ -141,8 +141,8 @@ async def search_vietnamese(request: SearchRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    print("🚀 Starting Brave Search Baseline Server")
-    print("📍 Server will be available at: http://localhost:8004")
-    print("🔑 BRAVE_SEARCH_API_KEY environment variable is REQUIRED")
-    print("❌ No mock mode - real API only")
+    print(" Starting Brave Search Baseline Server")
+    print(" Server will be available at: http://localhost:8004")
+    print(" BRAVE_SEARCH_API_KEY environment variable is REQUIRED")
+    print(" No mock mode - real API only")
     uvicorn.run(app, host="0.0.0.0", port=8004)

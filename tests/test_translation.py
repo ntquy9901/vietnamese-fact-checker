@@ -26,15 +26,15 @@ TEST_CLAIMS = [
 
 def test_translation_quality():
     print("=" * 80)
-    print("🧪 VinAI Translation Quality Test - 10 Vietnamese Claims")
+    print(" VinAI Translation Quality Test - 10 Vietnamese Claims")
     print("=" * 80)
     
     try:
         # Health check
         response = requests.get('http://localhost:8003/', timeout=5)
         data = response.json()
-        print(f"📦 Model: {data.get('model', 'unknown')}")
-        print(f"🤖 Status: {'Loaded ✅' if data.get('model_loaded') else 'Not loaded ❌'}")
+        print(f" Model: {data.get('model', 'unknown')}")
+        print(f" Status: {'Loaded ' if data.get('model_loaded') else 'Not loaded '}")
         print("=" * 80)
         
         results = []
@@ -61,20 +61,20 @@ def test_translation_quality():
                 print(f"\n{i}. [{category}]")
                 print(f"   VI: {claim}")
                 print(f"   EN: {result['english']}")
-                print(f"   ⏱️  {result['translation_time']:.2f}s")
+                print(f"   ⏱  {result['translation_time']:.2f}s")
             else:
-                print(f"\n{i}. ❌ Failed: {claim}")
+                print(f"\n{i}.  Failed: {claim}")
         
         # Summary
         print("\n" + "=" * 80)
-        print("📊 SUMMARY")
+        print(" SUMMARY")
         print("=" * 80)
         print(f"Total claims tested: {len(results)}")
         print(f"Total translation time: {total_time:.2f}s")
         print(f"Average time per claim: {total_time/len(results):.2f}s")
         
         # Quality analysis
-        print("\n📋 Translation Results Table:")
+        print("\n Translation Results Table:")
         print("-" * 80)
         print(f"{'#':<3} {'Vietnamese':<40} {'English':<35}")
         print("-" * 80)
@@ -87,7 +87,7 @@ def test_translation_quality():
         return results
             
     except Exception as e:
-        print(f'❌ Error: {e}')
+        print(f' Error: {e}')
         return []
 
 if __name__ == "__main__":

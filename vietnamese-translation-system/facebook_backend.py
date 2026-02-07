@@ -53,7 +53,7 @@ class FacebookNLLBTranslator:
         if self.is_loaded:
             return
             
-        print(f"📥 Loading Facebook model: {self.model_path}")
+        print(f" Loading Facebook model: {self.model_path}")
         start_time = time.time()
         
         try:
@@ -70,7 +70,7 @@ class FacebookNLLBTranslator:
             self.model.to(self.device)
             
             load_time = time.time() - start_time
-            print(f"✅ Facebook NLLB model loaded in {load_time:.2f} seconds")
+            print(f" Facebook NLLB model loaded in {load_time:.2f} seconds")
             
             # Language codes
             self.vi_lang_code = "vie_Latn"
@@ -78,7 +78,7 @@ class FacebookNLLBTranslator:
             self.is_loaded = True
             
         except Exception as e:
-            print(f"❌ Failed to load Facebook model: {e}")
+            print(f" Failed to load Facebook model: {e}")
             raise Exception(f"Facebook model loading failed: {e}")
     
     def translate_vi_to_en(self, text: str) -> str:
@@ -116,7 +116,7 @@ class FacebookNLLBTranslator:
             return translation.strip()
             
         except Exception as e:
-            print(f"❌ Facebook model translation error: {e}")
+            print(f" Facebook model translation error: {e}")
             raise Exception(f"Facebook model translation failed: {e}")
 
 # Global Facebook translator
@@ -127,11 +127,11 @@ async def startup_event():
     """Load Facebook model on startup"""
     global facebook_translator
     try:
-        print("🚀 Initializing Facebook NLLB translator...")
+        print(" Initializing Facebook NLLB translator...")
         facebook_translator = FacebookNLLBTranslator()
-        print("✅ Facebook NLLB backend ready!")
+        print(" Facebook NLLB backend ready!")
     except Exception as e:
-        print(f"❌ Failed to initialize Facebook backend: {e}")
+        print(f" Failed to initialize Facebook backend: {e}")
         facebook_translator = None
 
 @app.get("/")
@@ -172,6 +172,6 @@ async def translate(request: TranslationRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    print("🚀 Starting Facebook NLLB Backend on http://localhost:8003")
-    print("📝 This backend ONLY uses Facebook NLLB model - NO FALLBACKS!")
+    print(" Starting Facebook NLLB Backend on http://localhost:8003")
+    print(" This backend ONLY uses Facebook NLLB model - NO FALLBACKS!")
     uvicorn.run(app, host="0.0.0.0", port=8003)

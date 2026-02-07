@@ -8,7 +8,7 @@ test_sentences = [
     "Hôm nay trời đẹp"
 ]
 
-print("🧪 Testing Facebook NLLB Model from D:/huggingface_cache")
+print(" Testing Facebook NLLB Model from D:/huggingface_cache")
 print("=" * 60)
 
 for i, sentence in enumerate(test_sentences, 1):
@@ -21,7 +21,7 @@ for i, sentence in enumerate(test_sentences, 1):
             result = response.json()
             print(f"{i}. {sentence}")
             print(f"   → {result['english']}")
-            print(f"   ⏱️  {result['translation_time']:.3f}s | Model: {result['model_loaded']}")
+            print(f"   ⏱  {result['translation_time']:.3f}s | Model: {result['model_loaded']}")
         else:
             print(f"{i}. {sentence} - HTTP {response.status_code}")
             
@@ -30,4 +30,4 @@ for i, sentence in enumerate(test_sentences, 1):
     
     print()
 
-print("✅ All tests completed using model from D:/huggingface_cache")
+print(" All tests completed using model from D:/huggingface_cache")

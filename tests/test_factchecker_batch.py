@@ -20,15 +20,15 @@ TEST_CLAIMS = [
 
 def test_fact_checker():
     print("=" * 80)
-    print("🧪 Vietnamese Fact Checker - 10 Claims Test")
+    print(" Vietnamese Fact Checker - 10 Claims Test")
     print("=" * 80)
     
     # Check if server is running
     try:
         health = requests.get('http://localhost:8005/health', timeout=5)
-        print(f"✅ Fact Checker Server: Running")
+        print(f" Fact Checker Server: Running")
     except:
-        print("❌ Fact Checker Server: Not running!")
+        print(" Fact Checker Server: Not running!")
         return []
     
     results = []
@@ -36,7 +36,7 @@ def test_fact_checker():
     
     for i, (claim, category, expected) in enumerate(TEST_CLAIMS, 1):
         print(f"\n{'='*80}")
-        print(f"📝 Claim {i}/10: [{category}]")
+        print(f" Claim {i}/10: [{category}]")
         print(f"   VI: {claim}")
         print(f"   Expected: {'TRUE' if expected else 'FALSE'}")
         print("-" * 80)
@@ -76,27 +76,27 @@ def test_fact_checker():
                 
                 total_time += elapsed
                 
-                status = "✅" if is_correct else "❌"
+                status = "" if is_correct else ""
                 print(f"   Verdict: {verdict} ({confidence:.2%})")
                 print(f"   Result: {status} {'CORRECT' if is_correct else 'WRONG'}")
-                print(f"   ⏱️  {elapsed:.1f}s")
+                print(f"   ⏱  {elapsed:.1f}s")
                 
                 # Print evidence
-                print(f"\n   📚 Evidence ({len(evidence_list)} items):")
+                print(f"\n    Evidence ({len(evidence_list)} items):")
                 for j, ev in enumerate(evidence_list, 1):
                     text = ev.get('text', '')[:100] + '...' if len(ev.get('text', '')) > 100 else ev.get('text', '')
                     title = ev.get('title', 'No title')
                     print(f"      {j}. [{title[:40]}]")
                     print(f"         {text}")
             else:
-                print(f"   ❌ Error: {response.status_code}")
+                print(f"    Error: {response.status_code}")
                 
         except Exception as e:
-            print(f"   ❌ Exception: {e}")
+            print(f"    Exception: {e}")
     
     # Summary
     print("\n" + "=" * 80)
-    print("📊 FACT CHECKER RESULTS SUMMARY")
+    print(" FACT CHECKER RESULTS SUMMARY")
     print("=" * 80)
     
     correct = sum(1 for r in results if r['correct'])
@@ -107,13 +107,13 @@ def test_fact_checker():
     
     for r in results:
         exp_str = "TRUE" if r['expected'] else "FALSE"
-        res_str = "✅" if r['correct'] else "❌"
+        res_str = "" if r['correct'] else ""
         print(f"{r['id']:<3} {r['category']:<12} {r['verdict']:<12} {r['confidence']:.2%}   {exp_str:<10} {res_str:<8}")
     
     print("-" * 80)
-    print(f"\n📈 Accuracy: {correct}/{total} ({correct/total:.0%})")
-    print(f"⏱️  Total time: {total_time:.1f}s")
-    print(f"⏱️  Avg time/claim: {total_time/total:.1f}s")
+    print(f"\n Accuracy: {correct}/{total} ({correct/total:.0%})")
+    print(f"⏱  Total time: {total_time:.1f}s")
+    print(f"⏱  Avg time/claim: {total_time/total:.1f}s")
     
     return results
 

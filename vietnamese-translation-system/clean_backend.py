@@ -19,7 +19,7 @@ os.makedirs(CACHE_DIR, exist_ok=True)
 os.environ['TRANSFORMERS_CACHE'] = CACHE_DIR
 os.environ['HF_HOME'] = CACHE_DIR
 
-print(f"📁 Using cache directory: {CACHE_DIR}")
+print(f" Using cache directory: {CACHE_DIR}")
 
 # Enable CORS for all origins
 app.add_middleware(
@@ -67,7 +67,7 @@ def load_vinai_model():
         return True
     
     try:
-        print("📥 Loading VinAI vi2en model from D: cache...")
+        print(" Loading VinAI vi2en model from D: cache...")
         start_time = time.time()
         
         model_path = "VinAI/vinai-translate-vi2en-v2"
@@ -75,11 +75,11 @@ def load_vinai_model():
         # Check GPU availability
         if torch.cuda.is_available():
             device_used = "cuda"
-            print(f"🎮 GPU detected: {torch.cuda.get_device_name(0)}")
-            print(f"💾 GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
+            print(f" GPU detected: {torch.cuda.get_device_name(0)}")
+            print(f" GPU Memory: {torch.cuda.get_device_properties(0).total_memory / 1024**3:.1f} GB")
         else:
             device_used = "cpu"
-            print("⚠️ No GPU detected, using CPU")
+            print(" No GPU detected, using CPU")
         
         # Load from D: cache
         tokenizer = AutoTokenizer.from_pretrained(
@@ -98,12 +98,12 @@ def load_vinai_model():
         model_loaded = True
         
         load_time = time.time() - start_time
-        print(f"✅ VinAI model loaded on {device_used.upper()} in {load_time:.2f} seconds")
+        print(f" VinAI model loaded on {device_used.upper()} in {load_time:.2f} seconds")
         return True
         
     except Exception as e:
-        print(f"❌ Failed to load VinAI model: {e}")
-        print("🔄 Using fallback translations...")
+        print(f" Failed to load VinAI model: {e}")
+        print(" Using fallback translations...")
         return False
 
 def translate_with_vinai(text: str) -> str:
@@ -136,7 +136,7 @@ def translate_with_vinai(text: str) -> str:
         return " ".join(translation).strip()
         
     except Exception as e:
-        print(f"❌ VinAI translation error: {e}")
+        print(f" VinAI translation error: {e}")
         return f"[Translation failed: {text}]"
 
 def translate_batch_with_vinai(texts: List[str]) -> List[str]:
@@ -169,7 +169,7 @@ def translate_batch_with_vinai(texts: List[str]) -> List[str]:
         return translations
         
     except Exception as e:
-        print(f"❌ VinAI batch translation error: {e}")
+        print(f" VinAI batch translation error: {e}")
         # Fallback to individual translation
         return [translate_with_vinai(text) for text in texts]
 
@@ -244,7 +244,7 @@ async def translate_batch(request: BatchTranslationRequest):
         for vi, en in zip(request.texts, english_texts)
     ]
     
-    print(f"⚡ Batch translated {len(request.texts)} texts in {total_time:.2f}s on {device_used.upper()}")
+    print(f" Batch translated {len(request.texts)} texts in {total_time:.2f}s on {device_used.upper()}")
     
     return BatchTranslationResponse(
         translations=translations,
@@ -256,7 +256,7 @@ async def translate_batch(request: BatchTranslationRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    print("🚀 Starting VinAI Translation Backend")
-    print(f"📁 Cache directory: {CACHE_DIR}")
-    print("📦 Model: VinAI/vinai-translate-vi2en-v2")
+    print(" Starting VinAI Translation Backend")
+    print(f" Cache directory: {CACHE_DIR}")
+    print(" Model: VinAI/vinai-translate-vi2en-v2")
     uvicorn.run(app, host="0.0.0.0", port=8003)

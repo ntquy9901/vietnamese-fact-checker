@@ -8,7 +8,7 @@ import time
 
 def test_fact_checker():
     """Test Vietnamese Fact Checker with multiple claims"""
-    print("🧪 Comprehensive Vietnamese Fact Checker Test")
+    print(" Comprehensive Vietnamese Fact Checker Test")
     print("=" * 60)
     
     base_url = "http://localhost:8005"
@@ -44,9 +44,9 @@ def test_fact_checker():
     results = []
     
     for i, test_case in enumerate(test_cases, 1):
-        print(f"\n📝 Test {i}: {test_case['claim']}")
-        print(f"📖 Description: {test_case['description']}")
-        print(f"🎯 Expected: {test_case['expected']}")
+        print(f"\n Test {i}: {test_case['claim']}")
+        print(f" Description: {test_case['description']}")
+        print(f" Expected: {test_case['expected']}")
         
         try:
             start_time = time.time()
@@ -64,16 +64,16 @@ def test_fact_checker():
                 evidence_count = result.get('evidence_count', 0)
                 processing_time = end_time - start_time
                 
-                print(f"✅ Result: {verdict}")
-                print(f"📊 Confidence: {confidence:.3f}")
-                print(f"📄 Evidence Count: {evidence_count}")
-                print(f"⏱️ Processing Time: {processing_time:.2f}s")
+                print(f" Result: {verdict}")
+                print(f" Confidence: {confidence:.3f}")
+                print(f" Evidence Count: {evidence_count}")
+                print(f"⏱ Processing Time: {processing_time:.2f}s")
                 
                 # Check if result matches expectation
                 if verdict == test_case['expected']:
-                    print("🎯 CORRECT!")
+                    print(" CORRECT!")
                 else:
-                    print(f"⚠️ UNEXPECTED (Expected: {test_case['expected']})")
+                    print(f" UNEXPECTED (Expected: {test_case['expected']})")
                 
                 results.append({
                     'claim': test_case['claim'],
@@ -86,7 +86,7 @@ def test_fact_checker():
                 })
                 
             else:
-                print(f"❌ Failed: HTTP {response.status_code}")
+                print(f" Failed: HTTP {response.status_code}")
                 results.append({
                     'claim': test_case['claim'],
                     'expected': test_case['expected'],
@@ -98,7 +98,7 @@ def test_fact_checker():
                 })
                 
         except Exception as e:
-            print(f"❌ Exception: {e}")
+            print(f" Exception: {e}")
             results.append({
                 'claim': test_case['claim'],
                 'expected': test_case['expected'],
@@ -111,27 +111,27 @@ def test_fact_checker():
     
     # Summary
     print("\n" + "=" * 60)
-    print("📊 TEST SUMMARY")
+    print(" TEST SUMMARY")
     print("=" * 60)
     
     correct_count = sum(1 for r in results if r['correct'])
     total_count = len(results)
     accuracy = (correct_count / total_count) * 100
     
-    print(f"✅ Correct: {correct_count}/{total_count} ({accuracy:.1f}%)")
-    print(f"❌ Incorrect: {total_count - correct_count}/{total_count}")
+    print(f" Correct: {correct_count}/{total_count} ({accuracy:.1f}%)")
+    print(f" Incorrect: {total_count - correct_count}/{total_count}")
     
-    print(f"\n📈 Average Processing Time: {sum(r['processing_time'] for r in results)/len(results):.2f}s")
-    print(f"📄 Average Evidence Count: {sum(r['evidence_count'] for r in results)/len(results):.1f}")
+    print(f"\n Average Processing Time: {sum(r['processing_time'] for r in results)/len(results):.2f}s")
+    print(f" Average Evidence Count: {sum(r['evidence_count'] for r in results)/len(results):.1f}")
     
     # Detailed results
-    print(f"\n📋 DETAILED RESULTS:")
+    print(f"\n DETAILED RESULTS:")
     for i, result in enumerate(results, 1):
-        status = "✅" if result['correct'] else "❌"
+        status = "" if result['correct'] else ""
         print(f"{status} {i}. {result['claim'][:50]}...")
         print(f"   Expected: {result['expected']} | Got: {result['actual']} | Confidence: {result['confidence']:.3f}")
     
-    print(f"\n🎉 COMPREHENSIVE TEST COMPLETED!")
+    print(f"\n COMPREHENSIVE TEST COMPLETED!")
     
     return accuracy
 
@@ -139,8 +139,8 @@ if __name__ == "__main__":
     accuracy = test_fact_checker()
     
     if accuracy >= 80:
-        print("🏆 EXCELLENT! Fact Checker is working very well!")
+        print(" EXCELLENT! Fact Checker is working very well!")
     elif accuracy >= 60:
-        print("👍 GOOD! Fact Checker is working reasonably well!")
+        print(" GOOD! Fact Checker is working reasonably well!")
     else:
-        print("⚠️ NEEDS IMPROVEMENT! Fact Checker needs tuning!")
+        print(" NEEDS IMPROVEMENT! Fact Checker needs tuning!")

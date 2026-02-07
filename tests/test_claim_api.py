@@ -22,12 +22,12 @@ try:
     
     if response.status_code == 200:
         result = response.json()
-        print("\n✅ SUCCESS!")
+        print("\n SUCCESS!")
         print(json.dumps(result, indent=2, ensure_ascii=False))
     else:
-        print(f"\n❌ Error: {response.text}")
+        print(f"\n Error: {response.text}")
         
 except requests.exceptions.ConnectionError:
-    print("❌ Connection Error: Server not running")
+    print(" Connection Error: Server not running")
 except Exception as e:
-    print(f"❌ Error: {e}")
+    print(f" Error: {e}")

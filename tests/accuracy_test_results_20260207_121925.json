@@ -1,0 +1,715 @@
+{
+  "timestamp": "2026-02-07T12:19:25.151824",
+  "summary": {
+    "total_tests": 24,
+    "accuracy": 75.0,
+    "by_category": {
+      "geography": {
+        "correct": 3,
+        "total": 4
+      },
+      "history": {
+        "correct": 2,
+        "total": 3
+      },
+      "politics": {
+        "correct": 1,
+        "total": 2
+      },
+      "economy": {
+        "correct": 3,
+        "total": 3
+      },
+      "science": {
+        "correct": 1,
+        "total": 1
+      },
+      "sports": {
+        "correct": 1,
+        "total": 2
+      },
+      "culture": {
+        "correct": 1,
+        "total": 2
+      },
+      "false_claims": {
+        "correct": 2,
+        "total": 3
+      },
+      "complex": {
+        "correct": 2,
+        "total": 2
+      },
+      "numeric": {
+        "correct": 2,
+        "total": 2
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "correct": 10,
+        "total": 15
+      },
+      "medium": {
+        "correct": 7,
+        "total": 8
+      },
+      "hard": {
+        "correct": 1,
+        "total": 1
+      }
+    }
+  },
+  "service_logs": [
+    {
+      "timestamp": "2026-02-07T12:14:11.871238",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Hà Nội là thủ đô của Việt Nam"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9875526428222656,
+        "evidence_count": 3
+      },
+      "duration_ms": 46074.88,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:14:25.332396",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Thành phố Hồ Chí Minh là thành phố lớn nhất Việt Nam về dân số"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9857855439186096,
+        "evidence_count": 3
+      },
+      "duration_ms": 12457.74,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:14:39.144935",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia"
+      },
+      "output": {
+        "verdict": "NEITHER",
+        "confidence": 0.444717675447464,
+        "evidence_count": 3
+      },
+      "duration_ms": 12805.61,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:14:52.896240",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Sông Mekong là con sông dài nhất Việt Nam"
+      },
+      "output": {
+        "verdict": "REFUTED",
+        "confidence": 0.02736981213092804,
+        "evidence_count": 3
+      },
+      "duration_ms": 12745.34,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:15:08.024123",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam giành độc lập năm 1945"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9328369498252869,
+        "evidence_count": 3
+      },
+      "duration_ms": 14126.82,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:15:21.304069",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Chiến thắng Điện Biên Phủ diễn ra năm 1954"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.988108217716217,
+        "evidence_count": 3
+      },
+      "duration_ms": 12273.42,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:15:34.885619",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam thống nhất năm 1976"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9650157690048218,
+        "evidence_count": 3
+      },
+      "duration_ms": 12578.13,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:15:48.314993",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam là thành viên của ASEAN"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9896242022514343,
+        "evidence_count": 3
+      },
+      "duration_ms": 12425.11,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:16:01.424731",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam có chế độ đa đảng"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.892725944519043,
+        "evidence_count": 3
+      },
+      "duration_ms": 12104.5,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:16:14.613393",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam là một trong những nước xuất khẩu gạo lớn nhất thế giới"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9803030490875244,
+        "evidence_count": 3
+      },
+      "duration_ms": 12183.13,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:16:29.248968",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "GDP của Việt Nam năm 2023 vượt 400 tỷ USD"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9859752058982849,
+        "evidence_count": 3
+      },
+      "duration_ms": 13631.75,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:16:43.691012",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam là nền kinh tế lớn nhất Đông Nam Á"
+      },
+      "output": {
+        "verdict": "REFUTED",
+        "confidence": 0.2530156970024109,
+        "evidence_count": 3
+      },
+      "duration_ms": 13436.19,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:16:58.168802",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam đã phóng vệ tinh VNREDSat-1 vào năm 2013"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9880440831184387,
+        "evidence_count": 3
+      },
+      "duration_ms": 13471.07,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:17:11.296141",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Đội tuyển bóng đá Việt Nam đã vô địch AFF Cup 2018"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9853461980819702,
+        "evidence_count": 3
+      },
+      "duration_ms": 12119.99,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:17:25.226843",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam đã tham dự World Cup bóng đá nam"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9333164095878601,
+        "evidence_count": 3
+      },
+      "duration_ms": 12926.45,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:17:38.219605",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Phở là món ăn truyền thống của Việt Nam"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9870827198028564,
+        "evidence_count": 3
+      },
+      "duration_ms": 11989.61,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:17:51.300980",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Áo dài là quốc phục của Việt Nam"
+      },
+      "output": {
+        "verdict": "REFUTED",
+        "confidence": 0.2503088712692261,
+        "evidence_count": 3
+      },
+      "duration_ms": 12068.14,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:18:03.704467",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Đà Nẵng là thủ đô của Việt Nam"
+      },
+      "output": {
+        "verdict": "REFUTED",
+        "confidence": 0.006051826290786266,
+        "evidence_count": 3
+      },
+      "duration_ms": 11399.02,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:18:17.045493",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam có dân số hơn 200 triệu người"
+      },
+      "output": {
+        "verdict": "REFUTED",
+        "confidence": 0.009333046153187752,
+        "evidence_count": 3
+      },
+      "duration_ms": 12330.33,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:18:30.527484",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam giáp biên giới với Thái Lan"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.7851472496986389,
+        "evidence_count": 3
+      },
+      "duration_ms": 12473.07,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:18:43.776812",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam có dân số đông thứ 3 Đông Nam Á sau Indonesia và Philippines"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9159287810325623,
+        "evidence_count": 3
+      },
+      "duration_ms": 12243.64,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:18:57.875866",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Vịnh Hạ Long được UNESCO công nhận là Di sản Thế giới"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9911187291145325,
+        "evidence_count": 3
+      },
+      "duration_ms": 13093.13,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:19:11.136223",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Việt Nam có 63 tỉnh thành"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9847826361656189,
+        "evidence_count": 3
+      },
+      "duration_ms": 12257.49,
+      "success": true,
+      "error": null
+    },
+    {
+      "timestamp": "2026-02-07T12:19:24.144668",
+      "service": "fact_checker",
+      "action": "full_pipeline",
+      "input": {
+        "claim": "Núi Fansipan cao 3143 mét"
+      },
+      "output": {
+        "verdict": "SUPPORTED",
+        "confidence": 0.9669933319091797,
+        "evidence_count": 3
+      },
+      "duration_ms": 12002.47,
+      "success": true,
+      "error": null
+    }
+  ],
+  "test_results": [
+    {
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9875526428222656,
+      "is_correct": true,
+      "duration_ms": 46077.4290561676,
+      "error": null
+    },
+    {
+      "claim": "Thành phố Hồ Chí Minh là thành phố lớn nhất Việt Nam về dân số",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9857855439186096,
+      "is_correct": true,
+      "duration_ms": 12457.740068435669,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "category": "geography",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "NEITHER",
+      "confidence": 0.444717675447464,
+      "is_correct": false,
+      "duration_ms": 12805.609464645386,
+      "error": null
+    },
+    {
+      "claim": "Sông Mekong là con sông dài nhất Việt Nam",
+      "category": "geography",
+      "difficulty": "medium",
+      "expected": "REFUTED",
+      "actual": "REFUTED",
+      "confidence": 0.02736981213092804,
+      "is_correct": true,
+      "duration_ms": 12745.338678359985,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam giành độc lập năm 1945",
+      "category": "history",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9328369498252869,
+      "is_correct": true,
+      "duration_ms": 14126.824855804443,
+      "error": null
+    },
+    {
+      "claim": "Chiến thắng Điện Biên Phủ diễn ra năm 1954",
+      "category": "history",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.988108217716217,
+      "is_correct": true,
+      "duration_ms": 12273.419380187988,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam thống nhất năm 1976",
+      "category": "history",
+      "difficulty": "medium",
+      "expected": "REFUTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9650157690048218,
+      "is_correct": false,
+      "duration_ms": 12578.13048362732,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam là thành viên của ASEAN",
+      "category": "politics",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9896242022514343,
+      "is_correct": true,
+      "duration_ms": 12425.105333328247,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam có chế độ đa đảng",
+      "category": "politics",
+      "difficulty": "easy",
+      "expected": "REFUTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.892725944519043,
+      "is_correct": false,
+      "duration_ms": 12104.498863220215,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam là một trong những nước xuất khẩu gạo lớn nhất thế giới",
+      "category": "economy",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9803030490875244,
+      "is_correct": true,
+      "duration_ms": 12183.128356933594,
+      "error": null
+    },
+    {
+      "claim": "GDP của Việt Nam năm 2023 vượt 400 tỷ USD",
+      "category": "economy",
+      "difficulty": "medium",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9859752058982849,
+      "is_correct": true,
+      "duration_ms": 13631.74843788147,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam là nền kinh tế lớn nhất Đông Nam Á",
+      "category": "economy",
+      "difficulty": "medium",
+      "expected": "REFUTED",
+      "actual": "REFUTED",
+      "confidence": 0.2530156970024109,
+      "is_correct": true,
+      "duration_ms": 13436.193466186523,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam đã phóng vệ tinh VNREDSat-1 vào năm 2013",
+      "category": "science",
+      "difficulty": "medium",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9880440831184387,
+      "is_correct": true,
+      "duration_ms": 13471.068382263184,
+      "error": null
+    },
+    {
+      "claim": "Đội tuyển bóng đá Việt Nam đã vô địch AFF Cup 2018",
+      "category": "sports",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9853461980819702,
+      "is_correct": true,
+      "duration_ms": 12119.992971420288,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "category": "sports",
+      "difficulty": "easy",
+      "expected": "REFUTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9333164095878601,
+      "is_correct": false,
+      "duration_ms": 12927.453756332397,
+      "error": null
+    },
+    {
+      "claim": "Phở là món ăn truyền thống của Việt Nam",
+      "category": "culture",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9870827198028564,
+      "is_correct": true,
+      "duration_ms": 11989.612817764282,
+      "error": null
+    },
+    {
+      "claim": "Áo dài là quốc phục của Việt Nam",
+      "category": "culture",
+      "difficulty": "easy",
+      "expected": "SUPPORTED",
+      "actual": "REFUTED",
+      "confidence": 0.2503088712692261,
+      "is_correct": false,
+      "duration_ms": 12068.143844604492,
+      "error": null
+    },
+    {
+      "claim": "Đà Nẵng là thủ đô của Việt Nam",
+      "category": "false_claims",
+      "difficulty": "easy",
+      "expected": "REFUTED",
+      "actual": "REFUTED",
+      "confidence": 0.006051826290786266,
+      "is_correct": true,
+      "duration_ms": 11399.019241333008,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam có dân số hơn 200 triệu người",
+      "category": "false_claims",
+      "difficulty": "easy",
+      "expected": "REFUTED",
+      "actual": "REFUTED",
+      "confidence": 0.009333046153187752,
+      "is_correct": true,
+      "duration_ms": 12330.33299446106,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam giáp biên giới với Thái Lan",
+      "category": "false_claims",
+      "difficulty": "easy",
+      "expected": "REFUTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.7851472496986389,
+      "is_correct": false,
+      "duration_ms": 12473.069667816162,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam có dân số đông thứ 3 Đông Nam Á sau Indonesia và Philippines",
+      "category": "complex",
+      "difficulty": "hard",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9159287810325623,
+      "is_correct": true,
+      "duration_ms": 12243.643283843994,
+      "error": null
+    },
+    {
+      "claim": "Vịnh Hạ Long được UNESCO công nhận là Di sản Thế giới",
+      "category": "complex",
+      "difficulty": "medium",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9911187291145325,
+      "is_correct": true,
+      "duration_ms": 13093.125820159912,
+      "error": null
+    },
+    {
+      "claim": "Việt Nam có 63 tỉnh thành",
+      "category": "numeric",
+      "difficulty": "medium",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9847826361656189,
+      "is_correct": true,
+      "duration_ms": 12257.485628128052,
+      "error": null
+    },
+    {
+      "claim": "Núi Fansipan cao 3143 mét",
+      "category": "numeric",
+      "difficulty": "medium",
+      "expected": "SUPPORTED",
+      "actual": "SUPPORTED",
+      "confidence": 0.9669933319091797,
+      "is_correct": true,
+      "duration_ms": 12002.468347549438,
+      "error": null
+    }
+  ]
+}

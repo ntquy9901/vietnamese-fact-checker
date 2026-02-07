@@ -1,0 +1,206 @@
+[
+  {
+    "claim": "Hà Nội là thủ đô của Việt Nam",
+    "verdict": "SUPPORTED",
+    "confidence": 0.9875526428222656,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988]",
+    "evidence": [
+      {
+        "text": "Thủ đô Hà Nội - Việt Nam, Hanoi. 108,541 likes · 7,467 talking about this · 13,675 were here. Trang tin công bố thông tin chỉ đạo, điều hành của UBND thành phố Hà Nội",
+        "url": "https://www.facebook.com/thudo.gov.vn/?locale=vi_VN",
+        "title": "Thủ đô Hà Nội - Việt Nam | Hanoi"
+      },
+      {
+        "text": "Hà Nội cách thành phố cảng Hải Phòng 102 km, cách thành phố Nam Định 84 km tạo thành 3 cực chính của Đồng bằng sông Hồng. Nó có diện tích 3.358,6 km², chiếm khoảng 1% diện tích tự nhiên của cả nước, đứng hàng thứ 32 về diện tích trong 34 tỉnh, thành phố ở Việt Nam, và là 1 trong 17 thủ đô ...",
+        "url": "https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i",
+        "title": "Hà Nội – Wikipedia tiếng Việt"
+      },
+      {
+        "text": "Hà Nội trở thành thủ đô của đất nước từ năm 1954. Nếu không có lý do xứng đáng, không nên dời đô tới bất kỳ nơi nào khác. Đây là bản đồ bố trí các quân khu của Việt Nam.",
+        "url": "https://hinhanhvietnam.com/tai-sao-ha-noi-la-thu-do-cua-viet-nam-thay-vi-sai-gon/",
+        "title": "Tại sao Hà Nội là thủ đô của Việt Nam thay vì Sài Gòn? – Hình ảnh Việt Nam xưa & nay"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.339843034744263,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://www.facebook.com/thudo.gov.vn/?locale=vi_VN",
+      "https://vi.wikipedia.org/wiki/H%C3%A0_N%E1%BB%99i",
+      "https://hinhanhvietnam.com/tai-sao-ha-noi-la-thu-do-cua-viet-nam-thay-vi-sai-gon/"
+    ],
+    "expected": "SUPPORTED",
+    "is_correct": true
+  },
+  {
+    "claim": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+    "verdict": "NEITHER",
+    "confidence": 0.444717675447464,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: REFUTED with confidence 0.445]",
+    "evidence": [
+      {
+        "text": "Biên giới đất liền Việt Nam-Campuchia dài khoảng 1255km (trong đó 84% đã phân giới cắm mốc). Biên giới bắt đầu từ vị trí ngã ba biên giới Việt Nam-Lào-Campuchia (đồi 1086 gần Bờ Y-Kon Tum), ...",
+        "url": "https://ttdn.vn/bien-gioi-bien-dao/duong-bien-gioi-tren-dat-lien-giua-viet-nam-va-campuchia-54918",
+        "title": "Đường biên giới trên đất liền giữa Việt Nam và Campuchia | Thông Tin Đối Ngoại - Ban Tuyên giáo Trung ương"
+      },
+      {
+        "text": "Tại đây, hành khách có thể làm thủ tục hải quan xuất cảnh sang Trung Quốc. 2/ Cửa khẩu biên giới tại Việt Nam đến Lào",
+        "url": "http://bienphongvietnam.gov.vn/cua-khau-quoc-te-bien-gioi-viet-nam-den-cac-nuoc-trung-quoc-lao-campuchia.html",
+        "title": "Cửa khẩu quốc tế biên giới Việt Nam đến các nước Trung Quốc, Lào, Campuchia"
+      },
+      {
+        "text": "Từ cuối thế kỷ XIX đất nước ta bị thực dân Pháp xâm lược, chính quyền thực dân Pháp đã đàm phán, ký kết hiệp ước biên giới với Trung Quốc và Thái Lan để xác lập đường biên giới của xứ Đông Dương thuộc Pháp trong thời kỳ cận đại. Chính quyền thực dân Pháp cũng đã ấn định đường biên giới hành chính giữa các xứ thuộc địa Việt Nam - Lào - Campuchia căn cứ theo đường ranh giới tập quán tử lâu hình thàn...",
+        "url": "https://quangnam.gov.vn/tong-quan-ve-duong-bien-gioi-viet-nam-lao-59238.html",
+        "title": "Tổng quan về đường biên giới Việt Nam - Lào"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.344174861907959,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://ttdn.vn/bien-gioi-bien-dao/duong-bien-gioi-tren-dat-lien-giua-viet-nam-va-campuchia-54918",
+      "http://bienphongvietnam.gov.vn/cua-khau-quoc-te-bien-gioi-viet-nam-den-cac-nuoc-trung-quoc-lao-campuchia.html",
+      "https://quangnam.gov.vn/tong-quan-ve-duong-bien-gioi-viet-nam-lao-59238.html"
+    ],
+    "expected": "SUPPORTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam có chế độ đa đảng",
+    "verdict": "SUPPORTED",
+    "confidence": 0.892725944519043,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.893]",
+    "evidence": [
+      {
+        "text": "Chế độ một đảng duy nhất ... cách mạng Việt Nam cho phép khẳng định: Ở Việt Nam không cần và không chấp nhận chế độ đa đảng....",
+        "url": "https://baodongnai.com.vn/chinhtri/202007/viet-nam-khong-can-va-khong-chap-nhan-che-do-da-dang-3013680/",
+        "title": "Việt Nam không cần và không chấp nhận chế độ đa đảng - Báo Đồng Nai điện tử"
+      },
+      {
+        "text": "Thực tiễn ở Việt Nam, đi lên chủ nghĩa xã hội dưới sự lãnh đạo của Đảng Cộng sản Việt Nam là nguyện vọng và sự lựa chọn đúng đắn của Nhân dân ta. Và chắc chắn khẳng định rằng ở Việt Nam không cần và không chấp nhận chế độ đa đảng vì những lý do sau:",
+        "url": "https://truongchinhtri.camau.gov.vn/wps/portal/?page=ct.chitiet&urile=wcm:path:/truongchinhchilibrary/truongchinhtrisite/trangchu/nghiencuukhoahoc/hoithaokhoahoc/vcvmcnvmcnvmnhsghfghdnbvnbvncnv",
+        "title": "ĐẤU TRANH CHỐNG LUẬN ĐIỂM “ĐA ĐẢNG” Ở VIỆT NAM"
+      },
+      {
+        "text": "Xây dựng một chế độ dân chủ hậu thuẫn bởi nền tảng đa đảng chính trị đối lập và đa nguyên tư tưởng là điều kiện cần để Việt Nam văn minh và cường thịnh.",
+        "url": "https://www.bbc.com/vietnamese/vietnam-52514170",
+        "title": "Việt Nam: Thảo luận về triển vọng đa đảng trong tương lai - BBC News Tiếng Việt"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 9.852599382400513,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://baodongnai.com.vn/chinhtri/202007/viet-nam-khong-can-va-khong-chap-nhan-che-do-da-dang-3013680/",
+      "https://truongchinhtri.camau.gov.vn/wps/portal/?page=ct.chitiet&urile=wcm:path:/truongchinhchilibrary/truongchinhtrisite/trangchu/nghiencuukhoahoc/hoithaokhoahoc/vcvmcnvmcnvmnhsghfghdnbvnbvncnv",
+      "https://www.bbc.com/vietnamese/vietnam-52514170"
+    ],
+    "expected": "REFUTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam đã tham dự World Cup bóng đá nam",
+    "verdict": "SUPPORTED",
+    "confidence": 0.9333164095878601,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.933]",
+    "evidence": [
+      {
+        "text": "Từ những lần dự vòng loại đầu tiên cho đến chiến tích lịch sử tại vòng loại thứ 3 World Cup 2022, đội tuyển Việt Nam đang từng bước tiệm cận giấc mơ World Cup. Lần đầu tham dự: Vòng loại World Cup 1994 (diễn ra năm 1993). Trước đó, Việt Nam không góp mặt trong các kỳ vòng loại do nhiều lý do về điều kiện và tổ chức quốc gia. Kể từ năm 1993 đến nay, Việt Nam đã tham dự đầy đủ mọi vòng loại World Cu...",
+        "url": "https://vnbongda25.wordpress.com/2025/07/22/lich-su-tham-du-world-cup-cua-viet-nam-hanh-trinh-nhieu-khat-vong/",
+        "title": "Lịch sử tham dự World Cup của Việt Nam: Hành trình nhiều khát vọng – Bóng đá VN"
+      },
+      {
+        "text": "Bóng đá Việt Nam dự World Cup 2030. 10,005 likes · 15 talking about this. Hành trình cùng đội tuyển bóng đá quốc gia Việt Nam tham dự world cup 2030 Chiến Binh Rồng Vàng",
+        "url": "https://www.facebook.com/bongdavietnamworldcup/",
+        "title": "Bóng đá Việt Nam dự World Cup 2030 | Facebook"
+      },
+      {
+        "text": "Nỗi thất vọng càng lớn hơn khi mục tiêu của Liên đoàn Bóng đá Việt Nam (VFF) đề ra trong nhiệm kỳ 9 (2022 - 2026) là đội tuyển bóng đá nam quốc gia giành quyền vào vòng loại thứ 3 World Cup 2026 khu vực châu Á, cạnh tranh cơ hội dự vòng chung kết FIFA World Cup 2026 và hướng tới tham dự vòng chung kết FIFA World Cup 2030.",
+        "url": "https://tuoitre.vn/bong-da-viet-nam-tan-giac-mo-world-cup-2026-20240611224210614.htm",
+        "title": "Bóng đá Việt Nam tan giấc mơ World Cup 2026"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 10.485292196273804,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://vnbongda25.wordpress.com/2025/07/22/lich-su-tham-du-world-cup-cua-viet-nam-hanh-trinh-nhieu-khat-vong/",
+      "https://www.facebook.com/bongdavietnamworldcup/",
+      "https://tuoitre.vn/bong-da-viet-nam-tan-giac-mo-world-cup-2026-20240611224210614.htm"
+    ],
+    "expected": "REFUTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Áo dài là quốc phục của Việt Nam",
+    "verdict": "REFUTED",
+    "confidence": 0.2503088712692261,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: REFUTED with confidence 0.250]",
+    "evidence": [
+      {
+        "text": "Đánh giá tầm quan trọng của ... Sơn nhìn nhận: &quot;Dù nhà nước Việt Nam chưa ra một văn bản luật chính thức nào khẳng định áo dài là “quốc phục” Việt Nam, nhưng từ lâu nay, nó ...",
+        "url": "https://vov.gov.vn/ao-dai-xung-dang-duoc-ton-vinh-la-quoc-phuc-viet-nam-dtnew-182861",
+        "title": "Áo dài xứng đáng được tôn vinh là “quốc phục” Việt Nam?"
+      },
+      {
+        "text": "Thực tế, chưa có văn bản chính thức nào công nhận áo dài là quốc phục Việt Nam.",
+        "url": "https://ngoisao.vnexpress.net/phat-ngon-ao-dai-la-quoc-phuc-viet-nam-cua-tran-thanh-gay-chu-y-4838508.html",
+        "title": "Phát ngôn 'áo dài là quốc phục Việt Nam' của Trấn Thành gây chú ý - Ngôi sao"
+      },
+      {
+        "text": "Là công dân Việt Nam ai cũng biết “Áo dài” là quốc phục thể hiện bản sắc dân tộc Việt Nam. Nhưng không phải ai mặc áo dài cũng hiểu hết được ý nghĩa của nó, áo dài không chỉ là quốc ...",
+        "url": "https://lamia.com.vn/blog/ao-dai-viet-nam-trang-phuc-truyen-thong-niem-tu-hao-dan-toc-viet",
+        "title": "Áo dài Việt Nam - trang phục truyền thống của dân tộc Việt"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 9.873251676559448,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://vov.gov.vn/ao-dai-xung-dang-duoc-ton-vinh-la-quoc-phuc-viet-nam-dtnew-182861",
+      "https://ngoisao.vnexpress.net/phat-ngon-ao-dai-la-quoc-phuc-viet-nam-cua-tran-thanh-gay-chu-y-4838508.html",
+      "https://lamia.com.vn/blog/ao-dai-viet-nam-trang-phuc-truyen-thong-niem-tu-hao-dan-toc-viet"
+    ],
+    "expected": "SUPPORTED",
+    "is_correct": false
+  },
+  {
+    "claim": "Việt Nam giáp biên giới với Thái Lan",
+    "verdict": "SUPPORTED",
+    "confidence": 0.7851472496986389,
+    "rationale": "[English rationale: MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.785]",
+    "evidence": [
+      {
+        "text": "Thái Lan và Việt Nam là hai nước có bờ biển đối diện, đều có quyền mở rộng vùng biển của mình theo đúng quy định của Công ước của LHQ về Luật Biển năm 1982, do đó đã tạo ra một vùng chồng lấn rộng khoảng 6.074km2.",
+        "url": "https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/dsgsdgdsgdsgdsgdsg",
+        "title": "Hiệp định phân định ranh giới biển giữa Việt Nam và Thái Lan"
+      },
+      {
+        "text": "TikTok video from HTT (@htt.tv)",
+        "url": "https://www.tiktok.com/@htt.tv/video/7530635660894407943",
+        "title": "Biên Giới Việt Nam: Hòa Bình Trong Quan Hệ Thái Lan ..."
+      },
+      {
+        "text": "Tổng diện tích đất liền ... 4.639 km, giáp với vịnh Thái Lan ở phía tây nam, vịnh Bắc Bộ và biển Đông ở phía đông, Trung Quốc ở phía bắc, Lào và Campuchia ở phía tây....",
+        "url": "https://vnexpress.net/crossword-giai-o-chu-o-chu-doan-bien-gioi-thang-dai-nhat-viet-nam-tiep-giap-nuoc-nao-4955211.html",
+        "title": "Đoạn biên giới thẳng dài nhất Việt Nam tiếp giáp nước nào?"
+      }
+    ],
+    "evidence_count": 3,
+    "processing_time": 9.760100364685059,
+    "method": "minicheck_web_search",
+    "error": null,
+    "sources": [
+      "https://www.camau.gov.vn/wps/portal/?page=trangchitiet&urile=wcm:path:/camaulibrary/camauofsite/gioithieu/chuyende/biendaoquehuong/tulieuvanban/dsgsdgdsgdsgdsgdsg",
+      "https://www.tiktok.com/@htt.tv/video/7530635660894407943",
+      "https://vnexpress.net/crossword-giai-o-chu-o-chu-doan-bien-gioi-thang-dai-nhat-viet-nam-tiep-giap-nuoc-nao-4955211.html"
+    ],
+    "expected": "REFUTED",
+    "is_correct": false
+  }
+]

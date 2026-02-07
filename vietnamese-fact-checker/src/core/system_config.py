@@ -130,8 +130,8 @@ class MiniCheckConfig(BaseSettings):
 class EvidenceConfig(BaseSettings):
     """Evidence Processing Configuration"""
     
-    # Evidence limits
-    max_chunks: int = 3
+    # Evidence limits - UNIFIED across all services
+    max_chunks: int = 5  # Same as Brave Search max_results
     min_chunks: int = 1
     max_length: int = 500
     

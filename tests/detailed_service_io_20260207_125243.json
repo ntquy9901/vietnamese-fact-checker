@@ -1,0 +1,1244 @@
+[
+  {
+    "timestamp": "2026-02-07T12:50:26.649467",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hà Nội là thủ đô của Việt Nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hà Nội là thủ đô của Việt Nam",
+      "english": "Hanoi is the capital of Vietnam",
+      "translation_time": 0.3368387222290039,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2377.11,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:30.747668",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Hanoi is the capital of Vietnam",
+      "count": 5
+    },
+    "output": {
+      "query": "Hanoi is the capital of Vietnam",
+      "results": [
+        {
+          "title": "Hanoi - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Hanoi",
+          "snippet": "Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôjˀ] ⓘ) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all ...",
+          "content": "Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôjˀ] ⓘ) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all ...",
+          "published_date": "10 hours ago",
+          "language": "vi"
+        },
+        {
+          "title": "Hanoi | Location, History, Population, Map, & Facts | Britannica",
+          "url": "https://www.britannica.com/place/Hanoi",
+          "snippet": "Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level ...",
+          "content": "Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level ...",
+          "published_date": "4 days ago",
+          "language": "vi"
+        },
+        {
+          "title": "Ha Noi | Embassy of the Socialist Republic of Vietnam in the United States",
+          "url": "https://vietnamembassy-usa.org/vietnam/geography/hanoi",
+          "snippet": "Hanoi, the capital of Vietnam, is located at 20°25&#x27; latitude North and 105° 30&#x27; longitude East in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all the Northern provinces. The climate is tropical and is affected ...",
+          "content": "Hanoi, the capital of Vietnam, is located at 20°25&#x27; latitude North and 105° 30&#x27; longitude East in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all the Northern provinces. The climate is tropical and is affected ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "What is the capital of Vietnam and why you should visit it",
+          "url": "https://www.travelvietnam.com/travel-planning/what-is-the-capital-of-vietnam.html",
+          "snippet": "Hanoi is the capital of Vietnam and a city of history, culture, and beauty. Learn everything you need to know about this amazing city and why you should visit it.",
+          "content": "Hanoi is the capital of Vietnam and a city of history, culture, and beauty. Learn everything you need to know about this amazing city and why you should visit it.",
+          "published_date": "January 22, 2024",
+          "language": "vi"
+        },
+        {
+          "title": "Hanoi - The Capital and Second Largest City of Vietnam",
+          "url": "https://vietnamdiscovery.com/hanoi/",
+          "snippet": "Hanoi, the capital of Vietnam, is one of the most ancient cities in the world.",
+          "content": "Hanoi, the capital of Vietnam, is one of the most ancient cities in the world.",
+          "published_date": "",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.047000000005937,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4096.17,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:34.211607",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hanoi - Wikipedia. Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôjˀ] ⓘ) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hanoi - Wikipedia. Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôjˀ] ⓘ) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all ...",
+      "english": "Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôj] i) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all...",
+      "translation_time": 1.4243297576904297,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3463.94,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:36.589061",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hanoi is the capital of Vietnam",
+      "evidence": [
+        "Hanoi (/hæˈnɔɪ/ han-OY; Vietnamese: Hà Nội [hàː nôj] i) is the capital and second-most populous city of Vietnam. It encompasses an area of 3,358.6 km2 (1,296.8 mi2), and as of 2025 has a population of 8,807,523. It had the second-highest gross regional domestic product of all..."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9893983602523804,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.989",
+      "processing_time": 0.32430243492126465,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2377.45,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:39.557183",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Hanoi | Location, History, Population, Map, & Facts | Britannica. Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Hanoi | Location, History, Population, Map, & Facts | Britannica. Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level ...",
+      "english": "Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level...",
+      "translation_time": 0.9116334915161133,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2968.12,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:41.780498",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hanoi is the capital of Vietnam",
+      "evidence": [
+        "Hanoi, city, capital of Vietnam. It is situated in northern Vietnam on the western bank of the Red River, about 85 miles (140 km) inland from the South China Sea. In addition to being the national capital, Hanoi is also a province-level..."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9762156009674072,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.976",
+      "processing_time": 0.18724489212036133,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2223.32,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:45.211947",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Ha Noi | Embassy of the Socialist Republic of Vietnam in the United States. Hanoi, the capital of Vietnam, is located at 20°25&#x27; latitude North and 105° 30&#x27; longitude East in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all the Northern provinces. The climate is tropical and is affected ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Ha Noi | Embassy of the Socialist Republic of Vietnam in the United States. Hanoi, the capital of Vietnam, is located at 20°25&#x27; latitude North and 105° 30&#x27; longitude East in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all the Northern provinces. The climate is tropical and is affected ...",
+      "english": "Hanoi | Embassy of the Socialist Republic of Vietnam in the United States. Hanoi, the capital of Vietnam, is located at 20°25&#x27; North latitude and 105°30&#x27; East longitude in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all Northern provinces. The climate is tropical and is affected...",
+      "translation_time": 1.3817219734191895,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3431.45,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:47.517350",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Hanoi is the capital of Vietnam",
+      "evidence": [
+        "Hanoi | Embassy of the Socialist Republic of Vietnam in the United States. Hanoi, the capital of Vietnam, is located at 20°25&#x27; North latitude and 105°30&#x27; East longitude in the plains of North Vietnam, where there are many rivers flowing Eastwards to the sea. This is a convenient transport cluster for all Northern provinces. The climate is tropical and is affected..."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.988404393196106,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.988",
+      "processing_time": 0.29271793365478516,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2305.4,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:49.924644",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam có đường biên giới với Trung Quốc, Lào và Campuchia",
+      "english": "Vietnam has borders with China, Laos and Cambodia",
+      "translation_time": 0.36100292205810547,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2406.29,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:54.256025",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Vietnam has borders with China, Laos and Cambodia",
+      "count": 5
+    },
+    "output": {
+      "query": "Vietnam has borders with China, Laos and Cambodia",
+      "results": [
+        {
+          "title": "Geography | Embassy of the Socialist Republic of Vietnam in the United States",
+          "url": "https://vietnamembassy-usa.org/vietnam/geography",
+          "snippet": "It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23’ to 8°27’ North latitude.",
+          "content": "It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23’ to 8°27’ North latitude.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Vietnam neighboring countries: Sharing land and maritime borders – VinWonders",
+          "url": "https://vinwonders.com/en/wonderpedia/news/vietnam-neighboring-countries/",
+          "snippet": "To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean.",
+          "content": "To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Laos–Vietnam border - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Laos%E2%80%93Vietnam_border",
+          "snippet": "The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to tripoint with Cambodia in the south.",
+          "content": "The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to tripoint with Cambodia in the south.",
+          "published_date": "December 13, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "Which Countries Border Vietnam?",
+          "url": "https://www.worldatlas.com/articles/what-countries-border-vietnam.html",
+          "snippet": "Vietnam is located on the Indochinese Peninsula and has an area of about 127,888.9 square miles. The country shares borders with three countries: Cambodia (southwest), China (north), and Laos (northwest).",
+          "content": "Vietnam is located on the Indochinese Peninsula and has an area of about 127,888.9 square miles. The country shares borders with three countries: Cambodia (southwest), China (north), and Laos (northwest).",
+          "published_date": "May 24, 2018",
+          "language": "vi"
+        },
+        {
+          "title": "Geography of Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Geography_of_Vietnam",
+          "snippet": "Vietnam is located on the eastern margin of the Indochinese peninsula and occupies about 331,211.6 square kilometres (127,881.5 sq mi), of which about 25% was under cultivation in 1987. It borders China, Laos, and Cambodia and has shorelines ...",
+          "content": "Vietnam is located on the eastern margin of the Indochinese peninsula and occupies about 331,211.6 square kilometres (127,881.5 sq mi), of which about 25% was under cultivation in 1987. It borders China, Laos, and Cambodia and has shorelines ...",
+          "published_date": "2 weeks ago",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2810000000026776,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4331.38,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:50:57.710503",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Geography | Embassy of the Socialist Republic of Vietnam in the United States. It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23’ to 8°27’ North latitude.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Geography | Embassy of the Socialist Republic of Vietnam in the United States. It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23’ to 8°27’ North latitude.",
+      "english": "Geography | Embassy of the Socialist Republic of Vietnam in the United States. It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of the Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23' to 8°27' North latitude.",
+      "translation_time": 1.3976771831512451,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3454.48,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:00.041497",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has borders with China, Laos and Cambodia",
+      "evidence": [
+        "Geography | Embassy of the Socialist Republic of Vietnam in the United States. It has a long land border of 4,550 km, bordering China to the North, Laos and Cambodia to the West, and the Eastern Sea (South China Sea) of the Pacific Ocean to the East. On the map, Viet Nam is an S-shaped strip of land, stretching from 23°23' to 8°27' North latitude."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9873910546302795,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.987",
+      "processing_time": 0.30734872817993164,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2331.0,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:03.119230",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Vietnam neighboring countries: Sharing land and maritime borders – VinWonders. To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Vietnam neighboring countries: Sharing land and maritime borders – VinWonders. To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean.",
+      "english": "Vietnam neighboring countries: Sharing land and maritime borders – VinWonders. To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean.",
+      "translation_time": 1.0338163375854492,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3077.23,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:05.392735",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has borders with China, Laos and Cambodia",
+      "evidence": [
+        "Vietnam neighboring countries: Sharing land and maritime borders – VinWonders. To the north of Vietnam is China, to the west is Laos, and to the southwest is Cambodia. To the east, Vietnam is surrounded by the East Sea (also known as the South China Sea) of the Pacific Ocean."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9557443261146545,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.956",
+      "processing_time": 0.21417832374572754,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2273.51,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:08.370250",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Laos–Vietnam border - Wikipedia. The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to tripoint with Cambodia in the south.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Laos–Vietnam border - Wikipedia. The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to tripoint with Cambodia in the south.",
+      "english": "The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to the tripoint with Cambodia in the south.",
+      "translation_time": 0.9399154186248779,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2976.49,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:10.613481",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has borders with China, Laos and Cambodia",
+      "evidence": [
+        "The Laos–Vietnam border is the international border between the territory of Laos and Vietnam. The border is 2,161 km (1,343 mi) in length and runs from the tripoint with China in the north to the tripoint with Cambodia in the south."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.7073522806167603,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.707",
+      "processing_time": 0.19427752494812012,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2243.23,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:12.944922",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam có chế độ đa đảng",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam có chế độ đa đảng",
+      "english": "Vietnam has a multi-party system",
+      "translation_time": 0.26325011253356934,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2331.44,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:17.545276",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Vietnam has a multi-party system",
+      "count": 5
+    },
+    "output": {
+      "query": "Vietnam has a multi-party system",
+      "results": [
+        {
+          "title": "Politics of Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Politics_of_Vietnam",
+          "snippet": "Elections in Vietnam occur under ... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam, ...",
+          "content": "Elections in Vietnam occur under ... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam, ...",
+          "published_date": "1 day ago",
+          "language": "vi"
+        },
+        {
+          "title": "Can Vietnam have a one-party, two-candidate system? | East Asia Forum",
+          "url": "https://eastasiaforum.org/2013/05/10/can-vietnam-have-a-one-party-two-candidate-system/",
+          "snippet": "One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and the rule of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions.",
+          "content": "One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and the rule of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions.",
+          "published_date": "December 7, 2023",
+          "language": "vi"
+        },
+        {
+          "title": "How Democracy Works in Vietnam – Communist Party USA",
+          "url": "https://www.cpusa.org/article/how-democracy-works-in-vietnam/",
+          "snippet": "However, democracy simply means “rule of the people” and doesn’t necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic.",
+          "content": "However, democracy simply means “rule of the people” and doesn’t necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic.",
+          "published_date": "August 8, 2024",
+          "language": "vi"
+        },
+        {
+          "title": "In Vietnam, democracy means rule of the people – People's World",
+          "url": "https://www.peoplesworld.org/article/in-vietnam-democracy-means-rule-of-the-people/",
+          "snippet": "All Vietnamese citizens and peoples are masters of Vietnam and they all should work together to help build a better future for Vietnam. It’s ironic that in multi-party liberal democracies, elections and the so democratic process are used to divide the people, the Vietnamese democratic system ...",
+          "content": "All Vietnamese citizens and peoples are masters of Vietnam and they all should work together to help build a better future for Vietnam. It’s ironic that in multi-party liberal democracies, elections and the so democratic process are used to divide the people, the Vietnamese democratic system ...",
+          "published_date": "August 8, 2024",
+          "language": "vi"
+        },
+        {
+          "title": "Can Vietnam’s Communist Party Supercharge Its Economy With Private Enterprise?",
+          "url": "https://www.nytimes.com/2026/01/19/world/asia/vietnam-communist-party-congress-economy.html",
+          "snippet": "For decades, Vietnam’s one-party state has been governed by the top four members of the Communist Party’s Politburo — the so-called “Four Pillars” — the general secretary, the president, the prime minister and the chair of the National Assembly.",
+          "content": "For decades, Vietnam’s one-party state has been governed by the top four members of the Communist Party’s Politburo — the so-called “Four Pillars” — the general secretary, the president, the prime minister and the chair of the National Assembly.",
+          "published_date": "3 weeks ago",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.561999999990803,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4600.35,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:20.846396",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Politics of Vietnam - Wikipedia. Elections in Vietnam occur under ... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam, ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Politics of Vietnam - Wikipedia. Elections in Vietnam occur under ... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam, ...",
+      "english": "Politics of Vietnam - Wikipedia. Elections in Vietnam occur under... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam,...",
+      "translation_time": 1.2500264644622803,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3299.06,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:23.102486",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has a multi-party system",
+      "evidence": [
+        "Politics of Vietnam - Wikipedia. Elections in Vietnam occur under... system. Vietnam is among the few contemporary party-led dictatorships to not hold any direct multiparty elections at the national level. The competitive nature of the elections is highly constrained by the Communist Party&#x27;s monopoly on power in Vietnam,..."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.11385943740606308,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.114",
+      "processing_time": 0.20862102508544922,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2256.09,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:26.386232",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Can Vietnam have a one-party, two-candidate system? | East Asia Forum. One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and the rule of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Can Vietnam have a one-party, two-candidate system? | East Asia Forum. One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and the rule of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions.",
+      "english": "Can Vietnam have a one-party, two-candidate system? | East Asia Forum. One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and rules of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions.",
+      "translation_time": 1.2505946159362793,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3283.75,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:28.650295",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has a multi-party system",
+      "evidence": [
+        "Can Vietnam have a one-party, two-candidate system? | East Asia Forum. One manifestation of democracy is democratic elections that are fair, non-discriminatory and inclusive. Usually, this can only happen in a multi-party system protected by a system of checks and balances and rules of law to ensure fair competition. To Western political theorists, Vietnam is far from having these conditions."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.35003456473350525,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.350",
+      "processing_time": 0.2273881435394287,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2263.06,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:31.573396",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "How Democracy Works in Vietnam – Communist Party USA. However, democracy simply means “rule of the people” and doesn’t necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "How Democracy Works in Vietnam – Communist Party USA. However, democracy simply means “rule of the people” and doesn’t necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic.",
+      "english": "How Democracy Works in Vietnam – Communist Party USA. However, democracy simply means “rule of the people” and doesn't necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic.",
+      "translation_time": 0.8771581649780273,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2922.55,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:33.791554",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has a multi-party system",
+      "evidence": [
+        "How Democracy Works in Vietnam – Communist Party USA. However, democracy simply means “rule of the people” and doesn't necessarily have anything to do with multi-party elections. For example, the Socialist Republic of Vietnam is a single party state that is also democratic."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.22214877605438232,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.222",
+      "processing_time": 0.19809246063232422,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2217.13,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:36.187734",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam đã tham dự World Cup bóng đá nam",
+      "english": "Vietnam has participated in the men's football World Cup",
+      "translation_time": 0.33873438835144043,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2396.18,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:40.519029",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Vietnam has participated in the men's football World Cup",
+      "count": 5
+    },
+    "output": {
+      "query": "Vietnam has participated in the men's football World Cup",
+      "results": [
+        {
+          "title": "Vietnam national football team - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vietnam_national_football_team",
+          "snippet": "Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA ...",
+          "content": "Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA ...",
+          "published_date": "2 days ago",
+          "language": "vi"
+        },
+        {
+          "title": "VFF - FIFA World Cup",
+          "url": "http://en.vff.org.vn/chuyen-muc/international-competitions/men/fifa-chau-a/fifa-world-cup/",
+          "snippet": "The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam’s farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier ...",
+          "content": "The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam’s farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Vietnam national football team facts for kids",
+          "url": "https://kids.kiddle.co/Vietnam_national_football_team",
+          "snippet": "The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup.",
+          "content": "The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "r/soccer on Reddit: Vietnam 0-1 Iraq in FIFA World Cup 2026 Qualifiers",
+          "url": "https://www.reddit.com/r/soccer/comments/180hogd/vietnam_01_iraq_in_fifa_world_cup_2026_qualifiers/",
+          "snippet": "Vietnam’s national football team makes history by qualifying for the final round of the 2022 World Cup’s qualification process.",
+          "content": "Vietnam’s national football team makes history by qualifying for the final round of the 2022 World Cup’s qualification process.",
+          "published_date": "November 21, 2023",
+          "language": "vi"
+        },
+        {
+          "title": "Football in Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Football_in_Vietnam",
+          "snippet": "Vietnamese football suffered heavy decline in 2009-2016, where they would fail to qualify for 3 Asian cups, and lose the next 4 AFF Suzuki Cups. They also could not qualify for the FIFA World Cup.",
+          "content": "Vietnamese football suffered heavy decline in 2009-2016, where they would fail to qualify for 3 Asian cups, and lose the next 4 AFF Suzuki Cups. They also could not qualify for the FIFA World Cup.",
+          "published_date": "1 week ago",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2810000000026776,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4331.29,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:43.504929",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Vietnam national football team - Wikipedia. Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Vietnam national football team - Wikipedia. Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA ...",
+      "english": "Vietnam national football team - Wikipedia. Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA...",
+      "translation_time": 0.9535081386566162,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2985.9,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:45.739361",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has participated in the men's football World Cup",
+      "evidence": [
+        "Vietnam national football team - Wikipedia. Vietnam only joined the international stage by participating in the 1991 edition of the Southeast Asian Games (SEA Games) in Manila, Philippines. They have participated in every subsequent SEA Games tournament. Since 1994, Vietnam has consistently participated in qualification for the FIFA..."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.02794862911105156,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.028",
+      "processing_time": 0.20259976387023926,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2234.43,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:48.962429",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "VFF - FIFA World Cup. The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam’s farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "VFF - FIFA World Cup. The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam’s farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier ...",
+      "english": "VFF - FIFA World Cup. The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam's farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier...",
+      "translation_time": 1.1755716800689697,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3223.07,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:51.236883",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has participated in the men's football World Cup",
+      "evidence": [
+        "VFF - FIFA World Cup. The beautifully scored goal by Tuấn Hải, which carried a sense of honor, also served as Vietnam's farewell in the World Cup 2026 qualifiers · Speaking at the press conference before the match with the Indonesia team in the World Cup 2026 Asian 2nd Qualifiers, head coach Philippe Troussier..."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.7993509769439697,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.799",
+      "processing_time": 0.22772502899169922,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2274.45,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:54.154469",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Vietnam national football team facts for kids. The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Vietnam national football team facts for kids. The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup.",
+      "english": "Vietnam national football team facts for kids. The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup.",
+      "translation_time": 0.8539259433746338,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2917.59,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:56.411201",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam has participated in the men's football World Cup",
+      "evidence": [
+        "Vietnam national football team facts for kids. The unified Vietnam national team returned to international football at the 1991 Southeast Asian Games. They have played in every SEA Games since. Since 1994, Vietnam has also tried to qualify for the FIFA World Cup and the AFC Asian Cup."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.05904833972454071,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.059",
+      "processing_time": 0.20247507095336914,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2256.73,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:51:58.738940",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Áo dài là quốc phục của Việt Nam",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Áo dài là quốc phục của Việt Nam",
+      "english": "Ao dai is the national costume of Vietnam",
+      "translation_time": 0.2707381248474121,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2327.74,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:03.021424",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Ao dai is the national costume of Vietnam",
+      "count": 5
+    },
+    "output": {
+      "query": "Ao dai is the national costume of Vietnam",
+      "results": [
+        {
+          "title": "Ao Dai - Necessary Knowledge about Vietnamese National Costume",
+          "url": "https://vietnamnomad.com/featured-articles/ao-dai/",
+          "snippet": "The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world.",
+          "content": "The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world.",
+          "published_date": "January 8, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "All about ao dai: Vietnam's national dress | Vietnam Tourism",
+          "url": "https://vietnam.travel/things-to-do/ao-dai-vietnam",
+          "snippet": "Vietnam’s national dress, the áo dài is one of the country’s most striking symbols of beauty. Over hundreds of years, the áo dài has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese áo dài is appreciated by the young ...",
+          "content": "Vietnam’s national dress, the áo dài is one of the country’s most striking symbols of beauty. Over hundreds of years, the áo dài has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese áo dài is appreciated by the young ...",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Áo dài - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
+          "snippet": "Vietnamese: [ʔaːw˧˦ zaːj˨˩] (North), [ʔaːw˦˥ jaːj˨˩] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women. Áo translates as shirt and dài means &quot;long&quot;.",
+          "content": "Vietnamese: [ʔaːw˧˦ zaːj˨˩] (North), [ʔaːw˦˥ jaːj˨˩] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women. Áo translates as shirt and dài means &quot;long&quot;.",
+          "published_date": "January 3, 2026",
+          "language": "vi"
+        },
+        {
+          "title": "Ao Dai, the Traditional Dress in Vietnam | 2026",
+          "url": "https://www.rehahnphotographer.com/ao-dai-tradition-vietnam/",
+          "snippet": "Ao Dai, Vietnam&#x27;s traditional dress, with its long, elegant tunic that skims the figure, high side slits and airy pants for ease of movement.",
+          "content": "Ao Dai, Vietnam&#x27;s traditional dress, with its long, elegant tunic that skims the figure, high side slits and airy pants for ease of movement.",
+          "published_date": "May 20, 2025",
+          "language": "vi"
+        },
+        {
+          "title": "Things to Know about Ao Dai: The Vietnam Traditional Costume",
+          "url": "https://www.asiakingtravel.com/blog/ao-dai-vietnam-traditional-costume.html",
+          "snippet": "Ao dai is a Vietnam national costume. It holds the cultural significance of national identity and pride. It embodies the delicate beauty, modesty, and grace deeply valued in Vietnamese culture.",
+          "content": "Ao dai is a Vietnam national costume. It holds the cultural significance of national identity and pride. It embodies the delicate beauty, modesty, and grace deeply valued in Vietnamese culture.",
+          "published_date": "",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.2340000000112923,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4282.48,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:06.623264",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Ao Dai - Necessary Knowledge about Vietnamese National Costume. The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Ao Dai - Necessary Knowledge about Vietnamese National Costume. The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world.",
+      "english": "Ao Dai - Necessary Knowledge about Vietnamese National Costume. The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world.",
+      "translation_time": 1.5537171363830566,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3600.84,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:08.993279",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Ao dai is the national costume of Vietnam",
+      "evidence": [
+        "Ao Dai - Necessary Knowledge about Vietnamese National Costume. The ao dai Raglan is considered the most complete version of the modern ao dai. It was created by Tailor Dung by attaching the sleeves at a 45-degree angle to the neckline, allowing for more flexibility. This design, which dates back to the end of the 70s, remains the Vietnamese national dress and is appreciated not only by the Vietnamese people, but also by fashion and culture lovers around the world."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.948390007019043,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.948",
+      "processing_time": 0.32294631004333496,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2370.01,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:12.217007",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "All about ao dai: Vietnam's national dress | Vietnam Tourism. Vietnam’s national dress, the áo dài is one of the country’s most striking symbols of beauty. Over hundreds of years, the áo dài has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese áo dài is appreciated by the young ...",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "All about ao dai: Vietnam's national dress | Vietnam Tourism. Vietnam’s national dress, the áo dài is one of the country’s most striking symbols of beauty. Over hundreds of years, the áo dài has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese áo dài is appreciated by the young ...",
+      "english": "All about ao dai: Vietnam's national dress | Vietnam Tourism. Vietnam's national dress, the ao dai is one of the country's most striking symbols of beauty. Over hundreds of years, the ao dai has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese ao dai is appreciated by young...",
+      "translation_time": 1.1932408809661865,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3223.56,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:14.509220",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Ao dai is the national costume of Vietnam",
+      "evidence": [
+        "All about ao dai: Vietnam's national dress | Vietnam Tourism. Vietnam's national dress, the ao dai is one of the country's most striking symbols of beauty. Over hundreds of years, the ao dai has evolved alongside Vietnam, going from regal to practical, humble to high fashion, and back again. The Vietnamese ao dai is appreciated by young..."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9447725415229797,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.945",
+      "processing_time": 0.24001359939575195,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2291.23,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:17.750074",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Áo dài - Wikipedia. Vietnamese: [ʔaːw˧˦ zaːj˨˩] (North), [ʔaːw˦˥ jaːj˨˩] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women. Áo translates as shirt and dài means &quot;long&quot;.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Áo dài - Wikipedia. Vietnamese: [ʔaːw˧˦ zaːj˨˩] (North), [ʔaːw˦˥ jaːj˨˩] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women. Áo translates as shirt and dài means &quot;long&quot;.",
+      "english": "Vietnamese: [ʔaːw zaːj] (North), [ʔaːw˥ jaːj] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women.",
+      "translation_time": 1.205726146697998,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3239.85,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:20.000263",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Ao dai is the national costume of Vietnam",
+      "evidence": [
+        "Vietnamese: [ʔaːw zaːj] (North), [ʔaːw˥ jaːj] (South)) is a modernized Vietnamese national garment consisting of a long split tunic worn over silk trousers. It can serve as formalwear for both men and women."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.380452960729599,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.380",
+      "processing_time": 0.21523833274841309,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2250.19,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:22.294287",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Việt Nam giáp biên giới với Thái Lan",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Việt Nam giáp biên giới với Thái Lan",
+      "english": "Vietnam borders with Thailand",
+      "translation_time": 0.24233436584472656,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 2292.97,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:26.697696",
+    "service": "brave_search",
+    "action": "search",
+    "input": {
+      "query": "Vietnam borders with Thailand",
+      "count": 5
+    },
+    "output": {
+      "query": "Vietnam borders with Thailand",
+      "results": [
+        {
+          "title": "Thailand - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Thailand",
+          "snippet": "It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India.",
+          "content": "It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India.",
+          "published_date": "2 days ago",
+          "language": "vi"
+        },
+        {
+          "title": "Map of Thailand and Vietnam",
+          "url": "https://www.indochinatour.com/thailand-and-vietnam-tours/map-of-thailand-and-vietnam.html",
+          "snippet": "Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia.",
+          "content": "Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia.",
+          "published_date": "November 26, 2024",
+          "language": "vi"
+        },
+        {
+          "title": "Geography | Embassy of the Socialist Republic of Vietnam in the United States",
+          "url": "https://vietnamembassy-usa.org/vietnam/geography",
+          "snippet": "Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with the total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest.",
+          "content": "Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with the total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest.",
+          "published_date": "",
+          "language": "vi"
+        },
+        {
+          "title": "Vietnam - Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vietnam",
+          "snippet": "One of two communist states in Southeast Asia, Vietnam is bordered by China to the north, and Laos and Cambodia to the west; it lies along the Gulf of Thailand to the southwest and the South China Sea to the east, where it has shared and disputed ...",
+          "content": "One of two communist states in Southeast Asia, Vietnam is bordered by China to the north, and Laos and Cambodia to the west; it lies along the Gulf of Thailand to the southwest and the South China Sea to the east, where it has shared and disputed ...",
+          "published_date": "1 week ago",
+          "language": "vi"
+        },
+        {
+          "title": "What is the border between Thailand and Vietnam like? - Quora",
+          "url": "https://www.quora.com/What-is-the-border-between-Thailand-and-Vietnam-like",
+          "snippet": "Answer (1 of 8): There is no common border between Thailand and Vietnam now, yet there used to be a common border between the two countries as follows: Note: Xiêm La = Siam",
+          "content": "Answer (1 of 8): There is no common border between Thailand and Vietnam now, yet there used to be a common border between the two countries as follows: Note: Xiêm La = Siam",
+          "published_date": "",
+          "language": "vi"
+        }
+      ],
+      "count": 5,
+      "processing_time": 2.3589999999967404,
+      "search_engine": "Brave Search"
+    },
+    "duration_ms": 4403.41,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:30.047136",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Thailand - Wikipedia. It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Thailand - Wikipedia. It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India.",
+      "english": "Thailand - Wikipedia. It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India.",
+      "translation_time": 1.2838685512542725,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3348.93,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:32.316754",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam borders with Thailand",
+      "evidence": [
+        "Thailand - Wikipedia. It shares land borders with Myanmar to the west and northwest, Laos to the east and northeast, Cambodia to the southeast, and Malaysia to the south. Its maritime boundaries include the Gulf of Thailand and the Andaman Sea, as well as maritime borders with Vietnam, Indonesia, and India."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9787135720252991,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.979",
+      "processing_time": 0.20623469352722168,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2269.62,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:35.410200",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Map of Thailand and Vietnam. Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Map of Thailand and Vietnam. Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia.",
+      "english": "Map of Thailand and Vietnam. Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia.",
+      "translation_time": 1.038442850112915,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3092.27,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:37.666279",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam borders with Thailand",
+      "evidence": [
+        "Map of Thailand and Vietnam. Thailand has a more compact shape, with a coastline along the Gulf of Thailand and the Andaman Sea. It has mountains in the north and west and a lowland plain in the center. Thailand does not have a direct border with Vietnam, as they are separated by Laos and Cambodia."
+      ]
+    },
+    "output": {
+      "label": "REFUTED",
+      "score": 0.21569810807704926,
+      "explanation": "MiniCheck-roberta-large predicts: REFUTED with confidence 0.216",
+      "processing_time": 0.21059942245483398,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2255.07,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:40.941331",
+    "service": "translation",
+    "action": "translate",
+    "input": {
+      "text": "Geography | Embassy of the Socialist Republic of Vietnam in the United States. Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with the total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest.",
+      "source_lang": "vi",
+      "target_lang": "en"
+    },
+    "output": {
+      "vietnamese": "Geography | Embassy of the Socialist Republic of Vietnam in the United States. Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with the total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest.",
+      "english": "Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with a total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest.",
+      "translation_time": 1.2357759475708008,
+      "model": "VinAI/vinai-translate-vi2en-v2",
+      "using_facebook_model": false,
+      "model_loaded": true
+    },
+    "duration_ms": 3275.05,
+    "success": true,
+    "error": null
+  },
+  {
+    "timestamp": "2026-02-07T12:52:43.222034",
+    "service": "minicheck",
+    "action": "verify",
+    "input": {
+      "claim": "Vietnam borders with Thailand",
+      "evidence": [
+        "Between these two major deltas is a chain of small and narrow deltas along the Central coast from the Ma River basin in Thanh Hoa Province to Phan Thiet with a total area of 15,000 sq km. Viet Nam faces the Eastern Sea to the East and the Gulf of Thailand to the South and Southwest."
+      ]
+    },
+    "output": {
+      "label": "SUPPORTED",
+      "score": 0.9769372940063477,
+      "explanation": "MiniCheck-roberta-large predicts: SUPPORTED with confidence 0.977",
+      "processing_time": 0.21330571174621582,
+      "model": "MiniCheck-roberta-large"
+    },
+    "duration_ms": 2279.7,
+    "success": true,
+    "error": null
+  }
+]

@@ -19,7 +19,7 @@ def test_api():
     ]
     
     for claim in test_claims:
-        print(f"\n🧪 Testing: {claim}")
+        print(f"\n Testing: {claim}")
         print("-" * 40)
         
         data = {"claim": claim}
@@ -31,7 +31,7 @@ def test_api():
             
             if response.status_code == 200:
                 result = response.json()
-                print(f"✅ Success!")
+                print(f" Success!")
                 print(f"Verdict: {result.get('verdict')}")
                 print(f"Confidence: {result.get('confidence', 0):.4f}")
                 print(f"Evidence: {result.get('evidence_count', 0)} sources")
@@ -39,13 +39,13 @@ def test_api():
                 print(f"Method: {result.get('method')}")
                 
                 if result.get('error'):
-                    print(f"⚠️  Error: {result.get('error')}")
+                    print(f"  Error: {result.get('error')}")
             else:
-                print(f"❌ Failed: {response.status_code}")
+                print(f" Failed: {response.status_code}")
                 print(f"Response: {response.text}")
                 
         except Exception as e:
-            print(f"❌ Exception: {e}")
+            print(f" Exception: {e}")
 
 if __name__ == "__main__":
     test_api()

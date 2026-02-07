@@ -96,7 +96,7 @@ def test_full_factchecker(claim):
 
 def main():
     print("=" * 100)
-    print("🧪 DETAILED VIETNAMESE FACT CHECKER TEST - 5 CLAIMS")
+    print(" DETAILED VIETNAMESE FACT CHECKER TEST - 5 CLAIMS")
     print("=" * 100)
     
     for i, claim in enumerate(TEST_CLAIMS, 1):
@@ -105,7 +105,7 @@ def main():
         print(f"{'#' * 100}")
         
         # Test full fact checker
-        print("\n📊 FULL FACT CHECKER RESULT:")
+        print("\n FULL FACT CHECKER RESULT:")
         print("-" * 80)
         fc_result = test_full_factchecker(claim)
         
@@ -114,18 +114,18 @@ def main():
             print(f"   OUTPUT Verdict: {fc_result['verdict']}")
             print(f"   OUTPUT Confidence: {fc_result['confidence']:.2%}")
             print(f"   Evidence Count: {fc_result['evidence_count']}")
-            print(f"   ⏱️  Total Time: {fc_result['time']:.2f}s")
+            print(f"   ⏱  Total Time: {fc_result['time']:.2f}s")
             
             # Show translation details from debug
             debug = fc_result.get('debug', {})
             translation = debug.get('translation', {})
             minicheck_input = debug.get('minicheck_input', {})
             
-            print("\n   📝 SERVICE DETAILS:")
+            print("\n    SERVICE DETAILS:")
             print("   " + "-" * 76)
             
             # Translation Service
-            print("\n   🌐 TRANSLATION SERVICE (VinAI):")
+            print("\n    TRANSLATION SERVICE (VinAI):")
             if translation:
                 print(f"      INPUT:  {translation.get('normalized_claim', 'N/A')}")
                 print(f"      OUTPUT: {translation.get('english_claim', 'N/A')}")
@@ -134,7 +134,7 @@ def main():
             
             # Evidence translations
             if translation.get('vietnamese_evidence'):
-                print("\n   📚 EVIDENCE TRANSLATIONS:")
+                print("\n    EVIDENCE TRANSLATIONS:")
                 vi_ev = translation.get('vietnamese_evidence', [])
                 en_ev = translation.get('english_evidence', [])
                 for j, (vi, en) in enumerate(zip(vi_ev, en_ev), 1):
@@ -142,7 +142,7 @@ def main():
                     print(f"         EN: {en[:60]}...")
             
             # MiniCheck details
-            print("\n   🔍 MINICHECK SERVICE:")
+            print("\n    MINICHECK SERVICE:")
             if minicheck_input:
                 print(f"      INPUT Claim: {minicheck_input.get('claim', 'N/A')[:80]}...")
                 evidence_list = minicheck_input.get('evidence', [])
@@ -157,16 +157,16 @@ def main():
                 print(f"      OUTPUT Confidence: {minicheck_output.get('confidence', 0):.4f}")
             
             # Evidence sources
-            print("\n   🔗 EVIDENCE SOURCES (Brave Search):")
+            print("\n    EVIDENCE SOURCES (Brave Search):")
             for j, ev in enumerate(fc_result.get('evidence', []), 1):
                 print(f"      {j}. [{ev.get('title', 'N/A')[:50]}]")
                 print(f"         URL: {ev.get('url', 'N/A')[:70]}")
         else:
-            print(f"   ❌ ERROR: {fc_result.get('error', 'Unknown')}")
+            print(f"    ERROR: {fc_result.get('error', 'Unknown')}")
         
         print("\n" + "=" * 100)
     
-    print("\n📊 SUMMARY")
+    print("\n SUMMARY")
     print("=" * 100)
 
 if __name__ == "__main__":

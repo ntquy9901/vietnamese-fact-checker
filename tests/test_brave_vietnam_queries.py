@@ -7,7 +7,7 @@ import requests
 
 def test_brave_vietnam_queries():
     """Test Brave Search with Vietnam specific queries"""
-    print("🔍 Testing Brave Search with Vietnam Queries")
+    print(" Testing Brave Search with Vietnam Queries")
     print("=" * 50)
     
     base_url = "http://localhost:8004"
@@ -19,7 +19,7 @@ def test_brave_vietnam_queries():
     ]
     
     for i, query in enumerate(queries, 1):
-        print(f"\n📝 Query {i}: {query}")
+        print(f"\n Query {i}: {query}")
         
         try:
             response = requests.post(
@@ -32,10 +32,10 @@ def test_brave_vietnam_queries():
                 result = response.json()
                 results = result.get("results", [])
                 
-                print(f"✅ Found {len(results)} results")
+                print(f" Found {len(results)} results")
                 
                 for j, item in enumerate(results, 1):
-                    print(f"\n📄 Result {j}:")
+                    print(f"\n Result {j}:")
                     print(f"   Title: {item.get('title', '')}")
                     print(f"   Snippet: {item.get('snippet', '')[:150]}...")
                     
@@ -50,15 +50,15 @@ def test_brave_vietnam_queries():
                         
                         if trans_response.status_code == 200:
                             trans_result = trans_response.json()
-                            print(f"   🔄 EN: {trans_result.get('english', '')[:150]}...")
+                            print(f"    EN: {trans_result.get('english', '')[:150]}...")
                 
             else:
-                print(f"❌ Search failed: {response.status_code}")
+                print(f" Search failed: {response.status_code}")
                 
         except Exception as e:
-            print(f"❌ Exception: {e}")
+            print(f" Exception: {e}")
     
-    print(f"\n🎉 Brave Search test completed!")
+    print(f"\n Brave Search test completed!")
 
 if __name__ == "__main__":
     test_brave_vietnam_queries()

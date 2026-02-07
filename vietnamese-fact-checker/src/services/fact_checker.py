@@ -103,65 +103,37 @@ class VietnameseFactChecker:
                 "english_evidence": english_evidence
             }
             
-            # Step 5: MiniCheck verification with PARALLEL evidence testing
-            print("[STEP 5] PARALLEL MiniCheck verification")
+            # Step 5: MiniCheck verification with ALL evidence at once
+            print("[STEP 5] MiniCheck verification with ALL evidence")
             
             if english_evidence:
-                print(f"[INFO] Testing {len(english_evidence)} evidence items in PARALLEL...")
+                print(f"[INFO] Testing {len(english_evidence)} evidence items together...")
                 
                 minicheck_start = time.time()
                 
-                # Create async tasks for all evidence items
-                async def verify_single_evidence(idx, evidence):
-                    try:
-                        result = await self.minicheck.verify(english_claim, [evidence])
-                        return idx, evidence, result
-                    except Exception as e:
-                        return idx, evidence, {"verdict": "ERROR", "confidence": 0.0, "error": str(e)}
-                
-                # Run all MiniCheck verifications in PARALLEL
-                tasks = [verify_single_evidence(i, ev) for i, ev in enumerate(english_evidence)]
-                results = await asyncio.gather(*tasks)
-                
-                minicheck_time = time.time() - minicheck_start
-                print(f"   [PERF] All {len(english_evidence)} verifications completed in {minicheck_time:.2f}s (parallel)")
-                
-                # Process results and find best
-                best_result = None
-                best_score = -1.0
-                evidence_results = []
-                
-                for idx, evidence, result in results:
-                    if result and result.get("verdict") != "ERROR":
-                        score = result.get("confidence", 0.0)
-                        label = result.get("verdict", "ERROR")
-                        
-                        print(f"   {idx+1}. {label} ({score:.3f}): {evidence[:60]}...")
-                        
-                        evidence_results.append({
-                            "evidence_index": idx,
-                            "evidence": evidence,
-                            "label": label,
-                            "score": score,
-                            "raw_result": result
-                        })
-                        
-                        if score > best_score:
-                            best_score = score
-                            best_result = result
-                    else:
-                        print(f"   {idx+1}. [ERROR]: {evidence[:60]}...")
-                
-                # Use the best result found
-                if best_result:
-                    minicheck_result = best_result
-                    print(f"[BEST] Best evidence: score {best_score:.3f}")
-                else:
-                    print("[WARN] No valid evidence results found")
+                # Call MiniCheck ONCE with ALL evidence (correct approach)
+                try:
+                    result = await self.minicheck.verify(english_claim, english_evidence)
+                    minicheck_result = result
+                    
+                    minicheck_time = time.time() - minicheck_start
+                    print(f"   [PERF] MiniCheck completed in {minicheck_time:.2f}s")
+                    
+                    # Show individual scores from raw result
+                    if "raw_result" in result and "all_scores" in result["raw_result"]:
+                        all_scores = result["raw_result"]["all_scores"]
+                        print(f"   [SCORES] Individual evidence results:")
+                        for i, score_info in enumerate(all_scores):
+                            label = score_info.get("label", "N/A")
+                            score = score_info.get("score", 0)
+                            print(f"      {i+1}. {label}: {score:.3f}")
+                    
+                except Exception as e:
+                    print(f"[ERROR] MiniCheck verification failed: {e}")
                     minicheck_result = {
                         "label": "ERROR",
                         "score": 0.0,
-                        "explanation": "No valid evidence found after testing all options",
+                        "explanation": f"MiniCheck error: {str(e)}",
                         "processing_time": 0.0
                     }
             else:
@@ -217,7 +189,7 @@ class VietnameseFactChecker:
                         'claim': english_claim,
                         'evidence': english_evidence
                     },
-                    'minicheck_raw_output': minicheck_result,
+                    'minicheck_raw_output': minicheck_result.get('raw_result', minicheck_result),
                     'minicheck_parsed_output': parsed_result
                 }
             }

@@ -175,52 +175,52 @@ all_trusted_sources = list(set(all_trusted_sources))
 all_trusted_sources.sort()
 
 print("=" * 70)
-print("🔧 UPDATING TRUSTED SOURCES BY DOMAIN")
+print(" UPDATING TRUSTED SOURCES BY DOMAIN")
 print("=" * 70)
 
-print(f"\n📊 Sources by Category:")
+print(f"\n Sources by Category:")
 for category, sources in trusted_sources.items():
     print(f"   • {category}: {len(sources)} domains")
 
-print(f"\n📊 Total unique trusted sources: {len(all_trusted_sources)}")
+print(f"\n Total unique trusted sources: {len(all_trusted_sources)}")
 
 # Update configuration
-print("\n⏳ Updating configuration...")
+print("\n Updating configuration...")
 r = requests.post(f'{BASE}/config/brave_search', json={
     'section': 'brave_search',
     'updates': {'trusted_sources': all_trusted_sources}
 })
 
 if r.status_code == 200:
-    print(f"✅ Updated trusted_sources with {len(all_trusted_sources)} domains")
+    print(f" Updated trusted_sources with {len(all_trusted_sources)} domains")
 else:
-    print(f"❌ Failed: {r.text}")
+    print(f" Failed: {r.text}")
 
 # Verify
-print("\n📋 Verifying configuration...")
+print("\n Verifying configuration...")
 r = requests.get(f'{BASE}/config/brave_search')
 cfg = r.json()['config']
 print(f"   • trusted_sources count: {len(cfg['trusted_sources'])}")
 
 # Show categories summary
 print("\n" + "=" * 70)
-print("📚 TRUSTED SOURCES BY CATEGORY")
+print(" TRUSTED SOURCES BY CATEGORY")
 print("=" * 70)
 
 for category, sources in trusted_sources.items():
     category_name = {
-        "government": "🏛️  Chính phủ & Cơ quan Nhà nước",
-        "statistics": "📊 Thống kê & Dữ liệu",
-        "mainstream_news": "📰 Tin tức Chính thống",
-        "finance_economy": "💰 Kinh tế & Tài chính",
-        "health": "🏥 Y tế & Sức khỏe",
-        "education": "🎓 Giáo dục",
-        "law": "⚖️  Pháp luật",
-        "sports": "⚽ Thể thao",
-        "technology": "💻 Công nghệ",
-        "travel": "✈️  Du lịch",
-        "reference": "📖 Bách khoa & Tham khảo",
-        "international": "🌍 Quốc tế Uy tín",
+        "government": "  Chính phủ & Cơ quan Nhà nước",
+        "statistics": " Thống kê & Dữ liệu",
+        "mainstream_news": " Tin tức Chính thống",
+        "finance_economy": " Kinh tế & Tài chính",
+        "health": " Y tế & Sức khỏe",
+        "education": " Giáo dục",
+        "law": "  Pháp luật",
+        "sports": " Thể thao",
+        "technology": " Công nghệ",
+        "travel": "  Du lịch",
+        "reference": " Bách khoa & Tham khảo",
+        "international": " Quốc tế Uy tín",
     }.get(category, category)
     
     print(f"\n{category_name}:")
@@ -230,5 +230,5 @@ for category, sources in trusted_sources.items():
         print(f"   ... và {len(sources) - 5} nguồn khác")
 
 print("\n" + "=" * 70)
-print("✅ TRUSTED SOURCES UPDATE COMPLETE")
+print(" TRUSTED SOURCES UPDATE COMPLETE")
 print("=" * 70)
