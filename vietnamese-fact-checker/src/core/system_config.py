@@ -17,7 +17,7 @@ class BraveSearchConfig(BaseSettings):
     api_key: Optional[str] = Field(default=None, env="BRAVE_SEARCH_API_KEY")
     api_url: str = "https://api.search.brave.com/res/v1/web/search"
     proxy_url: str = "http://localhost:8004"
-    timeout: int = 10
+    timeout: int = 15
     max_results: int = 5
     
     # Localization
@@ -87,7 +87,7 @@ class TranslationConfig(BaseSettings):
     # Processing Settings
     max_length: int = 512
     batch_size: int = 10
-    timeout: int = 30
+    timeout: int = 45
     
     # GPU Settings
     use_gpu: bool = True
@@ -107,10 +107,10 @@ class MiniCheckConfig(BaseSettings):
     # API Settings
     api_url: str = "http://localhost:8002"
     verify_endpoint: str = "/verify"
-    timeout: int = 30
+    timeout: int = 60
     
     # Model Settings
-    model_name: str = "Bespoke-MiniCheck-7B"
+    model_name: str = "roberta-large"
     
     # Verdict Thresholds
     threshold_supported: float = 0.5      # >= 50% → SUPPORTED
@@ -137,7 +137,7 @@ class EvidenceConfig(BaseSettings):
     
     # Content fetching
     fetch_full_content: bool = True
-    content_fetch_timeout: int = 10
+    content_fetch_timeout: int = 15
     
     # Evidence quality
     min_text_length: int = 50

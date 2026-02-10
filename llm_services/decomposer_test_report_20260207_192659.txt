@@ -1,0 +1,74 @@
+================================================================================
+DECOMPOSER SERVICE TEST REPORT
+================================================================================
+Generated: 2026-02-07T19:26:59.194409
+Service URL: http://localhost:8006
+
+SUMMARY
+----------------------------------------
+Total Tests: 10
+Passed: 0
+Failed: 10
+Pass Rate: 0.0%
+
+FAILED TESTS
+----------------------------------------
+ID: geo_001
+Claim: Hà Nội là thủ đô của Việt Nam và có dân số hơn 8 triệu người
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: pol_001
+Claim: Chủ tịch Hồ Chí Minh đã tuyên bố độc lập Việt Nam vào ngày 2 tháng 9 năm 1945 tại Hà Nội
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: eco_001
+Claim: Việt Nam là nước nông nghiệp phát triển với GDP tăng trưởng 7% mỗi năm và xuất khẩu gạo nhiều tỷ đô
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: culture_001
+Claim: Phở là món ăn truyền thống của Việt Nam và được UNESCO công nhận là di sản văn hóa thế giới
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: tech_001
+Claim: Viettel là nhà mạng viễn thông lớn nhất Việt Nam và đang triển khai công nghệ 5G trên toàn quốc
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: health_001
+Claim: Bệnh COVID-19 đã được kiểm soát tốt ở Việt Nam với tỷ lệ tiêm chủ đạt 95% dân số
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: education_001
+Claim: Hệ thống giáo dục Việt Nam bao gồm 12 năm phổ thông cơ bản và nhiều trường đại học danh tiếng
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: simple_001
+Claim: Hà Nội là thủ đô của Việt Nam
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: complex_001
+Claim: Theo báo cáo của Bộ Kế hoạch và Đầu tư, Việt Nam đã đạt được tăng trưởng kinh tế 6.7% trong năm 2023, vượt mục tiêu 6.5%, nhờ vào sự phục hồi mạnh mảng của các ngành du lịch, sản xuất công nghiệp chế tạo và dịch vụ, đồng thời lạm phát triển kinh tế số với các chính sách thúc đẩy thanh toán không dùng tiền mặt và chuyển đổi số quốc gia, trong đó khu vực kinh tế tư nhân đóng góp 42% GDP, khu vực kinh tế nhà nước đóng góp 38%, và khu vực kinh tế nước ngoài đóng góp 20%
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+ID: multi_entity_001
+Claim: Sông Hồng chảy qua nhiều tỉnh thành và là nguồn nước chính cho đồng bằng sông Cửu Long và Đồng bằng sông Bằng
+Error: HTTP 500: {"detail":"Empty LLM response"}
+
+PERFORMANCE ANALYSIS
+----------------------------------------
+Average processing time: 6.42s
+Max processing time: 6.46s
+Min processing time: 6.39s
+
+CATEGORY ANALYSIS
+----------------------------------------
+geography: 0/1 (0.0%)
+politics: 0/1 (0.0%)
+economics: 0/1 (0.0%)
+culture: 0/1 (0.0%)
+technology: 0/1 (0.0%)
+health: 0/1 (0.0%)
+education: 0/1 (0.0%)
+simple: 0/1 (0.0%)
+complex: 0/2 (0.0%)
+
+================================================================================

@@ -1,0 +1,203 @@
+{
+  "test_cases": [
+    {
+      "id": "geo_001",
+      "claim": "Hà Nội là thủ đô của Việt Nam và có dân số hơn 8 triệu người",
+      "expected_sub_claims": 2,
+      "expected_entities": [
+        "Hà Nội",
+        "Việt Nam",
+        "thủ đô",
+        "dân số"
+      ],
+      "complexity_score_low": 0.3,
+      "complexity_score_high": 0.7
+    },
+    {
+      "id": "pol_001",
+      "claim": "Chủ tịch Hồ Chí Minh đã tuyên bố độc lập Việt Nam vào ngày 2 tháng 9 năm 1945 tại Hà Nội",
+      "expected_sub_claims": 3,
+      "expected_entities": [
+        "Chủ tịch Hồ Chí Minh",
+        "Việt Nam",
+        "độc lập",
+        "Hà Nội",
+        "2 tháng 9 năm 1945"
+      ],
+      "complexity_score_low": 0.4,
+      "complexity_score_high": 0.8
+    },
+    {
+      "id": "eco_001",
+      "claim": "Việt Nam là nước nông nghiệp phát triển với GDP tăng trưởng 7% mỗi năm và xuất khẩu gạo nhiều tỷ đô",
+      "expected_sub_claims": 3,
+      "expected_entities": [
+        "Việt Nam",
+        "nông nghiệp",
+        "GDP",
+        "xuất khẩu",
+        "tỷ đô"
+      ],
+      "complexity_score_low": 0.5,
+      "complexity_score_high": 0.9
+    },
+    {
+      "id": "culture_001",
+      "claim": "Phở là món ăn truyền thống của Việt Nam và được UNESCO công nhận là di sản văn hóa thế giới",
+      "expected_sub_claims": 2,
+      "expected_entities": [
+        "Phở",
+        "Việt Nam",
+        "UNESCO",
+        "di sản văn hóa",
+        "thế giới"
+      ],
+      "complexity_score_low": 0.3,
+      "complexity_score_high": 0.6
+    },
+    {
+      "id": "tech_001",
+      "claim": "Viettel là nhà mạng viễn thông lớn nhất Việt Nam và đang triển khai công nghệ 5G trên toàn quốc",
+      "expected_sub_claims": 2,
+      "expected_entities": [
+        "Viettel",
+        "Việt Nam",
+        "công nghệ 5G",
+        "toàn quốc"
+      ],
+      "complexity_score_low": 0.4,
+      "complexity_score_high": 0.7
+    },
+    {
+      "id": "health_001",
+      "claim": "Bệnh COVID-19 đã được kiểm soát tốt ở Việt Nam với tỷ lệ tiêm chủ đạt 95% dân số",
+      "expected_sub_claims": 2,
+      "expected_entities": [
+        "COVID-19",
+        "Việt Nam",
+        "tiêm chủ",
+        "dân số"
+      ],
+      "complexity_score_low": 0.4,
+      "complexity_score_high": 0.8
+    },
+    {
+      "id": "education_001",
+      "claim": "Hệ thống giáo dục Việt Nam bao gồm 12 năm phổ thông cơ bản và nhiều trường đại học danh tiếng",
+      "expected_sub_claims": 2,
+      "expected_entities": [
+        "giáo dục Việt Nam",
+        "12 năm phổ thông",
+        "trường đại học",
+        "danh tiếng"
+      ],
+      "complexity_score_low": 0.5,
+      "complexity_score_high": 0.7
+    },
+    {
+      "id": "simple_001",
+      "claim": "Hà Nội là thủ đô của Việt Nam",
+      "expected_sub_claims": 1,
+      "expected_entities": [
+        "Hà Nội",
+        "Việt Nam",
+        "thủ đô"
+      ],
+      "complexity_score_low": 0.1,
+      "complexity_score_high": 0.3
+    },
+    {
+      "id": "complex_001",
+      "claim": "Theo báo cáo của Bộ Kế hoạch và Đầu tư, Việt Nam đã đạt được tăng trưởng kinh tế 6.7% trong năm 2023, vượt mục tiêu 6.5%, nhờ vào sự phục hồi mạnh mảng của các ngành du lịch, sản xuất công nghiệp chế tạo và dịch vụ, đồng thời lạm phát triển kinh tế số với các chính sách thúc đẩy thanh toán không dùng tiền mặt và chuyển đổi số quốc gia, trong đó khu vực kinh tế tư nhân đóng góp 42% GDP, khu vực kinh tế nhà nước đóng góp 38%, và khu vực kinh tế nước ngoài đóng góp 20%",
+      "expected_sub_claims": 4,
+      "expected_entities": [
+        "Bộ Kế hoạch và Đầu tư",
+        "Việt Nam",
+        "GDP",
+        "du lịch",
+        "sản xuất công nghiệp chế tạo",
+        "dịch vụ",
+        "kinh tế số",
+        "thanh toán không dùng tiền mặt",
+        "chuyển đổi số quốc gia",
+        "kinh tế tư nhân",
+        "kinh tế nhà nước",
+        "kinh tế nước ngoài"
+      ],
+      "complexity_score_low": 0.8,
+      "complexity_score_high": 0.9
+    },
+    {
+      "id": "multi_entity_001",
+      "claim": "Sông Hồng chảy qua nhiều tỉnh thành và là nguồn nước chính cho đồng bằng sông Cửu Long và Đồng bằng sông Bằng",
+      "expected_sub_claims": 3,
+      "expected_entities": [
+        "Sông Hồng",
+        "tỉnh thành",
+        "đồng bằng sông Cửu Long",
+        "Đồng bằng sông Bằng"
+      ],
+      "complexity_score_low": 0.5,
+      "complexity_score_high": 0.7
+    }
+  ],
+  "test_config": {
+    "timeout_seconds": 60,
+    "max_retries": 3,
+    "confidence_threshold": 0.5,
+    "complexity_threshold": 0.7
+  },
+  "metadata": {
+    "total_cases": 10,
+    "categories": {
+      "geography": [
+        "geo_001"
+      ],
+      "politics": [
+        "pol_001"
+      ],
+      "economics": [
+        "eco_001"
+      ],
+      "culture": [
+        "culture_001"
+      ],
+      "technology": [
+        "tech_001"
+      ],
+      "health": [
+        "health_001"
+      ],
+      "education": [
+        "education_001"
+      ],
+      "simple": [
+        "simple_001"
+      ],
+      "complex": [
+        "complex_001",
+        "multi_entity_001"
+      ]
+    },
+    "complexity_levels": {
+      "simple": [
+        "simple_001"
+      ],
+      "medium": [
+        "geo_001",
+        "culture_001",
+        "tech_001",
+        "health_001",
+        "education_001"
+      ],
+      "complex": [
+        "pol_001",
+        "eco_001",
+        "complex_001",
+        "multi_entity_001"
+      ]
+    },
+    "generated_at": "2026-02-07T19:22:00+07:00",
+    "version": "1.0"
+  }
+}
