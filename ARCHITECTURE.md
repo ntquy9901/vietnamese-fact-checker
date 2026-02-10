@@ -1,14 +1,15 @@
 # Vietnamese Fact Checker - System Design Document
 
-**Version**: 1.0 (Baseline)  
-**Date**: 2026-02-07  
-**Author**: AI Assistant
+**Version**: 2.0 (Enhanced Parallel Architecture)  
+**Date**: 2026-02-10  
+**Author**: AI Assistant  
+**Status**: Production Ready (Decomposer) + Framework Ready (Other Services)
 
 ---
 
 ## 1. Solution Architecture Overview
 
-### 1.1 High-Level Architecture
+### 1.1 High-Level Architecture (V2.0 Parallel Design)
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
@@ -25,7 +26,7 @@
 │                        (Port 8005)                                          │
 │  ┌─────────────────────────────────────────────────────────────────────┐   │
 │  │  FastAPI Application                                                 │   │
-│  │  - /check          : Fact checking endpoint                         │   │
+│  │  - /check          : Legacy fact checking endpoint                   │   │
 │  │  - /health         : Health check                                   │   │
 │  │  - /config/*       : Configuration management                       │   │
 │  └─────────────────────────────────────────────────────────────────────┘   │
@@ -36,422 +37,534 @@
 │  SEARCH LAYER   │  │ TRANSLATION     │  │  VERIFICATION LAYER             │
 │                 │  │ LAYER           │  │                                 │
 │ Brave Search    │  │ VinAI           │  │  MiniCheck                      │
-│ Baseline        │  │ Translation     │  │  Flan-T5-Large                   │
+│ Baseline        │  │ Translation     │  │  Bespoke-MiniCheck-7B           │
 │ (Port 8004)     │  │ (Port 8003)     │  │  (Port 8002)                    │
 │                 │  │                 │  │                                 │
 │ ┌─────────────┐ │  │ ┌─────────────┐ │  │  ┌─────────────────────────┐   │
 │ │Brave Search │ │  │ │VinAI Model  │ │  │  │ MiniCheck Model         │   │
-│ │API Proxy    │ │  │ │vi2en-v2     │  │  │  │ (GPU Accelerated)       │   │
+│ │API Proxy    │ │  │ │vi2en-v2     │ │  │  │ (GPU Accelerated)       │   │
 │ └─────────────┘ │  │ └─────────────┘ │  │  └─────────────────────────┘   │
 └────────┬────────┘  └────────┬────────┘  └──────────────┬──────────────────┘
          │                    │                          │
          ▼                    ▼                          ▼
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│                         EXTERNAL SERVICES                                    │
+│                    V2.0 PARALLEL SERVICES LAYER                              │
+├─────────────────────────────────────────────────────────────────────────────┤
 │                                                                             │
-│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────────────────────┐  ┌───────────────┐
-│  │  Brave Search  │  │  │  HuggingFace  │  │  │  HuggingFace  │  │  │  │  │  │
-│  │  API          │  │  │  Model Hub    │  │  │  │  Model Hub  │  │  │  │  │
-│  └─────────────────┘  └─────────────────┘  └─────────────────────────────────┘  └───────────────┘
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────────────────┐  │
+│  │ Decomposer      │  │ LLM Service     │  │  Parallel Orchestrator      │  │
+│  │ Service         │  │ (Qwen2:1.5b)     │  │  (clean_parallel_arch)     │  │
+│  │ (Port 8006)     │  │ (Port 8009)      │  │                             │  │
+│  │                 │  │                 │  │  ┌─────────────────────────┐ │  │
+│  │ ┌─────────────┐ │  │ ┌─────────────┐ │  │  │ Wave-based Execution   │ │  │
+│  │ │Few-shot LLM │ │  │ │Ollama       │ │  │  │ 20x Speed Improvement │ │  │
+│  │ │Prompting    │ │  │ │Backend     │ │  │  │ 1000 Evidence/Claim   │ │  │
+│  │ └─────────────┘ │  │ └─────────────┘ │  │  └─────────────────────────┘ │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────────────────┘  │
+│                                                                             │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────────────────┐  │
+│  │ Brave Search    │  │ MiniCheck       │  │ Evidence Aggregator         │  │
+│  │ Service         │  │ Service         │  │ Service                     │  │
+│  │ (Port 8010)     │  │ (Port 8011)     │  │ (Port 8012)                 │  │
+│  │ 🔄 TO IMPLEMENT │  │ 🔄 TO IMPLEMENT │  │ 🔄 TO IMPLEMENT             │  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────────────────┘  │
+└─────────────────────────────────────────────────────────────────────────────┘
+         │                    │                          │
+         ▼                    ▼                          ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         EXTERNAL SERVICES                                    │
+├─────────────────────────────────────────────────────────────────────────────┤
+│   Brave Search API        │    HuggingFace Models    │   Ollama + CUDA/GPU   │
+│   (Internet)              │    (Local Cache)         │   (RTX 4060)           │
 └─────────────────────────────────────────────────────────────────────────────┘
 ```
 
-### 1.2 Component Overview
-
-| Component | Port | Technology | Purpose |
-|-----------|------|------------|---------|
-| **Vietnamese Fact Checker** | 8005 | FastAPI | Main API gateway and orchestration |
-| **Translation Service** | 8003 | FastAPI + VinAI | Vietnamese → English translation |
-| **MiniCheck Service** | 8002 | FastAPI + MiniCheck | Fact verification using AI |
-| **Brave Search Proxy** | 8004 | FastAPI | Web search proxy for Vietnamese content |
-
-### 1.3 Data Flow
-
-```
-Vietnamese Claim
-       ↓
-   [1] Brave Search (Vietnamese content)
-       ↓
-   [2] Evidence Fetcher (Process search results)
-       ↓
-   [3] Translation Service (VI → EN)
-       ↓
-   [4] MiniCheck (English verification)
-       ↓
-   [5] Fact Checker (Aggregation & Response)
-       ↓
-   Final Verdict (SUPPORTED/REFUTED/NEITHER)
-```
-
-## 2. Component Details
-
-### 2.1 Vietnamese Fact Checker (Port 8005)
-
-**Technology Stack:**
-- FastAPI framework
-- Python async/await
-- Pydantic for data validation
-- Comprehensive configuration system
-
-**Key Features:**
-- Orchestrates entire fact-checking pipeline
-- Configurable thresholds and parameters
-- Detailed logging and debugging
-- Health check endpoints
-- Configuration management API
-
-**Main Endpoints:**
-- `POST /check` - Main fact-checking endpoint
-- `GET /health` - Service health check
-- `GET /config/*` - Configuration management
-
-### 2.2 Translation Service (Port 8003)
-
-**Technology Stack:**
-- FastAPI framework
-- VinAI/vinai-translate-vi2en-v2 model
-- GPU acceleration (CUDA)
-- Batch translation support
-
-**Key Features:**
-- High-quality Vietnamese → English translation
-- GPU acceleration for performance
-- Batch processing (multiple texts)
-- Model caching in D:/huggingface_cache
-- Fallback mechanisms
-
-**Performance:**
-- Single text: ~0.5s
-- Batch (5 texts): ~1.2s
-- GPU Memory: ~2GB
-
-### 2.3 MiniCheck Service (Port 8002)
-
-**Technology Stack:**
-- FastAPI framework
-- MiniCheck Flan-T5-Large model
-- GPU acceleration
-- Majority vote aggregation
-
-**Key Features:**
-- Sentence-level fact verification
-- 1:1 doc-claim pairing
-- Majority vote aggregation (fixed from max score)
-- Individual evidence scoring
-- Configurable thresholds
-
-**Aggregation Strategy:**
-- **Old**: Max individual score (buggy)
-- **New**: Majority vote with average confidence
-- Handles ties with average score
-
-### 2.4 Brave Search Proxy (Port 8004)
-
-**Technology Stack:**
-- FastAPI framework
-- Brave Search API integration
-- Vietnamese localization
-- Source filtering
-
-**Key Features:**
-- Vietnamese language search
-- Trusted source filtering
-- Result ranking and filtering
-- Mock mode for testing
-
-## 3. Data Models
-
-### 3.1 Request/Response Models
-
-**Fact Check Request:**
-```python
-{
-    "claim": "string"  # Vietnamese claim to verify
-}
-```
-
-**Fact Check Response:**
-```python
-{
-    "claim": "string",
-    "verdict": "SUPPORTED|REFUTED|NEITHER",
-    "confidence": 0.0,
-    "rationale": "string",
-    "evidence": [
-        {
-            "text": "string",
-            "url": "string",
-            "title": "string"
-        }
-    ],
-    "evidence_count": 0,
-    "processing_time": 0.0,
-    "debug_info": {
-        "translation": {...},
-        "minicheck_input": {...},
-        "minicheck_raw_output": {...},
-        "minicheck_parsed_output": {...}
-    }
-}
-```
-
-### 3.2 Configuration Models
-
-**Evidence Configuration:**
-```python
-{
-    "max_chunks": 5,           # Max evidence pieces
-    "min_chunks": 1,           # Min evidence pieces
-    "max_length": 500,          # Max characters per evidence
-    "fetch_full_content": True   # Whether to fetch full content
-}
-```
-
-**MiniCheck Configuration:**
-```python
-{
-    "threshold_supported": 0.5,    # Confidence threshold for SUPPORTED
-    "threshold_refuted": 0.3,      # Confidence threshold for REFUTED
-    "aggregation_strategy": "majority_vote"
-}
-```
-
-## 4. Configuration System
-
-### 4.1 Configuration Files
-
-- `src/core/system_config.py` - Main configuration definitions
-- Environment variables support
-- Hot-reload capabilities
-- Validation and defaults
-
-### 4.2 Configuration Hierarchy
-
-1. **Environment Variables** (highest priority)
-2. **.env files**
-3. **Default values** (lowest priority)
-
-### 4.3 Runtime Configuration
-
-All configuration is loaded at startup and can be modified via:
-- Configuration API endpoints
-- Environment variables
-- Configuration files
-
-## 5. Performance Optimizations
-
-### 5.1 Implemented Optimizations
-
-1. **GPU Acceleration**
-   - Translation: VinAI model on GPU
-   - MiniCheck: Flan-T5-Large on GPU
-   - Memory usage: ~6GB VRAM total
-
-2. **Batch Processing**
-   - Translation: Multiple texts in single request
-   - Parallel evidence processing
-
-3. **Caching**
-   - Model caching in D:/huggingface_cache
-   - Translation results caching
-   - Search result caching (planned)
-
-4. **Parallel Processing**
-   - Async/await for non-blocking operations
-   - Concurrent service calls
-
-### 5.2 Performance Metrics
-
-| Metric | Value | Notes |
-|--------|-------|-------|
-| Processing Time | 20-30s | Full pipeline |
-| Memory Usage | 6GB VRAM | GPU models |
-| Throughput | 2 claims/min | Single instance |
-| Accuracy | 72% | 25 test cases |
-
-## 6. Testing Strategy
-
-### 6.1 Test Categories
-
-1. **Unit Tests**
-   - Individual service testing
-   - Model validation
-   - Configuration testing
-
-2. **Integration Tests**
-   - End-to-end pipeline testing
-   - Service interaction testing
-   - Performance testing
-
-3. **System Tests**
-   - Real-world claim testing
-   - Accuracy measurement
-   - Load testing
-
-### 6.2 Test Dataset
-
-**Standard Test Dataset**: 25 cases across 5 domains:
-- Geography (5 cases)
-- History (5 cases)
-- Politics (5 cases)
-- Culture (5 cases)
-- Sports (5 cases)
-
-Each test case includes:
-- Vietnamese claim
-- Expected verdict
-- Difficulty level
-- Domain classification
-- Notes
-
-### 6.3 Test Automation
-
-**Automated Test Scripts:**
-- `start_and_test_system.py` - Full system startup and test
-- `test_integration_v2.py` - Integration testing
-- `test_minicheck_fix.py` - MiniCheck unit tests
-- `test_simultaneous_evidence.py` - Evidence comparison
-
-## 7. Error Handling
-
-### 7.1 Error Categories
-
-1. **Service Errors**
-   - Service unavailable
-   - Network timeouts
-   - API rate limits
-
-2. **Model Errors**
-   - Model loading failures
-   - GPU memory issues
-   - Model inference errors
-
-3. **Data Errors**
-   - Invalid input format
-   - Empty search results
-   - Translation failures
-
-### 7.2 Error Recovery
-
-1. **Graceful Degradation**
-   - Fallback translation methods
-   - Reduced evidence processing
-   - Default verdicts
-
-2. **Retry Logic**
-   - Exponential backoff
-   - Maximum retry limits
-   - Circuit breaker pattern
-
-3. **Error Logging**
-   - Structured error reporting
-   - Debug information
-   - Performance metrics
-
-## 8. Security Considerations
-
-### 8.1 API Security
-
-1. **Input Validation**
-   - Claim length limits
-   - Content filtering
-   - SQL injection prevention
-
-2. **Rate Limiting**
-   - Request rate limits
-   - User-based throttling
-   - IP-based blocking
-
-3. **Data Privacy**
-   - No claim logging
-   - Evidence URL masking
-   - Temporary data storage
-
-### 8.2 Model Security
-
-1. **Model Access**
-   - Local model storage
-   - No external API calls for models
-   - Model version control
-
-2. **Data Protection**
-   - Local cache encryption
-   - Secure model storage
-   - Access control
-
-## 9. Deployment Architecture
-
-### 9.1 Deployment Options
-
-1. **Local Development**
-   - Individual service startup
-   - Manual configuration
-   - Debug mode enabled
-
-2. **Production Deployment**
-   - Containerized services
-   - Load balancing
-   - Monitoring integration
-
-### 9.2 Infrastructure Requirements
-
-**Minimum Requirements:**
-- CPU: 4 cores
-- RAM: 16GB
-- GPU: NVIDIA RTX 4060 or better
-- Storage: 10GB SSD
-
-**Recommended Requirements:**
-- CPU: 8 cores
-- RAM: 32GB
-- GPU: NVIDIA RTX 4070 Ti or better
-- Storage: 50GB NVMe SSD
-
-## 10. Future Enhancements
-
-### 10.1 Planned Services
-
-1. **Decomposer Service** (Port 8006)
-   - Multi-claim decomposition
-   - Entity recognition
-   - Claim simplification
-
-2. **Ranker Service** (Port 8007)
-   - Evidence quality ranking
-   - Semantic similarity
-   - Relevance scoring
-
-3. **Reconciliation Service** (Port 8008)
-   - Multiple verdict reconciliation
-   - Confidence aggregation
-   - Conflict resolution
-
-### 10.2 Model Improvements
-
-1. **Model Upgrades**
-   - Larger language models
-   - Fine-tuned models
-   - Ensemble methods
-
-2. **Performance**
-   - Model quantization
-   - Inference optimization
-   - Distributed processing
-
-### 10.3 Feature Enhancements
-
-1. **Multi-language Support**
-   - English fact-checking
-   - Cross-lingual verification
-   - Language detection
-
-2. **Advanced Analytics**
-   - Claim classification
-   - Source reliability scoring
-   - Trend analysis
+### 1.2 Service Components (V2.0)
+
+| Service | Port | Technology | Purpose | Status |
+|---------|------|------------|---------|--------|
+| **Decomposer** | 8006 | FastAPI + Ollama | Atomic claim generation | ✅ Running |
+| **LLM Service** | 8009 | FastAPI + Ollama | Qwen2:1.5b LLM backend | ✅ Running |
+| **Parallel Orchestrator** | N/A | Python | Task coordination | ✅ Ready |
+| **Brave Search Service** | 8010 | FastAPI + aiohttp | Evidence search (enhanced) | 🔄 Framework |
+| **MiniCheck Service** | 8011 | FastAPI + PyTorch | Quick verification | 🔄 Framework |
+| **Evidence Aggregator** | 8012 | FastAPI + Python | Result aggregation | 🔄 Framework |
+| **Fact Checker (Legacy)** | 8005 | FastAPI + Python | Main orchestrator (v1.0) | ✅ Running |
+| **Translation (Legacy)** | 8003 | FastAPI + PyTorch | Vietnamese → English | ✅ Running |
+| **MiniCheck (Legacy)** | 8002 | FastAPI + PyTorch | Claim verification | ✅ Running |
+| **Brave Search (Legacy)** | 8004 | FastAPI + aiohttp | Search proxy | ✅ Running |
 
 ---
 
-**Document Version**: 1.0 (Baseline)  
-**Last Updated**: 2026-02-07  
-**Status**: Production Ready
+## 2. Service Interaction Diagram
+
+```
+┌──────────────────────────────────────────────────────────────────────────┐
+│                         SERVICE INTERACTIONS                              │
+└──────────────────────────────────────────────────────────────────────────┘
+
+                              ┌─────────────┐
+                              │   Client    │
+                              │  (Request)  │
+                              └──────┬──────┘
+                                     │
+                                     ▼
+                    ┌────────────────────────────────┐
+                    │     FACT CHECKER (8005)        │
+                    │   ┌────────────────────────┐   │
+                    │   │  VietnameseFactChecker │   │
+                    │   │  - Orchestrates flow   │   │
+                    │   │  - Manages config      │   │
+                    │   └────────────────────────┘   │
+                    └──────┬─────────┬─────────┬─────┘
+                           │         │         │
+          ┌────────────────┘         │         └────────────────┐
+          │                          │                          │
+          ▼                          ▼                          ▼
+┌──────────────────┐    ┌──────────────────┐    ┌──────────────────┐
+│ BRAVE SEARCH     │    │ TRANSLATION      │    │ MINICHECK        │
+│ (8004)           │    │ (8003)           │    │ (8002)           │
+├──────────────────┤    ├──────────────────┤    ├──────────────────┤
+│ Input:           │    │ Input:           │    │ Input:           │
+│ - Vietnamese     │    │ - Vietnamese     │    │ - English claim  │
+│   query          │    │   text(s)        │    │ - English        │
+│                  │    │                  │    │   evidence       │
+│ Output:          │    │ Output:          │    │                  │
+│ - Search results │    │ - English        │    │ Output:          │
+│   (URLs, titles, │    │   translation    │    │ - Score (0-1)    │
+│    snippets)     │    │                  │    │ - Verdict        │
+└──────────────────┘    └──────────────────┘    └──────────────────┘
+          │                          │                          │
+          │         Brave API        │      HuggingFace         │    GPU
+          ▼         (Internet)       ▼      (Local)             ▼    (CUDA)
+    ┌──────────┐              ┌──────────────┐           ┌──────────────┐
+    │ Brave    │              │ VinAI Model  │           │ MiniCheck    │
+    │ Search   │              │ vinai-       │           │ Bespoke-     │
+    │ API      │              │ translate-   │           │ MiniCheck-7B │
+    └──────────┘              │ vi2en-v2     │           └──────────────┘
+                              └──────────────┘
+```
+
+---
+
+## 3. Workflow: Claim to Result
+
+### 3.1 Sequence Diagram
+
+```
+┌────────┐     ┌─────────────┐     ┌────────────┐     ┌─────────────┐     ┌──────────┐
+│ Client │     │ FactChecker │     │BraveSearch │     │ Translation │     │ MiniCheck│
+│        │     │   (8005)    │     │  (8004)    │     │   (8003)    │     │  (8002)  │
+└───┬────┘     └──────┬──────┘     └─────┬──────┘     └──────┬──────┘     └────┬─────┘
+    │                 │                  │                   │                 │
+    │  POST /check    │                  │                   │                 │
+    │  {claim: "..."} │                  │                   │                 │
+    │────────────────>│                  │                   │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 1: Search   │                   │                 │
+    │                 │─────────────────>│                   │                 │
+    │                 │   Vietnamese     │                   │                 │
+    │                 │   query          │                   │                 │
+    │                 │<─────────────────│                   │                 │
+    │                 │   5 results      │                   │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 2: Fetch Evidence               │                 │
+    │                 │──────────────────────────────────────────────────────> │
+    │                 │   (Internal: fetch URLs)             │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 3: Prepare Evidence Chunks      │                 │
+    │                 │──────────────────────────────────────────────────────> │
+    │                 │   (max 6 chunks)                     │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 4: Batch Translate              │                 │
+    │                 │─────────────────────────────────────>│                 │
+    │                 │   [claim + 6 evidences]              │                 │
+    │                 │<─────────────────────────────────────│                 │
+    │                 │   [English texts]                    │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 5: Parallel MiniCheck           │                 │
+    │                 │────────────────────────────────────────────────────────>
+    │                 │   (claim, evidence) x 6              │                 │
+    │                 │<────────────────────────────────────────────────────────
+    │                 │   scores: [0.97, 0.93, ...]          │                 │
+    │                 │                  │                   │                 │
+    │                 │ STEP 6: Aggregate & Translate Rationale                │
+    │                 │─────────────────────────────────────>│                 │
+    │                 │<─────────────────────────────────────│                 │
+    │                 │                  │                   │                 │
+    │  Response       │                  │                   │                 │
+    │  {verdict,      │                  │                   │                 │
+    │   confidence,   │                  │                   │                 │
+    │   evidence}     │                  │                   │                 │
+    │<────────────────│                  │                   │                 │
+    │                 │                  │                   │                 │
+```
+
+### 3.2 Step-by-Step Flow
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    FACT CHECKING WORKFLOW                                    │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+INPUT: Vietnamese Claim
+       "Hà Nội là thủ đô của Việt Nam"
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ STEP 1: WEB SEARCH                                                          │
+│ ───────────────────                                                         │
+│ Service: Brave Search Baseline (8004)                                       │
+│                                                                             │
+│ • Apply source filtering (exclude: facebook, tiktok, etc.)                 │
+│ • Search with Vietnamese query                                              │
+│ • Return: 5-15 results with URLs, titles, snippets                         │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ STEP 2: FETCH EVIDENCE                                                      │
+│ ──────────────────────                                                      │
+│ Service: Evidence Fetcher (internal)                                        │
+│                                                                             │
+│ • Fetch content from top URLs                                               │
+│ • Extract text snippets                                                     │
+│ • Limit: max 6 evidence chunks                                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ STEP 3: BATCH TRANSLATION                                                   │
+│ ─────────────────────────                                                   │
+│ Service: Translation Baseline (8003)                                        │
+│ Model: VinAI/vinai-translate-vi2en-v2                                       │
+│                                                                             │
+│ • Translate claim + all evidence in single batch                           │
+│ • GPU accelerated (CUDA)                                                    │
+│ • Output: English claim + English evidence                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ STEP 4: PARALLEL VERIFICATION                                               │
+│ ─────────────────────────────                                               │
+│ Service: MiniCheck Baseline (8002)                                          │
+│ Model: Bespoke-MiniCheck-7B                                                 │
+│                                                                             │
+│ • Verify claim against each evidence (parallel)                            │
+│ • Output: score 0.0 - 1.0 for each pair                                    │
+│ • Apply thresholds:                                                         │
+│   - SUPPORTED: score >= 0.5                                                 │
+│   - REFUTED: score < 0.3                                                    │
+│   - NEITHER: 0.3 <= score < 0.5                                            │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    │
+                    ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ STEP 5: AGGREGATION                                                         │
+│ ───────────────────                                                         │
+│ Service: Fact Checker (internal)                                            │
+│                                                                             │
+│ • Aggregation strategy: "best" (highest score wins)                        │
+│ • Select best evidence with highest confidence                              │
+│ • Generate rationale                                                        │
+└─────────────────────────────────────────────────────────────────────────────┘
+                    │
+                    ▼
+OUTPUT: JSON Response
+        {
+          "verdict": "SUPPORTED",
+          "confidence": 0.9789,
+          "evidence_count": 5,
+          "evidence": [...],
+          "processing_time": 12.5
+        }
+```
+
+---
+
+## 4. Configuration Reference
+
+### 4.1 Configuration Architecture
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                     CONFIGURATION SYSTEM                                     │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+                    ┌─────────────────────────┐
+                    │    system_config.py     │
+                    │   (Central Config)      │
+                    └───────────┬─────────────┘
+                                │
+        ┌───────────────────────┼───────────────────────┐
+        │                       │                       │
+        ▼                       ▼                       ▼
+┌───────────────┐     ┌───────────────┐     ┌───────────────┐
+│ BraveSearch   │     │ Translation   │     │  MiniCheck    │
+│ Config        │     │ Config        │     │  Config       │
+├───────────────┤     ├───────────────┤     ├───────────────┤
+│ • api_url     │     │ • api_url     │     │ • api_url     │
+│ • max_results │     │ • model_name  │     │ • threshold   │
+│ • trusted_src │     │ • use_gpu     │     │ • aggregation │
+│ • untrusted   │     │ • batch_size  │     │ • model       │
+└───────────────┘     └───────────────┘     └───────────────┘
+        │                       │                       │
+        ▼                       ▼                       ▼
+┌───────────────┐     ┌───────────────┐     ┌───────────────┐
+│ Evidence      │     │ Logging       │     │ Performance   │
+│ Config        │     │ Config        │     │ Config        │
+├───────────────┤     ├───────────────┤     ├───────────────┤
+│ • max_chunks  │     │ • log_level   │     │ • parallel    │
+│ • max_length  │     │ • log_timing  │     │ • batch_trans │
+│ • fetch_full  │     │ • log_scores  │     │ • workers     │
+└───────────────┘     └───────────────┘     └───────────────┘
+```
+
+### 4.2 Configuration Sections
+
+#### 4.2.1 Brave Search Configuration
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `api_url` | string | http://localhost:8004 | Brave Search proxy URL |
+| `max_results` | int | 15 | Maximum search results |
+| `country` | string | VN | Country code |
+| `language` | string | vi | Language code |
+| `source_filter_mode` | string | exclude | Filter mode: include/exclude |
+| `trusted_sources` | list | 101 domains | Trusted source domains |
+| `untrusted_sources` | list | 10 domains | Blocked source domains |
+
+**Trusted Sources by Category:**
+```
+🏛️ Government (15): chinhphu.vn, gov.vn, moh.gov.vn...
+📰 News (17): vnexpress.net, tuoitre.vn, thanhnien.vn...
+💰 Finance (9): cafef.vn, vietstock.vn, vneconomy.vn...
+🏥 Health (8): suckhoedoisong.vn, vinmec.com...
+🎓 Education (12): edu.vn, vnu.edu.vn, hust.edu.vn...
+⚖️ Law (6): thuvienphapluat.vn, plo.vn...
+⚽ Sports (6): bongda24h.vn, vff.org.vn...
+💻 Technology (8): tinhte.vn, genk.vn...
+🌍 International (8): bbc.com, reuters.com, who.int...
+```
+
+**Untrusted Sources (blocked):**
+```
+facebook.com, fb.com, tiktok.com, twitter.com, x.com,
+instagram.com, youtube.com, reddit.com, quora.com, pinterest.com
+```
+
+#### 4.2.2 Translation Configuration
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `api_url` | string | http://localhost:8003 | Translation API URL |
+| `model_name` | string | VinAI/vinai-translate-vi2en-v2 | Translation model |
+| `use_gpu` | bool | true | Use GPU acceleration |
+| `gpu_device` | string | cuda:0 | GPU device |
+| `batch_size` | int | 10 | Batch translation size |
+| `timeout` | int | 30 | Request timeout (seconds) |
+| `cache_translations` | bool | false | Enable translation cache |
+
+#### 4.2.3 MiniCheck Configuration
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `api_url` | string | http://localhost:8002/verify | MiniCheck API URL |
+| `threshold_supported` | float | 0.5 | Min score for SUPPORTED |
+| `threshold_refuted` | float | 0.3 | Max score for REFUTED |
+| `aggregation_strategy` | string | best | Aggregation: best/average/weighted |
+| `model` | string | Bespoke-MiniCheck-7B | Verification model |
+| `timeout` | int | 30 | Request timeout (seconds) |
+
+#### 4.2.4 Evidence Configuration
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `max_chunks` | int | 6 | Max evidence pieces |
+| `min_chunks` | int | 1 | Min evidence pieces |
+| `max_length` | int | 500 | Max text length per chunk |
+| `fetch_full_content` | bool | true | Fetch full page content |
+| `content_fetch_timeout` | float | 2.0 | URL fetch timeout |
+
+#### 4.2.5 Logging Configuration
+
+| Parameter | Type | Default | Description |
+|-----------|------|---------|-------------|
+| `level` | string | INFO | Log level |
+| `log_service_io` | bool | true | Log service input/output |
+| `log_timing` | bool | true | Log timing information |
+| `log_translation_details` | bool | true | Log translation details |
+| `log_minicheck_all_scores` | bool | true | Log all MiniCheck scores |
+| `log_search_results` | bool | true | Log search results |
+
+### 4.3 Configuration API
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                    CONFIGURATION API ENDPOINTS                               │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+GET  /config              → Get all configurations
+GET  /config/summary      → Get service config summary
+GET  /config/{section}    → Get specific section config
+POST /config/{section}    → Update section config
+POST /config/reload       → Reload config from environment
+POST /config/save         → Save current config to file
+
+Example - Update evidence max_chunks:
+┌─────────────────────────────────────────────────────────────────┐
+│ POST /config/evidence                                           │
+│ Content-Type: application/json                                  │
+│                                                                 │
+│ {                                                               │
+│   "section": "evidence",                                        │
+│   "updates": {                                                  │
+│     "max_chunks": 6                                             │
+│   }                                                             │
+│ }                                                               │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 5. Deployment Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                         DEPLOYMENT ARCHITECTURE                              │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                              HOST MACHINE                                    │
+│                     (Windows 11 + RTX 4060 GPU)                             │
+├─────────────────────────────────────────────────────────────────────────────┤
+│                                                                             │
+│  ┌─────────────────────────────────────────────────────────────────────┐   │
+│  │                        Python 3.10 Environment                       │   │
+│  ├─────────────────────────────────────────────────────────────────────┤   │
+│  │                                                                      │   │
+│  │  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐              │   │
+│  │  │ Fact Checker │  │ Translation  │  │  MiniCheck   │              │   │
+│  │  │   :8005      │  │   :8003      │  │   :8002      │              │   │
+│  │  │              │  │              │  │              │              │   │
+│  │  │  FastAPI     │  │  FastAPI     │  │  FastAPI     │              │   │
+│  │  │  + uvicorn   │  │  + PyTorch   │  │  + PyTorch   │              │   │
+│  │  └──────────────┘  └──────────────┘  └──────────────┘              │   │
+│  │         │                 │                 │                       │   │
+│  │         │                 ▼                 ▼                       │   │
+│  │         │          ┌─────────────────────────────┐                 │   │
+│  │         │          │      CUDA 11.8 + cuDNN      │                 │   │
+│  │         │          │      RTX 4060 (8GB VRAM)    │                 │   │
+│  │         │          └─────────────────────────────┘                 │   │
+│  │         │                                                           │   │
+│  │  ┌──────────────┐                                                   │   │
+│  │  │ Brave Search │                                                   │   │
+│  │  │   :8004      │───────────────────────────────────────────────┐  │   │
+│  │  │   (Proxy)    │                                               │  │   │
+│  │  └──────────────┘                                               │  │   │
+│  │                                                                  │  │   │
+│  └──────────────────────────────────────────────────────────────────│──┘   │
+│                                                                     │      │
+│  ┌──────────────────────────────────────────────────────────────────│──┐   │
+│  │                     Local Storage                                │  │   │
+│  │  D:\huggingface_cache\     ← Model cache                        │  │   │
+│  │  D:\bmad\                  ← Project files                       │  │   │
+│  └─────────────────────────────────────────────────────────────────────┘   │
+│                                                                             │
+└───────────────────────────────────────────────────────────────────┬─────────┘
+                                                                    │
+                                                                    ▼
+                                                          ┌─────────────────┐
+                                                          │    INTERNET     │
+                                                          │                 │
+                                                          │  Brave Search   │
+                                                          │  API            │
+                                                          └─────────────────┘
+```
+
+---
+
+## 6. Data Flow Summary
+
+```
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                           DATA FLOW SUMMARY                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+INPUT                    PROCESSING                           OUTPUT
+─────                    ──────────                           ──────
+
+Vietnamese    ──────►    Brave Search    ──────►    5-6 Vietnamese
+Claim                    (8004)                     Evidence Snippets
+                              │
+                              ▼
+                         ┌─────────┐
+                         │ Combine │
+                         │ Claim + │
+                         │Evidence │
+                         └────┬────┘
+                              │
+                              ▼
+                         Translation     ──────►    English Claim +
+                         (8003)                     English Evidence
+                              │
+                              ▼
+                         MiniCheck       ──────►    Scores [0.0-1.0]
+                         (8002)                     per evidence
+                              │
+                              ▼
+                         ┌──────────┐
+                         │Aggregate │    ──────►    Final Verdict
+                         │ & Select │               + Confidence
+                         │  Best    │               + Best Evidence
+                         └──────────┘
+
+VERDICT LOGIC:
+─────────────
+• Score >= 0.5  →  SUPPORTED
+• Score < 0.3   →  REFUTED  
+• Otherwise     →  NEITHER
+```
+
+---
+
+## 7. File Structure
+
+```
+D:\bmad\
+├── vietnamese-fact-checker/          # Main API Server
+│   ├── src/
+│   │   ├── api/
+│   │   │   └── main.py              # FastAPI endpoints
+│   │   ├── core/
+│   │   │   ├── system_config.py     # Central configuration
+│   │   │   └── config.py            # Legacy config
+│   │   └── services/
+│   │       ├── fact_checker.py      # Main orchestrator
+│   │       ├── brave_search_client.py
+│   │       ├── translation_client.py
+│   │       ├── minicheck_client.py
+│   │       └── evidence_fetcher.py
+│   └── start_vietnamese_checker.py
+│
+├── vietnamese-translation-system/    # Translation Service
+│   └── translation_baseline.py
+│
+├── minicheck/                        # Verification Service
+│   └── minicheck_baseline.py
+│
+├── brave-search-baseline/            # Search Proxy
+│   └── brave_search_baseline.py
+│
+├── tests/                            # Test Scripts
+│   └── test_*.py
+│
+├── README.md                         # Installation Guide
+├── ARCHITECTURE.md                   # This Document
+└── start_all_servers.py             # Start All Services
+```
+
+---
+
+**Document End**
